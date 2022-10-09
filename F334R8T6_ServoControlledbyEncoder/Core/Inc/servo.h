@@ -10,11 +10,11 @@
 #define ANGLE_MIN 0
 #define ANGLE_MAX 1800
 /* zakres PWM */
-#define PWM_MIN 1000
-#define PWM_MAX 2000
+#define PWM_MIN 500
+#define PWM_MAX 2400
 
-#define STEP ((1000 * (PWM_MAX - PWM_MIN)) / (ANGLE_MAX - ANGLE_MIN))
+#define STEP 1000*(3500/1800)
 
-void set_ang(uint16_t ang, uint8_t mode);
+void set_ang(uint16_t ang);
 
 #endif /* INC_SERVO_H_ */

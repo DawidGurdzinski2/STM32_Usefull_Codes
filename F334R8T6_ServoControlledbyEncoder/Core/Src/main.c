@@ -24,6 +24,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include <stdio.h>
+#include <string.h>
 #include "servo.h"
 /* USER CODE END Includes */
 
@@ -88,21 +90,35 @@ int main(void)
   MX_GPIO_Init();
   MX_USART2_UART_Init();
   MX_TIM16_Init();
+  MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
   HAL_TIM_PWM_Start(&htim16, TIM_CHANNEL_1 );//incjalizuje timer16 chanel1 jako pwm output
+  HAL_TIM_Encoder_Start(&htim3, TIM_CHANNEL_ALL);
+
+  void niggamryga()
+  {//0-29
+	  set_ang(0);//USTAWIA PWM NA 1ms BO prescaller jest na 1MHz-1us 1000us=1ms pwm
+	  	 HAL_Delay(500);
+	  	 set_ang(900);
+	  	 HAL_Delay(500);
+	  	 set_ang(1800);
+	  	 HAL_Delay(500);
+
+  }
+  	  char msg[64];
+  	uint8_t count;
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	 // __HAL_TIM_SET_COMPARE(&TIM_NO, TIM_CH_NO, 1000);
-	  //HAL_Delay(1000);
-	  //__HAL_TIM_SET_COMPARE(&TIM_NO, TIM_CH_NO, 1500);
-	  //HAL_Delay(1000);
-	  //__HAL_TIM_SET_COMPARE(&TIM_NO, TIM_CH_NO, 3000);
-	  //HAL_Delay(1000);
-	  //set_ang(0, 0);//USTAWIA PWM NA 1MS BO prescaller jest na 1MHz-1us 1000us=1ms pwm
+	  count=__HAL_TIM_GET_COUNTER(&htim3)/2;
+	  //niggamryga();
+	  sprintf((char*)msg,"NIGGA: %d\n",count);
+	  HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg), 1000);
+	  set_ang(count*20);
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -149,7 +165,16 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+{
+	if(GPIO_Pin== P1_Pin)
+	{
+		HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
+	}
 
+
+
+}
 /* USER CODE END 4 */
 
 /**

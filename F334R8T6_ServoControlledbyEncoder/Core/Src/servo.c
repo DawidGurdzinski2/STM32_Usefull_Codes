@@ -6,7 +6,7 @@
  * ang - kat obrotu walu serwomechanizmu
  * mode - tryb obrotu zgodnie/przeciwnie do wskazowek zegara
  */
-void set_ang(uint16_t ang, uint8_t mode)
+void set_ang(uint16_t ang)
 {
 	uint16_t val;
 
@@ -18,15 +18,9 @@ void set_ang(uint16_t ang, uint8_t mode)
 	{
 		ang = ANGLE_MIN;
 	}
+	val = PWM_MIN + (ang * STEP) / 1000;
 
-	if(mode)
-	{
-		val = PWM_MIN + ((ang - ANGLE_MIN) * STEP) / 1000;
-	}
-	else
-	{
-		val = PWM_MAX - ((ang - ANGLE_MIN) * STEP) / 1000;
-	}
+
 
 	__HAL_TIM_SET_COMPARE(&TIM_NO, TIM_CH_NO, val);
 }

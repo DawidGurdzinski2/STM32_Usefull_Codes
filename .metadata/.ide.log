@@ -1174,3 +1174,1125 @@
 2022-10-09 19:34:51,662 [INFO] IPUIPlugin:79 - create IPUIPlugin
 2022-10-09 19:34:51,662 [INFO] IPUIPlugin:79 - create IPUIPlugin
 2022-10-09 19:34:51,718 [INFO] OpenFileManager:327 - Restore cursor
+2022-10-09 19:59:03,255 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 434362432 Bytes (807403520)
+2022-10-09 19:59:04,473 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 459909976 Bytes (807403520)
+2022-10-09 19:59:05,993 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 530020392 Bytes (807403520)
+2022-10-09 19:59:06,295 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: NVIC
+2022-10-09 19:59:06,295 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: USART
+2022-10-09 19:59:06,295 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: TIM1_8F3
+2022-10-09 19:59:06,295 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: SYS
+2022-10-09 19:59:06,295 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: GPIO
+2022-10-09 19:59:06,295 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: RCC
+2022-10-09 19:59:06,296 [INFO] CodeGenerator:690 - code generatio: config db path: /opt/st/stm32cubeide_1.10.1/plugins/com.st.stm32cube.common.mx_6.6.1.202207061420//db/
+2022-10-09 19:59:06,540 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/MXTmpFiles/license.tmp_save
+2022-10-09 19:59:06,592 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/MXTmpFiles/license.tmp
+2022-10-09 19:59:06,627 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/gpio.c_save
+2022-10-09 19:59:06,699 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/gpio.c
+2022-10-09 19:59:06,700 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/gpio.h_save
+2022-10-09 19:59:06,758 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/gpio.h
+2022-10-09 19:59:06,920 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/tim.c_save
+2022-10-09 19:59:07,017 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/tim.c
+2022-10-09 19:59:07,018 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/tim.h_save
+2022-10-09 19:59:07,077 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/tim.h
+2022-10-09 19:59:07,079 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/usart.c_save
+2022-10-09 19:59:07,158 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/usart.c
+2022-10-09 19:59:07,159 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/usart.h_save
+2022-10-09 19:59:07,211 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/usart.h
+2022-10-09 19:59:07,213 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/stm32f3xx_it.c_save
+2022-10-09 19:59:07,271 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/stm32f3xx_it.c
+2022-10-09 19:59:07,272 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/stm32f3xx_it.h_save
+2022-10-09 19:59:07,330 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/stm32f3xx_it.h
+2022-10-09 19:59:07,333 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/stm32f3xx_hal_msp.c_save
+2022-10-09 19:59:07,407 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/stm32f3xx_hal_msp.c
+2022-10-09 19:59:07,409 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/MXTmpFiles/system.tmp_save
+2022-10-09 19:59:07,459 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/MXTmpFiles/system.tmp
+2022-10-09 19:59:07,460 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/stm32f3xx_hal_conf.h_save
+2022-10-09 19:59:07,518 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/stm32f3xx_hal_conf.h
+2022-10-09 19:59:07,543 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/main.h_save
+2022-10-09 19:59:07,598 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/main.h
+2022-10-09 19:59:07,599 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/main.c_save
+2022-10-09 19:59:07,675 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/main.c
+2022-10-09 19:59:08,257 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 17mS.
+2022-10-09 19:59:08,259 [INFO] ProjectBuilder:4117 - Project Generator version: 3.17.1
+2022-10-09 19:59:08,534 [INFO] ConfigFileManager:1394 - The Die is : DIE438
+2022-10-09 19:59:08,538 [INFO] ApiDbMcu:505 - Load IP Config File for FATFS
+2022-10-09 19:59:08,557 [INFO] ApiDbMcu:505 - Load IP Config File for FREERTOS
+2022-10-09 19:59:08,688 [INFO] ApiDbMcu:505 - Load IP Config File for TOUCHSENSING
+2022-10-09 19:59:09,912 [INFO] ProjectBuilder:4285 - Time for Generating toolchain IDE Files: 1653mS.
+2022-10-09 19:59:09,912 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2022-10-09 19:59:09,913 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2022-10-09 20:02:52,893 [INFO] MainUpdater:2768 - connection check result : 10
+2022-10-09 20:02:52,893 [INFO] MainUpdater:2768 - connection check result : 10
+2022-10-09 20:02:53,017 [INFO] MicroXplorer:451 - Change Database Path : 
+2022-10-09 20:02:53,017 [INFO] MicroXplorer:481 - Change Database Version : DB.6.0.60
+2022-10-09 20:02:53,036 [WARN] ThirdParty:827 - waiting for thirdparty lock release [close project]
+2022-10-09 20:02:53,036 [INFO] ThirdParty:829 - entering critical section [close project]
+2022-10-09 20:02:53,037 [INFO] ThirdParty:839 - exiting critical section [close project]
+2022-10-09 20:02:53,038 [INFO] PinOutPanel:1468 - setPackage(No Configuration,No Configuration)
+2022-10-09 20:02:53,042 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 472216392 Bytes (807403520)
+2022-10-09 20:02:53,042 [INFO] MicroXplorer:451 - Change Database Path : 
+2022-10-09 20:02:53,042 [INFO] MicroXplorer:481 - Change Database Version : DB.6.0.60
+2022-10-09 20:02:53,042 [INFO] OpenFileManager:307 - Change cursor
+2022-10-09 20:02:53,055 [INFO] RulesReader:61 - Compatibility file has been processed (282 Rules)
+2022-10-09 20:02:53,056 [INFO] Mcu:1922 - Initializing MCU STM32F334R(6-8)Tx STM32F334R8Tx STM32F334R8T6
+2022-10-09 20:02:54,300 [INFO] Context:654 - Trying to add GPIOservice into a context  which must be forbidden
+2022-10-09 20:02:55,177 [WARN] ApiManager:308 - Cannot register API 'Board Extension:GNSS1A1' from pack STMicroelectronics.X-CUBE-GNSS1.6.0.0: no header file found
+2022-10-09 20:02:55,178 [WARN] ApiManager:308 - Cannot register API 'Board Support:Custom' from pack STMicroelectronics.X-CUBE-GNSS1.6.0.0: no header file found
+2022-10-09 20:02:55,178 [WARN] ApiManager:308 - Cannot register API 'Data Exchange:lib_gnss' from pack STMicroelectronics.X-CUBE-GNSS1.6.0.0: no header file found
+2022-10-09 20:02:55,180 [WARN] ApiManager:308 - Cannot register API 'Wireless:BlueNRG-MS' from pack STMicroelectronics.X-CUBE-BLE1.6.2.3: no header file found
+2022-10-09 20:02:55,180 [INFO] RtosManager:488 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2022-10-09 20:02:55,181 [INFO] RtosManager:488 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2022-10-09 20:02:55,181 [INFO] RtosManager:488 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2022-10-09 20:02:55,181 [INFO] RtosManager:488 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2022-10-09 20:02:55,181 [WARN] ModelIntegratedComponent:185 - Missing modes for component STMicroelectronics:FreeRTOS:0.0.1:STMicroelectronics:RTOS:FreeRTOS:Core:::10.2.0:
+2022-10-09 20:02:55,183 [WARN] ApiManager:308 - Cannot register API 'Board Extension:S2868A1' from pack STMicroelectronics.X-CUBE-SUBG2.5.0.0: no header file found
+2022-10-09 20:02:55,183 [WARN] ApiManager:308 - Cannot register API 'Board Extension:S2868A2' from pack STMicroelectronics.X-CUBE-SUBG2.5.0.0: no header file found
+2022-10-09 20:02:55,183 [WARN] ApiManager:308 - Cannot register API 'Board Extension:S2915A1' from pack STMicroelectronics.X-CUBE-SUBG2.5.0.0: no header file found
+2022-10-09 20:02:55,185 [WARN] ApiManager:308 - Cannot register API 'Board Extension:NFC04A1' from pack STMicroelectronics.X-CUBE-NFC4.2.0.4: no header file found
+2022-10-09 20:02:55,187 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:02:55,187 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:02:55,187 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:02:55,187 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:02:55,187 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:02:55,187 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:02:55,188 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:02:55,188 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:02:55,188 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:02:55,188 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:02:55,188 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:02:55,188 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:02:55,188 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:02:55,188 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:02:55,188 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:02:55,188 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:02:55,188 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:02:55,188 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:02:55,188 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:02:55,188 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:02:55,188 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:02:55,188 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:02:55,188 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:02:55,188 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:02:55,188 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:02:55,188 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:02:55,189 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:02:55,189 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:02:55,189 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:02:55,189 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:02:55,189 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:02:55,189 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:02:55,189 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:02:55,190 [WARN] ApiManager:308 - Cannot register API 'Board Extension:NFC07A1' from pack STMicroelectronics.X-CUBE-NFC7.1.0.0: no header file found
+2022-10-09 20:02:55,271 [WARN] ApiManager:308 - Cannot register API 'Board Extension:IKS01A3' from pack STMicroelectronics.X-CUBE-MEMS1.9.3.0: no header file found
+2022-10-09 20:02:55,272 [WARN] ApiManager:308 - Cannot register API 'Board Extension:IKS01A2' from pack STMicroelectronics.X-CUBE-MEMS1.9.3.0: no header file found
+2022-10-09 20:02:55,272 [WARN] ApiManager:308 - Cannot register API 'Board Extension:IKS02A1' from pack STMicroelectronics.X-CUBE-MEMS1.9.3.0: no header file found
+2022-10-09 20:02:55,276 [WARN] ApiManager:308 - Cannot register API 'Board Extension:EEPRMA1' from pack STMicroelectronics.X-CUBE-EEPRMA1.3.1.1: no header file found
+2022-10-09 20:02:55,276 [WARN] ApiManager:308 - Cannot register API 'Board Extension:EEPRMA2' from pack STMicroelectronics.X-CUBE-EEPRMA1.3.1.1: no header file found
+2022-10-09 20:02:55,276 [WARN] ApiManager:308 - Cannot register API 'Board Extension:S2868A1' from pack STMicroelectronics.X-CUBE-SFXS2LP1.4.0.0: no header file found
+2022-10-09 20:02:55,276 [WARN] ApiManager:308 - Cannot register API 'Board Extension:S2868A2' from pack STMicroelectronics.X-CUBE-SFXS2LP1.4.0.0: no header file found
+2022-10-09 20:02:55,276 [WARN] ApiManager:308 - Cannot register API 'Board Extension:S2915A1' from pack STMicroelectronics.X-CUBE-SFXS2LP1.4.0.0: no header file found
+2022-10-09 20:02:55,277 [WARN] ApiManager:308 - Cannot register API 'Wireless:BlueNRG-2' from pack STMicroelectronics.X-CUBE-BLE2.3.3.0: no header file found
+2022-10-09 20:02:55,280 [INFO] ThirdPartyModel:289 - Start build external matchings
+2022-10-09 20:02:55,492 [INFO] ThirdPartyModel:302 - End build external matchings
+2022-10-09 20:02:55,501 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (RCC) : Parameter (FLatency) has Id (AdvancedSettings) currently not set
+2022-10-09 20:02:55,501 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2022-10-09 20:02:55,502 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM2Freq_Value)
+2022-10-09 20:02:55,673 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 269235944 Bytes (807403520)
+2022-10-09 20:02:55,679 [WARN] ThirdParty:789 - waiting for thirdparty lock release [change project]
+2022-10-09 20:02:55,679 [INFO] ThirdParty:791 - entering critical section [change project]
+2022-10-09 20:02:55,679 [INFO] ThirdParty:981 - CMSIS Pack Vendor :RoweBots I-CUBE-UNISONRTOS 5.5.0-4
+2022-10-09 20:02:55,680 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 6.0.0
+2022-10-09 20:02:55,680 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7 2.1.0
+2022-10-09 20:02:55,680 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2022-10-09 20:02:55,680 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F4 1.1.0
+2022-10-09 20:02:55,680 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics LIBJPEG 8.0.0
+2022-10-09 20:02:55,680 [INFO] ThirdParty:981 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfSSL 5.4.0
+2022-10-09 20:02:55,680 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2022-10-09 20:02:55,680 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLEMGR 1.0.0
+2022-10-09 20:02:55,680 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F7 1.1.0
+2022-10-09 20:02:55,680 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2022-10-09 20:02:55,680 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 6.2.3
+2022-10-09 20:02:55,680 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.3.0
+2022-10-09 20:02:55,680 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2022-10-09 20:02:55,680 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G0 1.1.0
+2022-10-09 20:02:55,680 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 5.0.0
+2022-10-09 20:02:55,680 [INFO] ThirdParty:981 - CMSIS Pack Vendor :SEGGER I-CUBE-embOS 1.2.0
+2022-10-09 20:02:55,680 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics STM32_WPAN 1.0.0
+2022-10-09 20:02:55,680 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2022-10-09 20:02:55,680 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 2.0.4
+2022-10-09 20:02:55,680 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2022-10-09 20:02:55,680 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2022-10-09 20:02:55,680 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-ASTRA1 1.1.1
+2022-10-09 20:02:55,680 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2022-10-09 20:02:55,680 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOF1 3.1.0
+2022-10-09 20:02:55,680 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-ASTRA1 1.1.0
+2022-10-09 20:02:55,680 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G4 1.0.0
+2022-10-09 20:02:55,680 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L4 1.0.0
+2022-10-09 20:02:55,680 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics HAL Drivers 0.0.0
+2022-10-09 20:02:55,680 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2022-10-09 20:02:55,680 [INFO] ThirdParty:981 - CMSIS Pack Vendor :emotas I-CUBE-CANOPEN 1.1.2
+2022-10-09 20:02:55,680 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.20.0
+2022-10-09 20:02:55,680 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2022-10-09 20:02:55,680 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC7 1.0.0
+2022-10-09 20:02:55,681 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WL 1.0.0
+2022-10-09 20:02:55,681 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 9.3.0
+2022-10-09 20:02:55,681 [INFO] ThirdParty:981 - CMSIS Pack Vendor :portGmbH I-Cube-SoM-uGOAL 1.1.0
+2022-10-09 20:02:55,681 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALS 1.0.1
+2022-10-09 20:02:55,681 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 7.2.0
+2022-10-09 20:02:55,681 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics ThreadX 1.0.0
+2022-10-09 20:02:55,681 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L5 1.0.0
+2022-10-09 20:02:55,681 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2022-10-09 20:02:55,681 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-EEPRMA1 3.1.1
+2022-10-09 20:02:55,681 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics ThreadX 0.0.2
+2022-10-09 20:02:55,681 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2022-10-09 20:02:55,681 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SFXS2LP1 4.0.0
+2022-10-09 20:02:55,681 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE2 3.3.0
+2022-10-09 20:02:55,681 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-DISPLAY 2.2.0
+2022-10-09 20:02:55,681 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2022-10-09 20:02:55,681 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ISPU 1.0.0
+2022-10-09 20:02:55,681 [INFO] ThirdParty:797 - exiting critical section [change project]
+2022-10-09 20:02:56,008 [INFO] PinOutPanel:1468 - setPackage(No Configuration,No Configuration)
+2022-10-09 20:02:56,008 [INFO] PinOutPanel:1468 - setPackage(STM32F334R8Tx,LQFP64)
+2022-10-09 20:02:56,386 [INFO] UtilMem:74 - Before build in PCC Used Memory: 452407472 Bytes (807403520)
+2022-10-09 20:02:56,520 [INFO] UtilMem:74 - After build in PCC Used Memory: 496447664 Bytes (807403520)
+2022-10-09 20:02:56,545 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:02:56,545 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:02:56,545 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:02:56,545 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:02:56,546 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:02:56,546 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:02:56,546 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:02:56,546 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:02:56,546 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:02:56,546 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:02:56,547 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:02:56,547 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:02:56,547 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:02:56,547 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:02:56,547 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:02:56,547 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:02:56,548 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:02:56,548 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:02:56,548 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:02:56,548 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:02:56,549 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:02:56,549 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:02:56,549 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:02:56,549 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:02:56,549 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:02:56,549 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:02:56,549 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:02:56,550 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:02:56,550 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:02:56,550 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:02:56,550 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:02:56,550 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:02:56,550 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:02:56,550 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:02:56,551 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:02:56,551 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:02:56,551 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:02:56,607 [INFO] OpenFileManager:327 - Restore cursor
+2022-10-09 20:21:05,523 [INFO] MainUpdater:2768 - connection check result : 10
+2022-10-09 20:21:05,524 [INFO] MainUpdater:2768 - connection check result : 10
+2022-10-09 20:21:05,650 [INFO] MicroXplorer:451 - Change Database Path : 
+2022-10-09 20:21:05,650 [INFO] MicroXplorer:481 - Change Database Version : DB.6.0.60
+2022-10-09 20:21:05,661 [WARN] ThirdParty:827 - waiting for thirdparty lock release [close project]
+2022-10-09 20:21:05,661 [INFO] ThirdParty:829 - entering critical section [close project]
+2022-10-09 20:21:05,661 [INFO] ThirdParty:839 - exiting critical section [close project]
+2022-10-09 20:21:05,663 [INFO] PinOutPanel:1468 - setPackage(No Configuration,No Configuration)
+2022-10-09 20:21:05,666 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 262036472 Bytes (807403520)
+2022-10-09 20:21:05,666 [INFO] MicroXplorer:451 - Change Database Path : 
+2022-10-09 20:21:05,666 [INFO] MicroXplorer:481 - Change Database Version : DB.6.0.60
+2022-10-09 20:21:05,666 [INFO] OpenFileManager:307 - Change cursor
+2022-10-09 20:21:05,670 [INFO] Mcu:1922 - Initializing MCU STM32F334R(6-8)Tx STM32F334R8Tx STM32F334R8T6
+2022-10-09 20:21:06,801 [INFO] Context:654 - Trying to add GPIOservice into a context  which must be forbidden
+2022-10-09 20:21:07,580 [WARN] ApiManager:308 - Cannot register API 'Board Extension:GNSS1A1' from pack STMicroelectronics.X-CUBE-GNSS1.6.0.0: no header file found
+2022-10-09 20:21:07,580 [WARN] ApiManager:308 - Cannot register API 'Board Support:Custom' from pack STMicroelectronics.X-CUBE-GNSS1.6.0.0: no header file found
+2022-10-09 20:21:07,580 [WARN] ApiManager:308 - Cannot register API 'Data Exchange:lib_gnss' from pack STMicroelectronics.X-CUBE-GNSS1.6.0.0: no header file found
+2022-10-09 20:21:07,583 [WARN] ApiManager:308 - Cannot register API 'Wireless:BlueNRG-MS' from pack STMicroelectronics.X-CUBE-BLE1.6.2.3: no header file found
+2022-10-09 20:21:07,583 [INFO] RtosManager:488 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2022-10-09 20:21:07,583 [INFO] RtosManager:488 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2022-10-09 20:21:07,583 [INFO] RtosManager:488 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2022-10-09 20:21:07,583 [INFO] RtosManager:488 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2022-10-09 20:21:07,583 [WARN] ModelIntegratedComponent:185 - Missing modes for component STMicroelectronics:FreeRTOS:0.0.1:STMicroelectronics:RTOS:FreeRTOS:Core:::10.2.0:
+2022-10-09 20:21:07,585 [WARN] ApiManager:308 - Cannot register API 'Board Extension:S2868A1' from pack STMicroelectronics.X-CUBE-SUBG2.5.0.0: no header file found
+2022-10-09 20:21:07,585 [WARN] ApiManager:308 - Cannot register API 'Board Extension:S2868A2' from pack STMicroelectronics.X-CUBE-SUBG2.5.0.0: no header file found
+2022-10-09 20:21:07,585 [WARN] ApiManager:308 - Cannot register API 'Board Extension:S2915A1' from pack STMicroelectronics.X-CUBE-SUBG2.5.0.0: no header file found
+2022-10-09 20:21:07,588 [WARN] ApiManager:308 - Cannot register API 'Board Extension:NFC04A1' from pack STMicroelectronics.X-CUBE-NFC4.2.0.4: no header file found
+2022-10-09 20:21:07,590 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:21:07,590 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:21:07,590 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:21:07,590 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:21:07,590 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:21:07,591 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:21:07,591 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:21:07,591 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:21:07,591 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:21:07,591 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:21:07,591 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:21:07,591 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:21:07,591 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:21:07,591 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:21:07,591 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:21:07,591 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:21:07,591 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:21:07,591 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:21:07,591 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:21:07,591 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:21:07,591 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:21:07,591 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:21:07,591 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:21:07,591 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:21:07,591 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:21:07,592 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:21:07,592 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:21:07,592 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:21:07,592 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:21:07,592 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:21:07,592 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:21:07,592 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:21:07,592 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:21:07,593 [WARN] ApiManager:308 - Cannot register API 'Board Extension:NFC07A1' from pack STMicroelectronics.X-CUBE-NFC7.1.0.0: no header file found
+2022-10-09 20:21:07,705 [WARN] ApiManager:308 - Cannot register API 'Board Extension:IKS01A3' from pack STMicroelectronics.X-CUBE-MEMS1.9.3.0: no header file found
+2022-10-09 20:21:07,705 [WARN] ApiManager:308 - Cannot register API 'Board Extension:IKS01A2' from pack STMicroelectronics.X-CUBE-MEMS1.9.3.0: no header file found
+2022-10-09 20:21:07,705 [WARN] ApiManager:308 - Cannot register API 'Board Extension:IKS02A1' from pack STMicroelectronics.X-CUBE-MEMS1.9.3.0: no header file found
+2022-10-09 20:21:07,709 [WARN] ApiManager:308 - Cannot register API 'Board Extension:EEPRMA1' from pack STMicroelectronics.X-CUBE-EEPRMA1.3.1.1: no header file found
+2022-10-09 20:21:07,709 [WARN] ApiManager:308 - Cannot register API 'Board Extension:EEPRMA2' from pack STMicroelectronics.X-CUBE-EEPRMA1.3.1.1: no header file found
+2022-10-09 20:21:07,709 [WARN] ApiManager:308 - Cannot register API 'Board Extension:S2868A1' from pack STMicroelectronics.X-CUBE-SFXS2LP1.4.0.0: no header file found
+2022-10-09 20:21:07,709 [WARN] ApiManager:308 - Cannot register API 'Board Extension:S2868A2' from pack STMicroelectronics.X-CUBE-SFXS2LP1.4.0.0: no header file found
+2022-10-09 20:21:07,710 [WARN] ApiManager:308 - Cannot register API 'Board Extension:S2915A1' from pack STMicroelectronics.X-CUBE-SFXS2LP1.4.0.0: no header file found
+2022-10-09 20:21:07,710 [WARN] ApiManager:308 - Cannot register API 'Wireless:BlueNRG-2' from pack STMicroelectronics.X-CUBE-BLE2.3.3.0: no header file found
+2022-10-09 20:21:07,713 [INFO] ThirdPartyModel:289 - Start build external matchings
+2022-10-09 20:21:07,902 [INFO] ThirdPartyModel:302 - End build external matchings
+2022-10-09 20:21:07,909 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (RCC) : Parameter (FLatency) has Id (AdvancedSettings) currently not set
+2022-10-09 20:21:07,909 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2022-10-09 20:21:07,910 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM2Freq_Value)
+2022-10-09 20:21:08,046 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 273109584 Bytes (807403520)
+2022-10-09 20:21:08,078 [WARN] ThirdParty:789 - waiting for thirdparty lock release [change project]
+2022-10-09 20:21:08,078 [INFO] ThirdParty:791 - entering critical section [change project]
+2022-10-09 20:21:08,078 [INFO] ThirdParty:981 - CMSIS Pack Vendor :RoweBots I-CUBE-UNISONRTOS 5.5.0-4
+2022-10-09 20:21:08,078 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 6.0.0
+2022-10-09 20:21:08,078 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7 2.1.0
+2022-10-09 20:21:08,078 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2022-10-09 20:21:08,078 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F4 1.1.0
+2022-10-09 20:21:08,078 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics LIBJPEG 8.0.0
+2022-10-09 20:21:08,078 [INFO] ThirdParty:981 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfSSL 5.4.0
+2022-10-09 20:21:08,078 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2022-10-09 20:21:08,078 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLEMGR 1.0.0
+2022-10-09 20:21:08,078 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F7 1.1.0
+2022-10-09 20:21:08,078 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2022-10-09 20:21:08,078 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 6.2.3
+2022-10-09 20:21:08,078 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.3.0
+2022-10-09 20:21:08,078 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2022-10-09 20:21:08,078 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G0 1.1.0
+2022-10-09 20:21:08,078 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 5.0.0
+2022-10-09 20:21:08,078 [INFO] ThirdParty:981 - CMSIS Pack Vendor :SEGGER I-CUBE-embOS 1.2.0
+2022-10-09 20:21:08,078 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics STM32_WPAN 1.0.0
+2022-10-09 20:21:08,078 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2022-10-09 20:21:08,078 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 2.0.4
+2022-10-09 20:21:08,078 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2022-10-09 20:21:08,078 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2022-10-09 20:21:08,078 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-ASTRA1 1.1.1
+2022-10-09 20:21:08,078 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2022-10-09 20:21:08,078 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOF1 3.1.0
+2022-10-09 20:21:08,078 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-ASTRA1 1.1.0
+2022-10-09 20:21:08,079 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G4 1.0.0
+2022-10-09 20:21:08,079 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L4 1.0.0
+2022-10-09 20:21:08,079 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics HAL Drivers 0.0.0
+2022-10-09 20:21:08,079 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2022-10-09 20:21:08,079 [INFO] ThirdParty:981 - CMSIS Pack Vendor :emotas I-CUBE-CANOPEN 1.1.2
+2022-10-09 20:21:08,079 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.20.0
+2022-10-09 20:21:08,079 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2022-10-09 20:21:08,079 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC7 1.0.0
+2022-10-09 20:21:08,079 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WL 1.0.0
+2022-10-09 20:21:08,079 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 9.3.0
+2022-10-09 20:21:08,079 [INFO] ThirdParty:981 - CMSIS Pack Vendor :portGmbH I-Cube-SoM-uGOAL 1.1.0
+2022-10-09 20:21:08,079 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALS 1.0.1
+2022-10-09 20:21:08,079 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 7.2.0
+2022-10-09 20:21:08,079 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics ThreadX 1.0.0
+2022-10-09 20:21:08,079 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L5 1.0.0
+2022-10-09 20:21:08,079 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2022-10-09 20:21:08,079 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-EEPRMA1 3.1.1
+2022-10-09 20:21:08,079 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics ThreadX 0.0.2
+2022-10-09 20:21:08,079 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2022-10-09 20:21:08,079 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SFXS2LP1 4.0.0
+2022-10-09 20:21:08,079 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE2 3.3.0
+2022-10-09 20:21:08,079 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-DISPLAY 2.2.0
+2022-10-09 20:21:08,079 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2022-10-09 20:21:08,079 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ISPU 1.0.0
+2022-10-09 20:21:08,079 [INFO] ThirdParty:797 - exiting critical section [change project]
+2022-10-09 20:21:08,280 [INFO] PinOutPanel:1468 - setPackage(No Configuration,No Configuration)
+2022-10-09 20:21:08,281 [INFO] PinOutPanel:1468 - setPackage(STM32F334R8Tx,LQFP64)
+2022-10-09 20:21:08,755 [INFO] UtilMem:74 - Before build in PCC Used Memory: 315700000 Bytes (807403520)
+2022-10-09 20:21:08,866 [INFO] UtilMem:74 - After build in PCC Used Memory: 360268240 Bytes (807403520)
+2022-10-09 20:21:08,883 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:21:08,883 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:21:08,883 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:21:08,883 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:21:08,883 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:21:08,884 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:21:08,884 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:21:08,884 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:21:08,884 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:21:08,884 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:21:08,884 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:21:08,884 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:21:08,885 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:21:08,885 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:21:08,885 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:21:08,885 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:21:08,885 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:21:08,885 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:21:08,885 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:21:08,885 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:21:08,886 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:21:08,886 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:21:08,886 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:21:08,886 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:21:08,886 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:21:08,886 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:21:08,886 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:21:08,886 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:21:08,886 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:21:08,886 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:21:08,886 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:21:08,886 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:21:08,886 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:21:08,887 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:21:08,887 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:21:08,887 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:21:08,887 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:21:08,954 [INFO] OpenFileManager:327 - Restore cursor
+2022-10-09 20:38:35,699 [INFO] Gpio:272 - dependency for GPIO [RCC, SYS, TIM16, USART2]
+2022-10-09 20:39:42,890 [INFO] Gpio:272 - dependency for GPIO [RCC, SYS, TIM16, USART2]
+2022-10-09 20:39:45,228 [INFO] Gpio:272 - dependency for GPIO [RCC, SYS, TIM16, USART2]
+2022-10-09 20:39:45,270 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2022-10-09 20:42:31,670 [INFO] Gpio:272 - dependency for GPIO [RCC, SYS, TIM16, USART2]
+2022-10-09 20:43:14,127 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 355676288 Bytes (807403520)
+2022-10-09 20:43:15,191 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 374550656 Bytes (807403520)
+2022-10-09 20:43:16,455 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 443809296 Bytes (807403520)
+2022-10-09 20:43:16,682 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: NVIC
+2022-10-09 20:43:16,682 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: USART
+2022-10-09 20:43:16,683 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: TIM1_8F3
+2022-10-09 20:43:16,683 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: SYS
+2022-10-09 20:43:16,683 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: GPIO
+2022-10-09 20:43:16,683 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: RCC
+2022-10-09 20:43:16,684 [INFO] CodeGenerator:690 - code generatio: config db path: /opt/st/stm32cubeide_1.10.1/plugins/com.st.stm32cube.common.mx_6.6.1.202207061420//db/
+2022-10-09 20:43:16,912 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/MXTmpFiles/license.tmp_save
+2022-10-09 20:43:16,978 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/MXTmpFiles/license.tmp
+2022-10-09 20:43:17,007 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/gpio.c_save
+2022-10-09 20:43:17,063 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/gpio.c
+2022-10-09 20:43:17,064 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/gpio.h_save
+2022-10-09 20:43:17,115 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/gpio.h
+2022-10-09 20:43:17,260 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/tim.c_save
+2022-10-09 20:43:17,345 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/tim.c
+2022-10-09 20:43:17,346 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/tim.h_save
+2022-10-09 20:43:17,408 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/tim.h
+2022-10-09 20:43:17,410 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/usart.c_save
+2022-10-09 20:43:17,485 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/usart.c
+2022-10-09 20:43:17,486 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/usart.h_save
+2022-10-09 20:43:17,541 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/usart.h
+2022-10-09 20:43:17,543 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/stm32f3xx_it.c_save
+2022-10-09 20:43:17,610 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/stm32f3xx_it.c
+2022-10-09 20:43:17,611 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/stm32f3xx_it.h_save
+2022-10-09 20:43:17,668 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/stm32f3xx_it.h
+2022-10-09 20:43:17,670 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/stm32f3xx_hal_msp.c_save
+2022-10-09 20:43:17,762 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/stm32f3xx_hal_msp.c
+2022-10-09 20:43:17,763 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/MXTmpFiles/system.tmp_save
+2022-10-09 20:43:17,835 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/MXTmpFiles/system.tmp
+2022-10-09 20:43:17,836 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/stm32f3xx_hal_conf.h_save
+2022-10-09 20:43:17,901 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/stm32f3xx_hal_conf.h
+2022-10-09 20:43:17,917 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/main.h_save
+2022-10-09 20:43:17,974 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/main.h
+2022-10-09 20:43:17,975 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/main.c_save
+2022-10-09 20:43:18,050 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/main.c
+2022-10-09 20:43:18,527 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 17mS.
+2022-10-09 20:43:18,529 [INFO] ProjectBuilder:4117 - Project Generator version: 3.17.1
+2022-10-09 20:43:18,746 [INFO] ConfigFileManager:1394 - The Die is : DIE438
+2022-10-09 20:43:18,750 [INFO] ApiDbMcu:505 - Load IP Config File for FATFS
+2022-10-09 20:43:18,770 [INFO] ApiDbMcu:505 - Load IP Config File for FREERTOS
+2022-10-09 20:43:18,884 [INFO] ApiDbMcu:505 - Load IP Config File for TOUCHSENSING
+2022-10-09 20:43:20,139 [INFO] ProjectBuilder:4285 - Time for Generating toolchain IDE Files: 1610mS.
+2022-10-09 20:43:20,139 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2022-10-09 20:43:20,140 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2022-10-09 20:47:57,450 [INFO] MainUpdater:2768 - connection check result : 10
+2022-10-09 20:47:57,451 [INFO] MainUpdater:2768 - connection check result : 10
+2022-10-09 20:47:57,525 [INFO] Gpio:272 - dependency for GPIO [RCC, SYS, TIM16, USART2]
+2022-10-09 20:47:57,554 [INFO] MicroXplorer:451 - Change Database Path : 
+2022-10-09 20:47:57,554 [INFO] MicroXplorer:481 - Change Database Version : DB.6.0.60
+2022-10-09 20:47:57,563 [WARN] ThirdParty:827 - waiting for thirdparty lock release [close project]
+2022-10-09 20:47:57,563 [INFO] ThirdParty:829 - entering critical section [close project]
+2022-10-09 20:47:57,563 [INFO] ThirdParty:839 - exiting critical section [close project]
+2022-10-09 20:47:57,565 [INFO] PinOutPanel:1468 - setPackage(No Configuration,No Configuration)
+2022-10-09 20:47:57,567 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 386696480 Bytes (846200832)
+2022-10-09 20:47:57,567 [INFO] MicroXplorer:451 - Change Database Path : 
+2022-10-09 20:47:57,567 [INFO] MicroXplorer:481 - Change Database Version : DB.6.0.60
+2022-10-09 20:47:57,567 [INFO] OpenFileManager:307 - Change cursor
+2022-10-09 20:47:57,579 [INFO] RulesReader:61 - Compatibility file has been processed (282 Rules)
+2022-10-09 20:47:57,581 [INFO] Mcu:1922 - Initializing MCU STM32F334R(6-8)Tx STM32F334R8Tx STM32F334R8T6
+2022-10-09 20:47:58,686 [INFO] Context:654 - Trying to add GPIOservice into a context  which must be forbidden
+2022-10-09 20:47:59,432 [WARN] ApiManager:308 - Cannot register API 'Board Extension:GNSS1A1' from pack STMicroelectronics.X-CUBE-GNSS1.6.0.0: no header file found
+2022-10-09 20:47:59,433 [WARN] ApiManager:308 - Cannot register API 'Board Support:Custom' from pack STMicroelectronics.X-CUBE-GNSS1.6.0.0: no header file found
+2022-10-09 20:47:59,433 [WARN] ApiManager:308 - Cannot register API 'Data Exchange:lib_gnss' from pack STMicroelectronics.X-CUBE-GNSS1.6.0.0: no header file found
+2022-10-09 20:47:59,437 [WARN] ApiManager:308 - Cannot register API 'Wireless:BlueNRG-MS' from pack STMicroelectronics.X-CUBE-BLE1.6.2.3: no header file found
+2022-10-09 20:47:59,438 [INFO] RtosManager:488 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2022-10-09 20:47:59,438 [INFO] RtosManager:488 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2022-10-09 20:47:59,438 [INFO] RtosManager:488 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2022-10-09 20:47:59,438 [INFO] RtosManager:488 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2022-10-09 20:47:59,438 [WARN] ModelIntegratedComponent:185 - Missing modes for component STMicroelectronics:FreeRTOS:0.0.1:STMicroelectronics:RTOS:FreeRTOS:Core:::10.2.0:
+2022-10-09 20:47:59,440 [WARN] ApiManager:308 - Cannot register API 'Board Extension:S2868A1' from pack STMicroelectronics.X-CUBE-SUBG2.5.0.0: no header file found
+2022-10-09 20:47:59,440 [WARN] ApiManager:308 - Cannot register API 'Board Extension:S2868A2' from pack STMicroelectronics.X-CUBE-SUBG2.5.0.0: no header file found
+2022-10-09 20:47:59,440 [WARN] ApiManager:308 - Cannot register API 'Board Extension:S2915A1' from pack STMicroelectronics.X-CUBE-SUBG2.5.0.0: no header file found
+2022-10-09 20:47:59,442 [WARN] ApiManager:308 - Cannot register API 'Board Extension:NFC04A1' from pack STMicroelectronics.X-CUBE-NFC4.2.0.4: no header file found
+2022-10-09 20:47:59,444 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:47:59,444 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:47:59,445 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:47:59,445 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:47:59,445 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:47:59,445 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:47:59,445 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:47:59,445 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:47:59,445 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:47:59,445 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:47:59,445 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:47:59,445 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:47:59,445 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:47:59,445 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:47:59,445 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:47:59,445 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:47:59,445 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:47:59,445 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:47:59,445 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:47:59,445 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:47:59,445 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:47:59,445 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:47:59,445 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:47:59,445 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:47:59,445 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:47:59,445 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:47:59,445 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:47:59,446 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:47:59,446 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:47:59,446 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:47:59,446 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:47:59,446 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:47:59,446 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 20:47:59,447 [WARN] ApiManager:308 - Cannot register API 'Board Extension:NFC07A1' from pack STMicroelectronics.X-CUBE-NFC7.1.0.0: no header file found
+2022-10-09 20:47:59,514 [WARN] ApiManager:308 - Cannot register API 'Board Extension:IKS01A3' from pack STMicroelectronics.X-CUBE-MEMS1.9.3.0: no header file found
+2022-10-09 20:47:59,515 [WARN] ApiManager:308 - Cannot register API 'Board Extension:IKS01A2' from pack STMicroelectronics.X-CUBE-MEMS1.9.3.0: no header file found
+2022-10-09 20:47:59,515 [WARN] ApiManager:308 - Cannot register API 'Board Extension:IKS02A1' from pack STMicroelectronics.X-CUBE-MEMS1.9.3.0: no header file found
+2022-10-09 20:47:59,518 [WARN] ApiManager:308 - Cannot register API 'Board Extension:EEPRMA1' from pack STMicroelectronics.X-CUBE-EEPRMA1.3.1.1: no header file found
+2022-10-09 20:47:59,518 [WARN] ApiManager:308 - Cannot register API 'Board Extension:EEPRMA2' from pack STMicroelectronics.X-CUBE-EEPRMA1.3.1.1: no header file found
+2022-10-09 20:47:59,518 [WARN] ApiManager:308 - Cannot register API 'Board Extension:S2868A1' from pack STMicroelectronics.X-CUBE-SFXS2LP1.4.0.0: no header file found
+2022-10-09 20:47:59,518 [WARN] ApiManager:308 - Cannot register API 'Board Extension:S2868A2' from pack STMicroelectronics.X-CUBE-SFXS2LP1.4.0.0: no header file found
+2022-10-09 20:47:59,519 [WARN] ApiManager:308 - Cannot register API 'Board Extension:S2915A1' from pack STMicroelectronics.X-CUBE-SFXS2LP1.4.0.0: no header file found
+2022-10-09 20:47:59,519 [WARN] ApiManager:308 - Cannot register API 'Wireless:BlueNRG-2' from pack STMicroelectronics.X-CUBE-BLE2.3.3.0: no header file found
+2022-10-09 20:47:59,523 [INFO] ThirdPartyModel:289 - Start build external matchings
+2022-10-09 20:47:59,759 [INFO] ThirdPartyModel:302 - End build external matchings
+2022-10-09 20:47:59,764 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (RCC) : Parameter (FLatency) has Id (AdvancedSettings) currently not set
+2022-10-09 20:47:59,764 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2022-10-09 20:47:59,764 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM2Freq_Value)
+2022-10-09 20:47:59,879 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 470899640 Bytes (846200832)
+2022-10-09 20:47:59,911 [WARN] ThirdParty:789 - waiting for thirdparty lock release [change project]
+2022-10-09 20:47:59,911 [INFO] ThirdParty:791 - entering critical section [change project]
+2022-10-09 20:47:59,911 [INFO] ThirdParty:981 - CMSIS Pack Vendor :RoweBots I-CUBE-UNISONRTOS 5.5.0-4
+2022-10-09 20:47:59,911 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 6.0.0
+2022-10-09 20:47:59,911 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7 2.1.0
+2022-10-09 20:47:59,911 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2022-10-09 20:47:59,911 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F4 1.1.0
+2022-10-09 20:47:59,911 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics LIBJPEG 8.0.0
+2022-10-09 20:47:59,911 [INFO] ThirdParty:981 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfSSL 5.4.0
+2022-10-09 20:47:59,911 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2022-10-09 20:47:59,911 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLEMGR 1.0.0
+2022-10-09 20:47:59,911 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F7 1.1.0
+2022-10-09 20:47:59,911 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2022-10-09 20:47:59,911 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 6.2.3
+2022-10-09 20:47:59,911 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.3.0
+2022-10-09 20:47:59,911 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2022-10-09 20:47:59,911 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G0 1.1.0
+2022-10-09 20:47:59,911 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 5.0.0
+2022-10-09 20:47:59,911 [INFO] ThirdParty:981 - CMSIS Pack Vendor :SEGGER I-CUBE-embOS 1.2.0
+2022-10-09 20:47:59,911 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics STM32_WPAN 1.0.0
+2022-10-09 20:47:59,911 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2022-10-09 20:47:59,911 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 2.0.4
+2022-10-09 20:47:59,911 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2022-10-09 20:47:59,911 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2022-10-09 20:47:59,911 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-ASTRA1 1.1.1
+2022-10-09 20:47:59,911 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2022-10-09 20:47:59,911 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOF1 3.1.0
+2022-10-09 20:47:59,911 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-ASTRA1 1.1.0
+2022-10-09 20:47:59,911 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G4 1.0.0
+2022-10-09 20:47:59,911 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L4 1.0.0
+2022-10-09 20:47:59,912 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics HAL Drivers 0.0.0
+2022-10-09 20:47:59,912 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2022-10-09 20:47:59,912 [INFO] ThirdParty:981 - CMSIS Pack Vendor :emotas I-CUBE-CANOPEN 1.1.2
+2022-10-09 20:47:59,912 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.20.0
+2022-10-09 20:47:59,912 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2022-10-09 20:47:59,912 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC7 1.0.0
+2022-10-09 20:47:59,912 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WL 1.0.0
+2022-10-09 20:47:59,912 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 9.3.0
+2022-10-09 20:47:59,912 [INFO] ThirdParty:981 - CMSIS Pack Vendor :portGmbH I-Cube-SoM-uGOAL 1.1.0
+2022-10-09 20:47:59,912 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALS 1.0.1
+2022-10-09 20:47:59,912 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 7.2.0
+2022-10-09 20:47:59,912 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics ThreadX 1.0.0
+2022-10-09 20:47:59,912 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L5 1.0.0
+2022-10-09 20:47:59,912 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2022-10-09 20:47:59,912 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-EEPRMA1 3.1.1
+2022-10-09 20:47:59,912 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics ThreadX 0.0.2
+2022-10-09 20:47:59,912 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2022-10-09 20:47:59,912 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SFXS2LP1 4.0.0
+2022-10-09 20:47:59,912 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE2 3.3.0
+2022-10-09 20:47:59,912 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-DISPLAY 2.2.0
+2022-10-09 20:47:59,912 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2022-10-09 20:47:59,912 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ISPU 1.0.0
+2022-10-09 20:47:59,912 [INFO] ThirdParty:797 - exiting critical section [change project]
+2022-10-09 20:48:00,135 [INFO] PinOutPanel:1468 - setPackage(No Configuration,No Configuration)
+2022-10-09 20:48:00,136 [INFO] PinOutPanel:1468 - setPackage(STM32F334R8Tx,LQFP64)
+2022-10-09 20:48:00,507 [INFO] UtilMem:74 - Before build in PCC Used Memory: 324747784 Bytes (846200832)
+2022-10-09 20:48:00,633 [INFO] UtilMem:74 - After build in PCC Used Memory: 368787976 Bytes (846200832)
+2022-10-09 20:48:00,648 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:48:00,648 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:48:00,648 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:48:00,648 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:48:00,648 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:48:00,648 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:48:00,649 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:48:00,649 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:48:00,649 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:48:00,649 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:48:00,649 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:48:00,649 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:48:00,650 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:48:00,650 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:48:00,650 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:48:00,650 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:48:00,651 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:48:00,651 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:48:00,651 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:48:00,651 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:48:00,651 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:48:00,651 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:48:00,651 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:48:00,652 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:48:00,652 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:48:00,652 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:48:00,652 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:48:00,652 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:48:00,652 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:48:00,652 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:48:00,652 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:48:00,652 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:48:00,652 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:48:00,652 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:48:00,652 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:48:00,653 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:48:00,653 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 20:48:00,704 [INFO] OpenFileManager:327 - Restore cursor
+2022-10-09 20:48:06,063 [INFO] Gpio:272 - dependency for GPIO [RCC, SYS, TIM16, USART2]
+2022-10-09 21:01:15,153 [INFO] MainUpdater:2768 - connection check result : 10
+2022-10-09 21:01:15,153 [INFO] MainUpdater:2768 - connection check result : 10
+2022-10-09 21:01:15,239 [INFO] Gpio:272 - dependency for GPIO [RCC, SYS, TIM16, USART2]
+2022-10-09 21:01:15,277 [INFO] MicroXplorer:451 - Change Database Path : 
+2022-10-09 21:01:15,277 [INFO] MicroXplorer:481 - Change Database Version : DB.6.0.60
+2022-10-09 21:01:15,287 [WARN] ThirdParty:827 - waiting for thirdparty lock release [close project]
+2022-10-09 21:01:15,287 [INFO] ThirdParty:829 - entering critical section [close project]
+2022-10-09 21:01:15,287 [INFO] ThirdParty:839 - exiting critical section [close project]
+2022-10-09 21:01:15,288 [INFO] PinOutPanel:1468 - setPackage(No Configuration,No Configuration)
+2022-10-09 21:01:15,291 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 541697312 Bytes (846200832)
+2022-10-09 21:01:15,291 [INFO] MicroXplorer:451 - Change Database Path : 
+2022-10-09 21:01:15,291 [INFO] MicroXplorer:481 - Change Database Version : DB.6.0.60
+2022-10-09 21:01:15,291 [INFO] OpenFileManager:307 - Change cursor
+2022-10-09 21:01:15,295 [INFO] Mcu:1922 - Initializing MCU STM32F334R(6-8)Tx STM32F334R8Tx STM32F334R8T6
+2022-10-09 21:01:16,507 [INFO] Context:654 - Trying to add GPIOservice into a context  which must be forbidden
+2022-10-09 21:01:17,529 [WARN] ApiManager:308 - Cannot register API 'Board Extension:GNSS1A1' from pack STMicroelectronics.X-CUBE-GNSS1.6.0.0: no header file found
+2022-10-09 21:01:17,529 [WARN] ApiManager:308 - Cannot register API 'Board Support:Custom' from pack STMicroelectronics.X-CUBE-GNSS1.6.0.0: no header file found
+2022-10-09 21:01:17,529 [WARN] ApiManager:308 - Cannot register API 'Data Exchange:lib_gnss' from pack STMicroelectronics.X-CUBE-GNSS1.6.0.0: no header file found
+2022-10-09 21:01:17,532 [WARN] ApiManager:308 - Cannot register API 'Wireless:BlueNRG-MS' from pack STMicroelectronics.X-CUBE-BLE1.6.2.3: no header file found
+2022-10-09 21:01:17,533 [INFO] RtosManager:488 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2022-10-09 21:01:17,533 [INFO] RtosManager:488 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2022-10-09 21:01:17,533 [INFO] RtosManager:488 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2022-10-09 21:01:17,533 [INFO] RtosManager:488 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2022-10-09 21:01:17,533 [WARN] ModelIntegratedComponent:185 - Missing modes for component STMicroelectronics:FreeRTOS:0.0.1:STMicroelectronics:RTOS:FreeRTOS:Core:::10.2.0:
+2022-10-09 21:01:17,535 [WARN] ApiManager:308 - Cannot register API 'Board Extension:S2868A1' from pack STMicroelectronics.X-CUBE-SUBG2.5.0.0: no header file found
+2022-10-09 21:01:17,535 [WARN] ApiManager:308 - Cannot register API 'Board Extension:S2868A2' from pack STMicroelectronics.X-CUBE-SUBG2.5.0.0: no header file found
+2022-10-09 21:01:17,535 [WARN] ApiManager:308 - Cannot register API 'Board Extension:S2915A1' from pack STMicroelectronics.X-CUBE-SUBG2.5.0.0: no header file found
+2022-10-09 21:01:17,537 [WARN] ApiManager:308 - Cannot register API 'Board Extension:NFC04A1' from pack STMicroelectronics.X-CUBE-NFC4.2.0.4: no header file found
+2022-10-09 21:01:17,539 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 21:01:17,540 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 21:01:17,540 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 21:01:17,540 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 21:01:17,540 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 21:01:17,540 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 21:01:17,540 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 21:01:17,540 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 21:01:17,540 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 21:01:17,540 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 21:01:17,540 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 21:01:17,540 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 21:01:17,540 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 21:01:17,540 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 21:01:17,540 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 21:01:17,541 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 21:01:17,541 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 21:01:17,541 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 21:01:17,541 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 21:01:17,541 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 21:01:17,541 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 21:01:17,541 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 21:01:17,541 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 21:01:17,541 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 21:01:17,541 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 21:01:17,541 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 21:01:17,541 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 21:01:17,541 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 21:01:17,542 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 21:01:17,542 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 21:01:17,542 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 21:01:17,542 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 21:01:17,542 [WARN] ModelIntegratedComponent:64 - No mode defined for component null
+2022-10-09 21:01:17,544 [WARN] ApiManager:308 - Cannot register API 'Board Extension:NFC07A1' from pack STMicroelectronics.X-CUBE-NFC7.1.0.0: no header file found
+2022-10-09 21:01:17,608 [WARN] ApiManager:308 - Cannot register API 'Board Extension:IKS01A3' from pack STMicroelectronics.X-CUBE-MEMS1.9.3.0: no header file found
+2022-10-09 21:01:17,608 [WARN] ApiManager:308 - Cannot register API 'Board Extension:IKS01A2' from pack STMicroelectronics.X-CUBE-MEMS1.9.3.0: no header file found
+2022-10-09 21:01:17,608 [WARN] ApiManager:308 - Cannot register API 'Board Extension:IKS02A1' from pack STMicroelectronics.X-CUBE-MEMS1.9.3.0: no header file found
+2022-10-09 21:01:17,611 [WARN] ApiManager:308 - Cannot register API 'Board Extension:EEPRMA1' from pack STMicroelectronics.X-CUBE-EEPRMA1.3.1.1: no header file found
+2022-10-09 21:01:17,612 [WARN] ApiManager:308 - Cannot register API 'Board Extension:EEPRMA2' from pack STMicroelectronics.X-CUBE-EEPRMA1.3.1.1: no header file found
+2022-10-09 21:01:17,612 [WARN] ApiManager:308 - Cannot register API 'Board Extension:S2868A1' from pack STMicroelectronics.X-CUBE-SFXS2LP1.4.0.0: no header file found
+2022-10-09 21:01:17,612 [WARN] ApiManager:308 - Cannot register API 'Board Extension:S2868A2' from pack STMicroelectronics.X-CUBE-SFXS2LP1.4.0.0: no header file found
+2022-10-09 21:01:17,612 [WARN] ApiManager:308 - Cannot register API 'Board Extension:S2915A1' from pack STMicroelectronics.X-CUBE-SFXS2LP1.4.0.0: no header file found
+2022-10-09 21:01:17,613 [WARN] ApiManager:308 - Cannot register API 'Wireless:BlueNRG-2' from pack STMicroelectronics.X-CUBE-BLE2.3.3.0: no header file found
+2022-10-09 21:01:17,618 [INFO] ThirdPartyModel:289 - Start build external matchings
+2022-10-09 21:01:17,858 [INFO] ThirdPartyModel:302 - End build external matchings
+2022-10-09 21:01:17,864 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (RCC) : Parameter (FLatency) has Id (AdvancedSettings) currently not set
+2022-10-09 21:01:17,864 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2022-10-09 21:01:17,865 [INFO] ImportTextPane:193 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM2Freq_Value)
+2022-10-09 21:01:18,009 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 438230232 Bytes (846200832)
+2022-10-09 21:01:18,017 [WARN] ThirdParty:789 - waiting for thirdparty lock release [change project]
+2022-10-09 21:01:18,017 [INFO] ThirdParty:791 - entering critical section [change project]
+2022-10-09 21:01:18,017 [INFO] ThirdParty:981 - CMSIS Pack Vendor :RoweBots I-CUBE-UNISONRTOS 5.5.0-4
+2022-10-09 21:01:18,017 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 6.0.0
+2022-10-09 21:01:18,017 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7 2.1.0
+2022-10-09 21:01:18,018 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2022-10-09 21:01:18,018 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F4 1.1.0
+2022-10-09 21:01:18,018 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics LIBJPEG 8.0.0
+2022-10-09 21:01:18,018 [INFO] ThirdParty:981 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfSSL 5.4.0
+2022-10-09 21:01:18,018 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2022-10-09 21:01:18,018 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLEMGR 1.0.0
+2022-10-09 21:01:18,018 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F7 1.1.0
+2022-10-09 21:01:18,018 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2022-10-09 21:01:18,018 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 6.2.3
+2022-10-09 21:01:18,018 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.3.0
+2022-10-09 21:01:18,018 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2022-10-09 21:01:18,018 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G0 1.1.0
+2022-10-09 21:01:18,018 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 5.0.0
+2022-10-09 21:01:18,018 [INFO] ThirdParty:981 - CMSIS Pack Vendor :SEGGER I-CUBE-embOS 1.2.0
+2022-10-09 21:01:18,018 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics STM32_WPAN 1.0.0
+2022-10-09 21:01:18,018 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2022-10-09 21:01:18,018 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 2.0.4
+2022-10-09 21:01:18,018 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2022-10-09 21:01:18,018 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2022-10-09 21:01:18,018 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-ASTRA1 1.1.1
+2022-10-09 21:01:18,018 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2022-10-09 21:01:18,018 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOF1 3.1.0
+2022-10-09 21:01:18,018 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-ASTRA1 1.1.0
+2022-10-09 21:01:18,018 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G4 1.0.0
+2022-10-09 21:01:18,019 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L4 1.0.0
+2022-10-09 21:01:18,019 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics HAL Drivers 0.0.0
+2022-10-09 21:01:18,019 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2022-10-09 21:01:18,019 [INFO] ThirdParty:981 - CMSIS Pack Vendor :emotas I-CUBE-CANOPEN 1.1.2
+2022-10-09 21:01:18,019 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.20.0
+2022-10-09 21:01:18,019 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2022-10-09 21:01:18,019 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC7 1.0.0
+2022-10-09 21:01:18,019 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WL 1.0.0
+2022-10-09 21:01:18,019 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 9.3.0
+2022-10-09 21:01:18,019 [INFO] ThirdParty:981 - CMSIS Pack Vendor :portGmbH I-Cube-SoM-uGOAL 1.1.0
+2022-10-09 21:01:18,019 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALS 1.0.1
+2022-10-09 21:01:18,019 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 7.2.0
+2022-10-09 21:01:18,019 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics ThreadX 1.0.0
+2022-10-09 21:01:18,019 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L5 1.0.0
+2022-10-09 21:01:18,019 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2022-10-09 21:01:18,019 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-EEPRMA1 3.1.1
+2022-10-09 21:01:18,019 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics ThreadX 0.0.2
+2022-10-09 21:01:18,019 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2022-10-09 21:01:18,019 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SFXS2LP1 4.0.0
+2022-10-09 21:01:18,019 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE2 3.3.0
+2022-10-09 21:01:18,019 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-DISPLAY 2.2.0
+2022-10-09 21:01:18,019 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2022-10-09 21:01:18,019 [INFO] ThirdParty:981 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ISPU 1.0.0
+2022-10-09 21:01:18,020 [INFO] ThirdParty:797 - exiting critical section [change project]
+2022-10-09 21:01:18,227 [INFO] PinOutPanel:1468 - setPackage(No Configuration,No Configuration)
+2022-10-09 21:01:18,228 [INFO] PinOutPanel:1468 - setPackage(STM32F334R8Tx,LQFP64)
+2022-10-09 21:01:18,648 [INFO] UtilMem:74 - Before build in PCC Used Memory: 339590752 Bytes (846200832)
+2022-10-09 21:01:18,777 [INFO] UtilMem:74 - After build in PCC Used Memory: 384153184 Bytes (846200832)
+2022-10-09 21:01:18,793 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 21:01:18,793 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 21:01:18,793 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 21:01:18,793 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 21:01:18,793 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 21:01:18,793 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 21:01:18,794 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 21:01:18,794 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 21:01:18,794 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 21:01:18,794 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 21:01:18,794 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 21:01:18,794 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 21:01:18,794 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 21:01:18,794 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 21:01:18,794 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 21:01:18,795 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 21:01:18,795 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 21:01:18,795 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 21:01:18,795 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 21:01:18,795 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 21:01:18,795 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 21:01:18,795 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 21:01:18,795 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 21:01:18,796 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 21:01:18,796 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 21:01:18,796 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 21:01:18,796 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 21:01:18,796 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 21:01:18,796 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 21:01:18,796 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 21:01:18,796 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 21:01:18,796 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 21:01:18,796 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 21:01:18,797 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 21:01:18,797 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 21:01:18,797 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 21:01:18,797 [INFO] IPUIPlugin:79 - create IPUIPlugin
+2022-10-09 21:01:18,851 [INFO] OpenFileManager:327 - Restore cursor
+2022-10-09 21:01:21,626 [INFO] Gpio:272 - dependency for GPIO [RCC, SYS, TIM16, USART2]
+2022-10-09 21:05:35,965 [INFO] Gpio:272 - dependency for GPIO [RCC, SYS, TIM16, USART2]
+2022-10-09 21:06:35,131 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2022-10-09 21:12:37,993 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 450681656 Bytes (846200832)
+2022-10-09 21:12:39,239 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 477171232 Bytes (846200832)
+2022-10-09 21:12:41,493 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 551342304 Bytes (846200832)
+2022-10-09 21:12:41,747 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: NVIC
+2022-10-09 21:12:41,747 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: USART
+2022-10-09 21:12:41,747 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: TIM1_8F3
+2022-10-09 21:12:41,747 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: TIM1_8F3
+2022-10-09 21:12:41,747 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: SYS
+2022-10-09 21:12:41,747 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: GPIO
+2022-10-09 21:12:41,747 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: RCC
+2022-10-09 21:12:41,748 [INFO] CodeGenerator:690 - code generatio: config db path: /opt/st/stm32cubeide_1.10.1/plugins/com.st.stm32cube.common.mx_6.6.1.202207061420//db/
+2022-10-09 21:12:42,039 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/MXTmpFiles/license.tmp_save
+2022-10-09 21:12:42,094 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/MXTmpFiles/license.tmp
+2022-10-09 21:12:42,135 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/gpio.c_save
+2022-10-09 21:12:42,201 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/gpio.c
+2022-10-09 21:12:42,202 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/gpio.h_save
+2022-10-09 21:12:42,256 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/gpio.h
+2022-10-09 21:12:42,457 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/tim.c_save
+2022-10-09 21:12:42,566 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/tim.c
+2022-10-09 21:12:42,568 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/tim.h_save
+2022-10-09 21:12:42,629 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/tim.h
+2022-10-09 21:12:42,632 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/usart.c_save
+2022-10-09 21:12:42,715 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/usart.c
+2022-10-09 21:12:42,716 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/usart.h_save
+2022-10-09 21:12:42,779 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/usart.h
+2022-10-09 21:12:42,782 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/stm32f3xx_it.c_save
+2022-10-09 21:12:42,844 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/stm32f3xx_it.c
+2022-10-09 21:12:42,844 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/stm32f3xx_it.h_save
+2022-10-09 21:12:42,903 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/stm32f3xx_it.h
+2022-10-09 21:12:42,906 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/stm32f3xx_hal_msp.c_save
+2022-10-09 21:12:42,991 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/stm32f3xx_hal_msp.c
+2022-10-09 21:12:42,992 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/MXTmpFiles/system.tmp_save
+2022-10-09 21:12:43,052 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/MXTmpFiles/system.tmp
+2022-10-09 21:12:43,053 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/stm32f3xx_hal_conf.h_save
+2022-10-09 21:12:43,118 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/stm32f3xx_hal_conf.h
+2022-10-09 21:12:43,138 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/main.h_save
+2022-10-09 21:12:43,199 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/main.h
+2022-10-09 21:12:43,200 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/main.c_save
+2022-10-09 21:12:43,283 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/main.c
+2022-10-09 21:12:43,923 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 19mS.
+2022-10-09 21:12:43,925 [INFO] ProjectBuilder:4117 - Project Generator version: 3.17.1
+2022-10-09 21:12:44,160 [INFO] ConfigFileManager:1394 - The Die is : DIE438
+2022-10-09 21:12:44,165 [INFO] ApiDbMcu:505 - Load IP Config File for FATFS
+2022-10-09 21:12:44,185 [INFO] ApiDbMcu:505 - Load IP Config File for FREERTOS
+2022-10-09 21:12:44,293 [INFO] ApiDbMcu:505 - Load IP Config File for TOUCHSENSING
+2022-10-09 21:12:45,603 [INFO] ProjectBuilder:4285 - Time for Generating toolchain IDE Files: 1678mS.
+2022-10-09 21:12:45,604 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2022-10-09 21:12:45,605 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 1mS.
+2022-10-09 21:20:59,632 [INFO] Gpio:272 - dependency for GPIO [RCC, SYS, TIM3, TIM16, USART2]
+2022-10-09 21:21:26,748 [INFO] Gpio:272 - dependency for GPIO [RCC, SYS, TIM3, TIM16, USART2]
+2022-10-09 21:21:26,782 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2022-10-09 21:21:50,487 [INFO] Gpio:272 - dependency for GPIO [RCC, SYS, TIM3, TIM16, USART2]
+2022-10-09 21:22:09,358 [INFO] Gpio:272 - dependency for GPIO [RCC, SYS, TIM3, TIM16, USART2]
+2022-10-09 21:27:22,779 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 601344520 Bytes (891289600)
+2022-10-09 21:27:24,883 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 740341632 Bytes (891289600)
+2022-10-09 21:27:27,336 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 375913720 Bytes (891289600)
+2022-10-09 21:27:27,529 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: NVIC
+2022-10-09 21:27:27,529 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: USART
+2022-10-09 21:27:27,529 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: TIM1_8F3
+2022-10-09 21:27:27,529 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: TIM1_8F3
+2022-10-09 21:27:27,529 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: SYS
+2022-10-09 21:27:27,529 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: GPIO
+2022-10-09 21:27:27,530 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: RCC
+2022-10-09 21:27:27,530 [INFO] CodeGenerator:690 - code generatio: config db path: /opt/st/stm32cubeide_1.10.1/plugins/com.st.stm32cube.common.mx_6.6.1.202207061420//db/
+2022-10-09 21:27:27,762 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/MXTmpFiles/license.tmp_save
+2022-10-09 21:27:27,823 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/MXTmpFiles/license.tmp
+2022-10-09 21:27:27,854 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/gpio.c_save
+2022-10-09 21:27:27,919 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/gpio.c
+2022-10-09 21:27:27,920 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/gpio.h_save
+2022-10-09 21:27:27,973 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/gpio.h
+2022-10-09 21:27:28,153 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/tim.c_save
+2022-10-09 21:27:28,238 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/tim.c
+2022-10-09 21:27:28,239 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/tim.h_save
+2022-10-09 21:27:28,291 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/tim.h
+2022-10-09 21:27:28,293 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/usart.c_save
+2022-10-09 21:27:28,363 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/usart.c
+2022-10-09 21:27:28,364 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/usart.h_save
+2022-10-09 21:27:28,418 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/usart.h
+2022-10-09 21:27:28,421 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/stm32f3xx_it.c_save
+2022-10-09 21:27:28,490 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/stm32f3xx_it.c
+2022-10-09 21:27:28,491 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/stm32f3xx_it.h_save
+2022-10-09 21:27:28,544 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/stm32f3xx_it.h
+2022-10-09 21:27:28,547 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/stm32f3xx_hal_msp.c_save
+2022-10-09 21:27:28,620 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/stm32f3xx_hal_msp.c
+2022-10-09 21:27:28,621 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/MXTmpFiles/system.tmp_save
+2022-10-09 21:27:28,753 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/MXTmpFiles/system.tmp
+2022-10-09 21:27:28,755 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/stm32f3xx_hal_conf.h_save
+2022-10-09 21:27:28,818 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/stm32f3xx_hal_conf.h
+2022-10-09 21:27:28,834 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/main.h_save
+2022-10-09 21:27:28,889 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/main.h
+2022-10-09 21:27:28,890 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/main.c_save
+2022-10-09 21:27:28,963 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/main.c
+2022-10-09 21:27:29,465 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 17mS.
+2022-10-09 21:27:29,466 [INFO] ProjectBuilder:4117 - Project Generator version: 3.17.1
+2022-10-09 21:27:29,688 [INFO] ConfigFileManager:1394 - The Die is : DIE438
+2022-10-09 21:27:31,125 [INFO] ProjectBuilder:4285 - Time for Generating toolchain IDE Files: 1659mS.
+2022-10-09 21:27:31,125 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2022-10-09 21:27:31,126 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2022-10-09 21:52:33,957 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2022-10-09 21:52:34,313 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 426674520 Bytes (891289600)
+2022-10-09 21:52:35,349 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 447123800 Bytes (891289600)
+2022-10-09 21:52:37,632 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 554078552 Bytes (891289600)
+2022-10-09 21:52:37,849 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: NVIC
+2022-10-09 21:52:37,849 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: USART
+2022-10-09 21:52:37,849 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: TIM1_8F3
+2022-10-09 21:52:37,850 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: TIM1_8F3
+2022-10-09 21:52:37,850 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: SYS
+2022-10-09 21:52:37,850 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: GPIO
+2022-10-09 21:52:37,850 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: RCC
+2022-10-09 21:52:37,850 [INFO] CodeGenerator:690 - code generatio: config db path: /opt/st/stm32cubeide_1.10.1/plugins/com.st.stm32cube.common.mx_6.6.1.202207061420//db/
+2022-10-09 21:52:38,132 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/MXTmpFiles/license.tmp_save
+2022-10-09 21:52:38,204 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/MXTmpFiles/license.tmp
+2022-10-09 21:52:38,237 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/gpio.c_save
+2022-10-09 21:52:38,310 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/gpio.c
+2022-10-09 21:52:38,311 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/gpio.h_save
+2022-10-09 21:52:38,371 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/gpio.h
+2022-10-09 21:52:38,599 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/tim.c_save
+2022-10-09 21:52:38,680 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/tim.c
+2022-10-09 21:52:38,681 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/tim.h_save
+2022-10-09 21:52:38,735 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/tim.h
+2022-10-09 21:52:38,737 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/usart.c_save
+2022-10-09 21:52:38,815 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/usart.c
+2022-10-09 21:52:38,816 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/usart.h_save
+2022-10-09 21:52:38,879 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/usart.h
+2022-10-09 21:52:38,882 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/stm32f3xx_it.c_save
+2022-10-09 21:52:38,945 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/stm32f3xx_it.c
+2022-10-09 21:52:38,946 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/stm32f3xx_it.h_save
+2022-10-09 21:52:39,005 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/stm32f3xx_it.h
+2022-10-09 21:52:39,007 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/stm32f3xx_hal_msp.c_save
+2022-10-09 21:52:39,082 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/stm32f3xx_hal_msp.c
+2022-10-09 21:52:39,083 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/MXTmpFiles/system.tmp_save
+2022-10-09 21:52:39,136 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/MXTmpFiles/system.tmp
+2022-10-09 21:52:39,137 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/stm32f3xx_hal_conf.h_save
+2022-10-09 21:52:39,211 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/stm32f3xx_hal_conf.h
+2022-10-09 21:52:39,229 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/main.h_save
+2022-10-09 21:52:39,291 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/main.h
+2022-10-09 21:52:39,292 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/main.c_save
+2022-10-09 21:52:39,375 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/main.c
+2022-10-09 21:52:40,080 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 20mS.
+2022-10-09 21:52:40,082 [INFO] ProjectBuilder:4117 - Project Generator version: 3.17.1
+2022-10-09 21:52:40,347 [INFO] ConfigFileManager:1394 - The Die is : DIE438
+2022-10-09 21:52:41,451 [INFO] ProjectBuilder:4285 - Time for Generating toolchain IDE Files: 1369mS.
+2022-10-09 21:52:41,451 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2022-10-09 21:52:41,452 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2022-10-09 22:05:29,343 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,589x237,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2022-10-09 22:35:07,298 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2022-10-09 22:35:08,264 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 586363056 Bytes (891289600)
+2022-10-09 22:35:09,456 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 611474336 Bytes (891289600)
+2022-10-09 22:35:10,995 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 293654600 Bytes (891289600)
+2022-10-09 22:35:11,186 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: NVIC
+2022-10-09 22:35:11,186 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: USART
+2022-10-09 22:35:11,186 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: TIM1_8F3
+2022-10-09 22:35:11,186 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: TIM1_8F3
+2022-10-09 22:35:11,186 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: SYS
+2022-10-09 22:35:11,187 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: GPIO
+2022-10-09 22:35:11,187 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: RCC
+2022-10-09 22:35:11,187 [INFO] CodeGenerator:690 - code generatio: config db path: /opt/st/stm32cubeide_1.10.1/plugins/com.st.stm32cube.common.mx_6.6.1.202207061420//db/
+2022-10-09 22:35:11,446 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/MXTmpFiles/license.tmp_save
+2022-10-09 22:35:11,515 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/MXTmpFiles/license.tmp
+2022-10-09 22:35:11,541 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/gpio.c_save
+2022-10-09 22:35:11,608 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/gpio.c
+2022-10-09 22:35:11,609 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/gpio.h_save
+2022-10-09 22:35:11,684 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/gpio.h
+2022-10-09 22:35:11,869 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/tim.c_save
+2022-10-09 22:35:11,968 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/tim.c
+2022-10-09 22:35:11,969 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/tim.h_save
+2022-10-09 22:35:12,024 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/tim.h
+2022-10-09 22:35:12,026 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/usart.c_save
+2022-10-09 22:35:12,103 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/usart.c
+2022-10-09 22:35:12,104 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/usart.h_save
+2022-10-09 22:35:12,158 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/usart.h
+2022-10-09 22:35:12,160 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/stm32f3xx_it.c_save
+2022-10-09 22:35:12,218 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/stm32f3xx_it.c
+2022-10-09 22:35:12,220 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/stm32f3xx_it.h_save
+2022-10-09 22:35:12,375 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/stm32f3xx_it.h
+2022-10-09 22:35:12,377 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/stm32f3xx_hal_msp.c_save
+2022-10-09 22:35:12,454 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/stm32f3xx_hal_msp.c
+2022-10-09 22:35:12,455 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/MXTmpFiles/system.tmp_save
+2022-10-09 22:35:12,508 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/MXTmpFiles/system.tmp
+2022-10-09 22:35:12,511 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/stm32f3xx_hal_conf.h_save
+2022-10-09 22:35:12,572 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/stm32f3xx_hal_conf.h
+2022-10-09 22:35:12,589 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/main.h_save
+2022-10-09 22:35:12,643 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/main.h
+2022-10-09 22:35:12,644 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/main.c_save
+2022-10-09 22:35:12,719 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/main.c
+2022-10-09 22:35:13,328 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 22mS.
+2022-10-09 22:35:13,329 [INFO] ProjectBuilder:4117 - Project Generator version: 3.17.1
+2022-10-09 22:35:13,548 [INFO] ConfigFileManager:1394 - The Die is : DIE438
+2022-10-09 22:35:14,675 [INFO] ProjectBuilder:4285 - Time for Generating toolchain IDE Files: 1346mS.
+2022-10-09 22:35:14,675 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2022-10-09 22:35:14,676 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 1mS.
+2022-10-09 22:37:37,782 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2022-10-09 22:37:39,203 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2022-10-09 22:37:42,613 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 360087864 Bytes (905969664)
+2022-10-09 22:37:43,903 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 418281784 Bytes (905969664)
+2022-10-09 22:37:45,928 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 526285112 Bytes (905969664)
+2022-10-09 22:37:46,113 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: NVIC
+2022-10-09 22:37:46,113 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: USART
+2022-10-09 22:37:46,113 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: TIM1_8F3
+2022-10-09 22:37:46,113 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: TIM1_8F3
+2022-10-09 22:37:46,113 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: SYS
+2022-10-09 22:37:46,113 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: GPIO
+2022-10-09 22:37:46,113 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: RCC
+2022-10-09 22:37:46,114 [INFO] CodeGenerator:690 - code generatio: config db path: /opt/st/stm32cubeide_1.10.1/plugins/com.st.stm32cube.common.mx_6.6.1.202207061420//db/
+2022-10-09 22:37:46,270 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/MXTmpFiles/license.tmp_save
+2022-10-09 22:37:46,424 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/MXTmpFiles/license.tmp
+2022-10-09 22:37:46,458 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/gpio.c_save
+2022-10-09 22:37:46,531 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/gpio.c
+2022-10-09 22:37:46,532 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/gpio.h_save
+2022-10-09 22:37:46,588 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/gpio.h
+2022-10-09 22:37:46,778 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/tim.c_save
+2022-10-09 22:37:46,876 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/tim.c
+2022-10-09 22:37:46,877 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/tim.h_save
+2022-10-09 22:37:46,941 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/tim.h
+2022-10-09 22:37:46,944 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/usart.c_save
+2022-10-09 22:37:47,071 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/usart.c
+2022-10-09 22:37:47,072 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/usart.h_save
+2022-10-09 22:37:47,150 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/usart.h
+2022-10-09 22:37:47,153 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/stm32f3xx_it.c_save
+2022-10-09 22:37:47,218 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/stm32f3xx_it.c
+2022-10-09 22:37:47,219 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/stm32f3xx_it.h_save
+2022-10-09 22:37:47,276 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/stm32f3xx_it.h
+2022-10-09 22:37:47,278 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/stm32f3xx_hal_msp.c_save
+2022-10-09 22:37:47,352 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/stm32f3xx_hal_msp.c
+2022-10-09 22:37:47,353 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/MXTmpFiles/system.tmp_save
+2022-10-09 22:37:47,407 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/MXTmpFiles/system.tmp
+2022-10-09 22:37:47,409 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/stm32f3xx_hal_conf.h_save
+2022-10-09 22:37:47,462 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/stm32f3xx_hal_conf.h
+2022-10-09 22:37:47,478 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/main.h_save
+2022-10-09 22:37:47,530 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/main.h
+2022-10-09 22:37:47,531 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/main.c_save
+2022-10-09 22:37:47,604 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/main.c
+2022-10-09 22:37:48,086 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 19mS.
+2022-10-09 22:37:48,088 [INFO] ProjectBuilder:4117 - Project Generator version: 3.17.1
+2022-10-09 22:37:48,316 [INFO] ConfigFileManager:1394 - The Die is : DIE438
+2022-10-09 22:37:49,435 [INFO] ProjectBuilder:4285 - Time for Generating toolchain IDE Files: 1347mS.
+2022-10-09 22:37:49,435 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2022-10-09 22:37:49,436 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2022-10-09 22:38:33,407 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2022-10-09 22:38:34,832 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 350321384 Bytes (905969664)
+2022-10-09 22:38:35,756 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 445732936 Bytes (905969664)
+2022-10-09 22:38:37,525 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 572619496 Bytes (905969664)
+2022-10-09 22:38:37,782 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: NVIC
+2022-10-09 22:38:37,783 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: USART
+2022-10-09 22:38:37,783 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: TIM1_8F3
+2022-10-09 22:38:37,783 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: TIM1_8F3
+2022-10-09 22:38:37,783 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: SYS
+2022-10-09 22:38:37,783 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: GPIO
+2022-10-09 22:38:37,783 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: RCC
+2022-10-09 22:38:37,784 [INFO] CodeGenerator:690 - code generatio: config db path: /opt/st/stm32cubeide_1.10.1/plugins/com.st.stm32cube.common.mx_6.6.1.202207061420//db/
+2022-10-09 22:38:38,065 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/MXTmpFiles/license.tmp_save
+2022-10-09 22:38:38,122 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/MXTmpFiles/license.tmp
+2022-10-09 22:38:38,152 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/gpio.c_save
+2022-10-09 22:38:38,213 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/gpio.c
+2022-10-09 22:38:38,214 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/gpio.h_save
+2022-10-09 22:38:38,264 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/gpio.h
+2022-10-09 22:38:38,437 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/tim.c_save
+2022-10-09 22:38:38,529 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/tim.c
+2022-10-09 22:38:38,530 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/tim.h_save
+2022-10-09 22:38:38,586 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/tim.h
+2022-10-09 22:38:38,588 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/usart.c_save
+2022-10-09 22:38:38,666 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/usart.c
+2022-10-09 22:38:38,667 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/usart.h_save
+2022-10-09 22:38:38,722 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/usart.h
+2022-10-09 22:38:38,725 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/stm32f3xx_it.c_save
+2022-10-09 22:38:38,902 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/stm32f3xx_it.c
+2022-10-09 22:38:38,903 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/stm32f3xx_it.h_save
+2022-10-09 22:38:38,958 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/stm32f3xx_it.h
+2022-10-09 22:38:38,960 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/stm32f3xx_hal_msp.c_save
+2022-10-09 22:38:39,033 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/stm32f3xx_hal_msp.c
+2022-10-09 22:38:39,034 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/MXTmpFiles/system.tmp_save
+2022-10-09 22:38:39,084 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/MXTmpFiles/system.tmp
+2022-10-09 22:38:39,085 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/stm32f3xx_hal_conf.h_save
+2022-10-09 22:38:39,148 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/stm32f3xx_hal_conf.h
+2022-10-09 22:38:39,164 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/main.h_save
+2022-10-09 22:38:39,220 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/main.h
+2022-10-09 22:38:39,221 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/main.c_save
+2022-10-09 22:38:39,291 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/main.c
+2022-10-09 22:38:39,805 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 19mS.
+2022-10-09 22:38:39,806 [INFO] ProjectBuilder:4117 - Project Generator version: 3.17.1
+2022-10-09 22:38:40,042 [INFO] ConfigFileManager:1394 - The Die is : DIE438
+2022-10-09 22:38:41,190 [INFO] ProjectBuilder:4285 - Time for Generating toolchain IDE Files: 1384mS.
+2022-10-09 22:38:41,190 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2022-10-09 22:38:41,191 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2022-10-09 22:41:57,799 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2022-10-09 22:41:58,730 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 609616312 Bytes (905969664)
+2022-10-09 22:41:59,421 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 640547256 Bytes (905969664)
+2022-10-09 22:42:01,799 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 390054136 Bytes (905969664)
+2022-10-09 22:42:01,995 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: NVIC
+2022-10-09 22:42:01,995 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: USART
+2022-10-09 22:42:01,995 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: TIM1_8F3
+2022-10-09 22:42:01,995 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: TIM1_8F3
+2022-10-09 22:42:01,995 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: SYS
+2022-10-09 22:42:01,995 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: GPIO
+2022-10-09 22:42:01,995 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: RCC
+2022-10-09 22:42:01,996 [INFO] CodeGenerator:690 - code generatio: config db path: /opt/st/stm32cubeide_1.10.1/plugins/com.st.stm32cube.common.mx_6.6.1.202207061420//db/
+2022-10-09 22:42:02,271 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/MXTmpFiles/license.tmp_save
+2022-10-09 22:42:02,329 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/MXTmpFiles/license.tmp
+2022-10-09 22:42:02,360 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/gpio.c_save
+2022-10-09 22:42:02,429 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/gpio.c
+2022-10-09 22:42:02,430 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/gpio.h_save
+2022-10-09 22:42:02,483 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/gpio.h
+2022-10-09 22:42:02,665 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/tim.c_save
+2022-10-09 22:42:02,756 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/tim.c
+2022-10-09 22:42:02,757 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/tim.h_save
+2022-10-09 22:42:02,814 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/tim.h
+2022-10-09 22:42:02,815 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/usart.c_save
+2022-10-09 22:42:02,889 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/usart.c
+2022-10-09 22:42:02,890 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/usart.h_save
+2022-10-09 22:42:02,944 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/usart.h
+2022-10-09 22:42:02,946 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/stm32f3xx_it.c_save
+2022-10-09 22:42:03,002 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/stm32f3xx_it.c
+2022-10-09 22:42:03,002 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/stm32f3xx_it.h_save
+2022-10-09 22:42:03,053 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/stm32f3xx_it.h
+2022-10-09 22:42:03,055 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/stm32f3xx_hal_msp.c_save
+2022-10-09 22:42:03,126 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/stm32f3xx_hal_msp.c
+2022-10-09 22:42:03,127 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/MXTmpFiles/system.tmp_save
+2022-10-09 22:42:03,178 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/MXTmpFiles/system.tmp
+2022-10-09 22:42:03,179 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/stm32f3xx_hal_conf.h_save
+2022-10-09 22:42:03,241 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/stm32f3xx_hal_conf.h
+2022-10-09 22:42:03,299 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/main.h_save
+2022-10-09 22:42:03,406 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Inc/main.h
+2022-10-09 22:42:03,409 [INFO] CodeEngine:245 - oldGeneratedFile, /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/main.c_save
+2022-10-09 22:42:03,509 [INFO] CodeEngine:269 - Generated code: /home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoControlledbyEncoder/Core/Src/main.c
+2022-10-09 22:42:03,996 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 17mS.
+2022-10-09 22:42:03,998 [INFO] ProjectBuilder:4117 - Project Generator version: 3.17.1
+2022-10-09 22:42:04,217 [INFO] ConfigFileManager:1394 - The Die is : DIE438
+2022-10-09 22:42:05,326 [INFO] ProjectBuilder:4285 - Time for Generating toolchain IDE Files: 1328mS.
+2022-10-09 22:42:05,326 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2022-10-09 22:42:05,326 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2022-10-09 22:48:41,581 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
