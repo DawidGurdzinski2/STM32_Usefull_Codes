@@ -13,3 +13,6 @@ Command-line arguments:  -data /home/dawid/Desktop/Programing and other/GITHUB/S
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-10-09 17:38:34.263
 !MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-10-09 18:30:57.116
+!MESSAGE Indexed 'F334R8T6_ServoControlledbyEncoder' (23 sources, 83 headers) in 3.49 sec: 5,418 declarations; 29,640 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0057%)
