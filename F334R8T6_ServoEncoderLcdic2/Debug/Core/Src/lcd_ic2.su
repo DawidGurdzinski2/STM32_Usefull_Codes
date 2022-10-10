@@ -1,0 +1,4 @@
+../Core/Src/lcd_ic2.c:7:6:lcd_init	24	static
+../Core/Src/lcd_ic2.c:35:6:lcd_write	32	static
+../Core/Src/lcd_ic2.c:51:6:lcd_display	24	static
+../Core/Src/lcd_ic2.c:82:6:lcd_clear	24	static
