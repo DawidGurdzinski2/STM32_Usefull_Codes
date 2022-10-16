@@ -902,3 +902,263 @@ Finished building: default.size.stdout
  
 Finished building: F334R8T6_ServoEncoderLcdic2.list
  
+22:30:41 **** Incremental Build of configuration Debug for project F334R8T6_ServoEncoderLcdic2 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/lcd_ic2.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F334x8 -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/lcd_ic2.d" -MT"Core/Src/lcd_ic2.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/lcd_ic2.o"
+../Core/Src/lcd_ic2.c: In function 'lcd_init':
+../Core/Src/lcd_ic2.c:18:2: warning: implicit declaration of function 'lcd_init_write'; did you mean 'lcd_write'? [-Wimplicit-function-declaration]
+   18 |  lcd_init_write(lcd->addr, INIT_8_BIT_MODE, xpin);
+      |  ^~~~~~~~~~~~~~
+      |  lcd_write
+../Core/Src/lcd_ic2.c: At top level:
+../Core/Src/lcd_ic2.c:45:6: warning: conflicting types for 'lcd_init_write'
+   45 | void lcd_init_write(uint8_t addr, uint8_t data, uint8_t xpin)
+      |      ^~~~~~~~~~~~~~
+../Core/Src/lcd_ic2.c:18:2: note: previous implicit declaration of 'lcd_init_write' was here
+   18 |  lcd_init_write(lcd->addr, INIT_8_BIT_MODE, xpin);
+      |  ^~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "F334R8T6_ServoEncoderLcdic2.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoEncoderLcdic2/STM32F334R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F334R8T6_ServoEncoderLcdic2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F334R8T6_ServoEncoderLcdic2.elf
+ 
+arm-none-eabi-size   F334R8T6_ServoEncoderLcdic2.elf 
+arm-none-eabi-objdump -h -S  F334R8T6_ServoEncoderLcdic2.elf  > "F334R8T6_ServoEncoderLcdic2.list"
+   text	   data	    bss	    dec	    hex	filename
+  21820	    120	   1992	  23932	   5d7c	F334R8T6_ServoEncoderLcdic2.elf
+Finished building: default.size.stdout
+ 
+Finished building: F334R8T6_ServoEncoderLcdic2.list
+ 
+22:34:22 **** Incremental Build of configuration Debug for project F334R8T6_ServoEncoderLcdic2 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/lcd_ic2.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F334x8 -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/lcd_ic2.d" -MT"Core/Src/lcd_ic2.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/lcd_ic2.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F334x8 -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/lcd_ic2.c: In function 'lcd_init':
+../Core/Src/lcd_ic2.c:18:2: warning: implicit declaration of function 'lcd_init_write'; did you mean 'lcd_write'? [-Wimplicit-function-declaration]
+   18 |  lcd_init_write(lcd->addr, INIT_8_BIT_MODE, xpin);
+      |  ^~~~~~~~~~~~~~
+      |  lcd_write
+../Core/Src/lcd_ic2.c: At top level:
+../Core/Src/lcd_ic2.c:36:6: warning: conflicting types for 'lcd_init_write'
+   36 | void lcd_init_write(uint8_t addr, uint8_t data, uint8_t xpin)
+      |      ^~~~~~~~~~~~~~
+../Core/Src/lcd_ic2.c:18:2: note: previous implicit declaration of 'lcd_init_write' was here
+   18 |  lcd_init_write(lcd->addr, INIT_8_BIT_MODE, xpin);
+      |  ^~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:123:5: warning: implicit declaration of function 'change_cursor' [-Wimplicit-function-declaration]
+  123 |     change_cursor(&disp);
+      |     ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "F334R8T6_ServoEncoderLcdic2.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoEncoderLcdic2/STM32F334R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F334R8T6_ServoEncoderLcdic2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F334R8T6_ServoEncoderLcdic2.elf
+ 
+arm-none-eabi-size   F334R8T6_ServoEncoderLcdic2.elf 
+arm-none-eabi-objdump -h -S  F334R8T6_ServoEncoderLcdic2.elf  > "F334R8T6_ServoEncoderLcdic2.list"
+   text	   data	    bss	    dec	    hex	filename
+  21872	    120	   1992	  23984	   5db0	F334R8T6_ServoEncoderLcdic2.elf
+Finished building: default.size.stdout
+ 
+Finished building: F334R8T6_ServoEncoderLcdic2.list
+ 
+22:34:59 **** Incremental Build of configuration Debug for project F334R8T6_ServoEncoderLcdic2 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F334x8 -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "F334R8T6_ServoEncoderLcdic2.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoEncoderLcdic2/STM32F334R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F334R8T6_ServoEncoderLcdic2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F334R8T6_ServoEncoderLcdic2.elf
+ 
+arm-none-eabi-size   F334R8T6_ServoEncoderLcdic2.elf 
+arm-none-eabi-objdump -h -S  F334R8T6_ServoEncoderLcdic2.elf  > "F334R8T6_ServoEncoderLcdic2.list"
+   text	   data	    bss	    dec	    hex	filename
+  21820	    120	   1992	  23932	   5d7c	F334R8T6_ServoEncoderLcdic2.elf
+Finished building: default.size.stdout
+ 
+Finished building: F334R8T6_ServoEncoderLcdic2.list
+ 
+22:35:31 **** Incremental Build of configuration Debug for project F334R8T6_ServoEncoderLcdic2 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F334x8 -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "F334R8T6_ServoEncoderLcdic2.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoEncoderLcdic2/STM32F334R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F334R8T6_ServoEncoderLcdic2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F334R8T6_ServoEncoderLcdic2.elf
+ 
+arm-none-eabi-size   F334R8T6_ServoEncoderLcdic2.elf 
+arm-none-eabi-objdump -h -S  F334R8T6_ServoEncoderLcdic2.elf  > "F334R8T6_ServoEncoderLcdic2.list"
+   text	   data	    bss	    dec	    hex	filename
+  21816	    120	   1992	  23928	   5d78	F334R8T6_ServoEncoderLcdic2.elf
+Finished building: default.size.stdout
+ 
+Finished building: F334R8T6_ServoEncoderLcdic2.list
+ 
+22:36:14 **** Incremental Build of configuration Debug for project F334R8T6_ServoEncoderLcdic2 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/lcd_ic2.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F334x8 -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/lcd_ic2.d" -MT"Core/Src/lcd_ic2.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/lcd_ic2.o"
+../Core/Src/lcd_ic2.c: In function 'lcd_init':
+../Core/Src/lcd_ic2.c:18:2: warning: implicit declaration of function 'lcd_init_write'; did you mean 'lcd_write'? [-Wimplicit-function-declaration]
+   18 |  lcd_init_write(lcd->addr, INIT_8_BIT_MODE, xpin);
+      |  ^~~~~~~~~~~~~~
+      |  lcd_write
+../Core/Src/lcd_ic2.c: At top level:
+../Core/Src/lcd_ic2.c:36:6: warning: conflicting types for 'lcd_init_write'
+   36 | void lcd_init_write(uint8_t addr, uint8_t data, uint8_t xpin)
+      |      ^~~~~~~~~~~~~~
+../Core/Src/lcd_ic2.c:18:2: note: previous implicit declaration of 'lcd_init_write' was here
+   18 |  lcd_init_write(lcd->addr, INIT_8_BIT_MODE, xpin);
+      |  ^~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "F334R8T6_ServoEncoderLcdic2.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoEncoderLcdic2/STM32F334R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F334R8T6_ServoEncoderLcdic2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F334R8T6_ServoEncoderLcdic2.elf
+ 
+arm-none-eabi-size   F334R8T6_ServoEncoderLcdic2.elf 
+arm-none-eabi-objdump -h -S  F334R8T6_ServoEncoderLcdic2.elf  > "F334R8T6_ServoEncoderLcdic2.list"
+   text	   data	    bss	    dec	    hex	filename
+  21816	    120	   1992	  23928	   5d78	F334R8T6_ServoEncoderLcdic2.elf
+Finished building: default.size.stdout
+ 
+Finished building: F334R8T6_ServoEncoderLcdic2.list
+ 
+22:42:20 **** Incremental Build of configuration Debug for project F334R8T6_ServoEncoderLcdic2 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/lcd_ic2.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F334x8 -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/lcd_ic2.d" -MT"Core/Src/lcd_ic2.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/lcd_ic2.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F334x8 -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/lcd_ic2.c: In function 'lcd_init':
+../Core/Src/lcd_ic2.c:18:2: warning: implicit declaration of function 'lcd_init_write'; did you mean 'lcd_write'? [-Wimplicit-function-declaration]
+   18 |  lcd_init_write(lcd->addr, INIT_8_BIT_MODE, xpin);
+      |  ^~~~~~~~~~~~~~
+      |  lcd_write
+../Core/Src/lcd_ic2.c: At top level:
+../Core/Src/lcd_ic2.c:36:6: warning: conflicting types for 'lcd_init_write'
+   36 | void lcd_init_write(uint8_t addr, uint8_t data, uint8_t xpin)
+      |      ^~~~~~~~~~~~~~
+../Core/Src/lcd_ic2.c:18:2: note: previous implicit declaration of 'lcd_init_write' was here
+   18 |  lcd_init_write(lcd->addr, INIT_8_BIT_MODE, xpin);
+      |  ^~~~~~~~~~~~~~
+../Core/Src/lcd_ic2.c:112:42: error: unknown type name 'mode'
+  112 | void change_cursor(struct lcd_disp * lcd,mode)
+      |                                          ^~~~
+make: *** [Core/Src/subdir.mk:52: Core/Src/lcd_ic2.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:123:5: warning: implicit declaration of function 'change_cursor' [-Wimplicit-function-declaration]
+  123 |     change_cursor(&disp,2);
+      |     ^~~~~~~~~~~~~
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+22:43:00 **** Incremental Build of configuration Debug for project F334R8T6_ServoEncoderLcdic2 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/lcd_ic2.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F334x8 -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/lcd_ic2.d" -MT"Core/Src/lcd_ic2.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/lcd_ic2.o"
+../Core/Src/lcd_ic2.c: In function 'lcd_init':
+../Core/Src/lcd_ic2.c:18:2: warning: implicit declaration of function 'lcd_init_write'; did you mean 'lcd_write'? [-Wimplicit-function-declaration]
+   18 |  lcd_init_write(lcd->addr, INIT_8_BIT_MODE, xpin);
+      |  ^~~~~~~~~~~~~~
+      |  lcd_write
+../Core/Src/lcd_ic2.c: At top level:
+../Core/Src/lcd_ic2.c:36:6: warning: conflicting types for 'lcd_init_write'
+   36 | void lcd_init_write(uint8_t addr, uint8_t data, uint8_t xpin)
+      |      ^~~~~~~~~~~~~~
+../Core/Src/lcd_ic2.c:18:2: note: previous implicit declaration of 'lcd_init_write' was here
+   18 |  lcd_init_write(lcd->addr, INIT_8_BIT_MODE, xpin);
+      |  ^~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "F334R8T6_ServoEncoderLcdic2.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoEncoderLcdic2/STM32F334R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F334R8T6_ServoEncoderLcdic2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F334R8T6_ServoEncoderLcdic2.elf
+ 
+arm-none-eabi-size   F334R8T6_ServoEncoderLcdic2.elf 
+arm-none-eabi-objdump -h -S  F334R8T6_ServoEncoderLcdic2.elf  > "F334R8T6_ServoEncoderLcdic2.list"
+   text	   data	    bss	    dec	    hex	filename
+  21956	    120	   1992	  24068	   5e04	F334R8T6_ServoEncoderLcdic2.elf
+Finished building: default.size.stdout
+ 
+Finished building: F334R8T6_ServoEncoderLcdic2.list
+ 
+22:43:47 **** Incremental Build of configuration Debug for project F334R8T6_ServoEncoderLcdic2 ****
+make -j8 all 
+arm-none-eabi-size   F334R8T6_ServoEncoderLcdic2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  21956	    120	   1992	  24068	   5e04	F334R8T6_ServoEncoderLcdic2.elf
+Finished building: default.size.stdout
+ 
+22:44:05 **** Incremental Build of configuration Debug for project F334R8T6_ServoEncoderLcdic2 ****
+make -j8 all 
+arm-none-eabi-size   F334R8T6_ServoEncoderLcdic2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  21956	    120	   1992	  24068	   5e04	F334R8T6_ServoEncoderLcdic2.elf
+Finished building: default.size.stdout
+ 
+22:45:33 **** Incremental Build of configuration Debug for project F334R8T6_ServoEncoderLcdic2 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/lcd_ic2.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F334x8 -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/lcd_ic2.d" -MT"Core/Src/lcd_ic2.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/lcd_ic2.o"
+../Core/Src/lcd_ic2.c: In function 'lcd_init':
+../Core/Src/lcd_ic2.c:18:2: warning: implicit declaration of function 'lcd_init_write'; did you mean 'lcd_write'? [-Wimplicit-function-declaration]
+   18 |  lcd_init_write(lcd->addr, INIT_8_BIT_MODE, xpin);
+      |  ^~~~~~~~~~~~~~
+      |  lcd_write
+../Core/Src/lcd_ic2.c: At top level:
+../Core/Src/lcd_ic2.c:36:6: warning: conflicting types for 'lcd_init_write'
+   36 | void lcd_init_write(uint8_t addr, uint8_t data, uint8_t xpin)
+      |      ^~~~~~~~~~~~~~
+../Core/Src/lcd_ic2.c:18:2: note: previous implicit declaration of 'lcd_init_write' was here
+   18 |  lcd_init_write(lcd->addr, INIT_8_BIT_MODE, xpin);
+      |  ^~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "F334R8T6_ServoEncoderLcdic2.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoEncoderLcdic2/STM32F334R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F334R8T6_ServoEncoderLcdic2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F334R8T6_ServoEncoderLcdic2.elf
+ 
+arm-none-eabi-size   F334R8T6_ServoEncoderLcdic2.elf 
+arm-none-eabi-objdump -h -S  F334R8T6_ServoEncoderLcdic2.elf  > "F334R8T6_ServoEncoderLcdic2.list"
+   text	   data	    bss	    dec	    hex	filename
+  21956	    120	   1992	  24068	   5e04	F334R8T6_ServoEncoderLcdic2.elf
+Finished building: default.size.stdout
+ 
+Finished building: F334R8T6_ServoEncoderLcdic2.list
+ 
+22:46:07 **** Incremental Build of configuration Debug for project F334R8T6_ServoEncoderLcdic2 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F334x8 -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:123:5: warning: implicit declaration of function 'change_cursor' [-Wimplicit-function-declaration]
+  123 |     change_cursor(&disp,3);
+      |     ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "F334R8T6_ServoEncoderLcdic2.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoEncoderLcdic2/STM32F334R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F334R8T6_ServoEncoderLcdic2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F334R8T6_ServoEncoderLcdic2.elf
+ 
+arm-none-eabi-size   F334R8T6_ServoEncoderLcdic2.elf 
+arm-none-eabi-objdump -h -S  F334R8T6_ServoEncoderLcdic2.elf  > "F334R8T6_ServoEncoderLcdic2.list"
+   text	   data	    bss	    dec	    hex	filename
+  21956	    120	   1992	  24068	   5e04	F334R8T6_ServoEncoderLcdic2.elf
+Finished building: default.size.stdout
+ 
+Finished building: F334R8T6_ServoEncoderLcdic2.list
+ 
+22:47:26 **** Incremental Build of configuration Debug for project F334R8T6_ServoEncoderLcdic2 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F334x8 -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:123:5: warning: implicit declaration of function 'change_cursor' [-Wimplicit-function-declaration]
+  123 |     change_cursor(&disp,4);
+      |     ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "F334R8T6_ServoEncoderLcdic2.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/F334R8T6_ServoEncoderLcdic2/STM32F334R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F334R8T6_ServoEncoderLcdic2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F334R8T6_ServoEncoderLcdic2.elf
+ 
+arm-none-eabi-size   F334R8T6_ServoEncoderLcdic2.elf 
+arm-none-eabi-objdump -h -S  F334R8T6_ServoEncoderLcdic2.elf  > "F334R8T6_ServoEncoderLcdic2.list"
+   text	   data	    bss	    dec	    hex	filename
+  21956	    120	   1992	  24068	   5e04	F334R8T6_ServoEncoderLcdic2.elf
+Finished building: default.size.stdout
+ 
+Finished building: F334R8T6_ServoEncoderLcdic2.list
+ 
+23:04:11 **** Incremental Build of configuration Debug for project F334R8T6_ServoEncoderLcdic2 ****
+make -j8 all 
+arm-none-eabi-size   F334R8T6_ServoEncoderLcdic2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  21956	    120	   1992	  24068	   5e04	F334R8T6_ServoEncoderLcdic2.elf
+Finished building: default.size.stdout
+ 
+23:04:22 **** Incremental Build of configuration Debug for project F334R8T6_ServoEncoderLcdic2 ****
+make -j8 all 
+arm-none-eabi-size   F334R8T6_ServoEncoderLcdic2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  21956	    120	   1992	  24068	   5e04	F334R8T6_ServoEncoderLcdic2.elf
+Finished building: default.size.stdout
+ 
+23:04:31 **** Incremental Build of configuration Debug for project F334R8T6_ServoEncoderLcdic2 ****
+make -j8 all 
+arm-none-eabi-size   F334R8T6_ServoEncoderLcdic2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  21956	    120	   1992	  24068	   5e04	F334R8T6_ServoEncoderLcdic2.elf
+Finished building: default.size.stdout
+ 

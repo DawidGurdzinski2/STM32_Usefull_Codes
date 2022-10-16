@@ -102,7 +102,7 @@ int main(void)
   disp.addr= (0x27<<1);
   disp.bl= true;
   lcd_init(&disp);
-  sprintf((char*)disp.f_line,"Napierdalaj ");
+  sprintf((char*)disp.f_line,"Napierdalaj");
   sprintf((char*)disp.s_line,"Rusz tym");
   lcd_display(&disp);
    	  char msg[64];
@@ -120,7 +120,7 @@ int main(void)
 		 oldcount=count;
 		 sprintf((char*)msg,"NIGGA: %d\n",count);
 	 	 HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg), 1000);
-
+	 	 change_cursor(&disp,4);
 	 	 sprintf((char*)disp.s_line,"%d",count);
 	 	lcd_display(&disp);
 
