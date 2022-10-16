@@ -29,6 +29,7 @@
 #include <string.h>
 #include "servo.h"
 #include "lcd_i2c.h"
+#include "menu.h"
 #include <stdbool.h>
 /* USER CODE END Includes */
 
@@ -108,10 +109,12 @@ int main(void)
    	  char msg[64];
 
    	uint8_t oldcount=0;
+   	menu_refresh(&disp);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+
   while (1)
   {
 
@@ -120,7 +123,7 @@ int main(void)
 		 oldcount=count;
 		 sprintf((char*)msg,"NIGGA: %d\n",count);
 	 	 HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg), 1000);
-	 	 change_cursor(&disp,4);
+	 	 //change_cursor(&disp,4);
 	 	 sprintf((char*)disp.s_line,"%d",count);
 	 	lcd_display(&disp);
 

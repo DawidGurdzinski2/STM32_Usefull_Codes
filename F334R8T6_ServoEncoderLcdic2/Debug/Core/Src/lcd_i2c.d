@@ -1,4 +1,4 @@
-Core/Src/lcd_ic2.o: ../Core/Src/lcd_ic2.c ../Core/Inc/lcd_i2c.h \
+Core/Src/lcd_i2c.o: ../Core/Src/lcd_i2c.c ../Core/Inc/lcd_i2c.h \
  ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h \
  ../Core/Inc/stm32f3xx_hal_conf.h \
  ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h \
