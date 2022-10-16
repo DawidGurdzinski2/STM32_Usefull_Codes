@@ -1,0 +1,5 @@
+../Core/Src/menu.c:32:6:menu_refresh	16	static
+../Core/Src/menu.c:50:6:menu_next	4	static
+../Core/Src/menu.c:63:6:menu_prev	4	static
+../Core/Src/menu.c:79:6:menu_enter	4	static
+../Core/Src/menu.c:94:6:menu_back	4	static
