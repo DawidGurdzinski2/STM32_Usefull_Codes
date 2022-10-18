@@ -1,0 +1,6 @@
+#ifndef MENU_CALLBACKS_H_
+#define MENU_CALLBACKS_H_
+
+
+void move_servo(void);
+#endif /* MENU_CALLBACKS_H_ */

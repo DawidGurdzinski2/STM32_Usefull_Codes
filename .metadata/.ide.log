@@ -6476,3 +6476,52 @@
 2022-10-16 23:48:07,594 [INFO] IPUIPlugin:79 - create IPUIPlugin
 2022-10-16 23:48:07,595 [INFO] IPUIPlugin:79 - create IPUIPlugin
 2022-10-16 23:48:07,850 [INFO] OpenFileManager:327 - Restore cursor
+2022-10-17 19:45:18,571 [INFO] Activator:177 - 
+
+
+2022-10-17 19:45:18,573 [INFO] Activator:178 - !SESSION log4j initialized
+2022-10-17 19:45:41,937 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2022-10-17 19:45:41,938 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2022-10-17 19:45:41,938 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2022-10-17 23:36:25,350 [INFO] Activator:177 - 
+
+
+2022-10-17 23:36:25,351 [INFO] Activator:178 - !SESSION log4j initialized
+2022-10-17 23:36:48,534 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2022-10-17 23:36:48,535 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2022-10-17 23:36:48,535 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2022-10-17 23:48:39,713 [INFO] Activator:177 - 
+
+
+2022-10-17 23:48:39,714 [INFO] Activator:178 - !SESSION log4j initialized
+2022-10-17 23:49:03,144 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2022-10-17 23:49:03,145 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2022-10-17 23:49:03,146 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2022-10-17 23:54:23,650 [INFO] Activator:177 - 
+
+
+2022-10-17 23:54:23,652 [INFO] Activator:178 - !SESSION log4j initialized
+2022-10-17 23:54:47,032 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2022-10-17 23:54:47,033 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2022-10-17 23:54:47,033 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2022-10-18 00:24:55,527 [INFO] Activator:177 - 
+
+
+2022-10-18 00:24:55,528 [INFO] Activator:178 - !SESSION log4j initialized
+2022-10-18 00:25:21,472 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2022-10-18 00:25:21,473 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2022-10-18 00:25:21,474 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2022-10-18 00:50:58,389 [INFO] Activator:177 - 
+
+
+2022-10-18 00:50:58,390 [INFO] Activator:178 - !SESSION log4j initialized
+2022-10-18 00:51:23,514 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2022-10-18 00:51:23,515 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2022-10-18 00:51:23,516 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2022-10-18 18:13:00,626 [INFO] Activator:177 - 
+
+
+2022-10-18 18:13:00,628 [INFO] Activator:178 - !SESSION log4j initialized
+2022-10-18 18:13:26,602 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2022-10-18 18:13:26,603 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2022-10-18 18:13:26,603 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.

@@ -1,3 +1,5 @@
 1665952232050	Delete resource 'F334R8T6_ServoEncoderLcdic2/Core/Inc/menu_callbacks.h'
 1665952235961	Delete resource 'F334R8T6_ServoEncoderLcdic2/Core/Src/menu_callbacks.c'
 1665953785985	Delete resource 'F334R8T6_ServoEncoderLcdic2'
+1666043052945	Delete resource 'STM32F334R8_Program/Core/Src/common.c'
+1666043056174	Delete resource 'STM32F334R8_Program/Core/Inc/common.h'

@@ -29,7 +29,9 @@
 #include <string.h>
 #include "servo.h"
 #include "lcd_i2c.h"
-//#include "menu.h"
+#include "menu.h"
+#include "common.h"
+#include "menu_callbacks.h"
 #include <stdbool.h>
 /* USER CODE END Includes */
 
@@ -51,7 +53,7 @@
 
 /* USER CODE BEGIN PV */
 struct lcd_disp disp;
-uint8_t count;
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -106,30 +108,33 @@ int main(void)
     sprintf((char*)disp.f_line,"costam");
     sprintf((char*)disp.s_line,"dziala");
     lcd_display(&disp);
-     	  char msg[64];
+     	  //char msg[64];
+    	set_ang(500);
+     	//uint8_t oldcount=0;
+     	menu_refresh(&disp);
 
-     	uint8_t oldcount=0;
-     	menu_refresh(&disp);
-     	menu_next();
-     	menu_refresh(&disp);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  count=__HAL_TIM_GET_COUNTER(&htim3)/2;
-	  	 if(oldcount!=count){
-	  		 oldcount=count;
-	  		 sprintf((char*)msg,"NIGGA: %d\n",count);
-	  	 	 HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg), 1000);
+	  //count=__HAL_TIM_GET_COUNTER(&htim3)/2;
+	  	// if(oldcount!=count){
+	  	//	 oldcount=count;
+	  	//	 sprintf((char*)msg,"NIGGA: %d\n",count);
+	  	// 	 HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg), 1000);
 	  	 	 //change_cursor(&disp,4);
-	  	 	 sprintf((char*)disp.s_line,"%d",count);
-	  	 	lcd_display(&disp);
+	  	//	 sprintf((char*)disp.s_line,"%d",count);
+	  	// 	lcd_display(&disp);
+	  	// }
+	  	  	key_next_press();
+	  	  	  key_prev_press();
+	       	HAL_Delay(1000);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-  }
+
   /* USER CODE END 3 */
 }
 }
@@ -183,8 +188,8 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
 	if(GPIO_Pin== P1_Pin)
 	{
-		HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
-		set_ang(count*20);
+		key_enter_press();
+
 	}
 }
 /* USER CODE END 4 */

@@ -15,6 +15,6 @@
 
 #define STEP 1000*(3500/1800)
 
-void set_ang(uint16_t ang);
+void set_ang(uint16_t );
 
 #endif /* INC_SERVO_H_ */

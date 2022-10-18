@@ -8,3 +8,4 @@ org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:F334R8T6_ServoControlledbyEncod
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:F334R8T6_ServoEncoderLcdic2\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:F334R8T6_ServoEncoderLcdic2\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:STM32F334R8_Program\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:STM32F334R8_Program\ Debug/activeLaunchTarget=null\:---
