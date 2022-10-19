@@ -35,21 +35,24 @@ menu_t menu4 = { "ruchserweCW", &menu5, &menu3, NULL, NULL, NULL };
 menu_t menu5 = { "DUZE NIC2", &menu1, &menu4, NULL, NULL, NULL };
 
 
-menu_t *currentPointer = &menu1;
-menu_t *nextPointer = &menu2;
+ menu_t *currentPointer = &menu1;
+ menu_t *nextPointer = &menu2;
+ char * name;
+ //zmiana wskazników zadzialala
 
-
-
+//1.volatile - nie działa
+//2. wylaczyc optymalizacje - nie działą
+//3. zakres widocznosci zmiennych
 
 void menu_refresh(struct lcd_disp * lcd) { // lcd_refresh();
 	sprintf((char*)(lcd->f_line),currentPointer->name);
 	if(!currentPointer->next)
 	{	sprintf((char*)(lcd->s_line)," ");}
 	else
-	{	sprintf((char*)(lcd->s_line),nextPointer->name);}
-
+	{
+		nextPointer=currentPointer->next;
+		sprintf((char*)(lcd->s_line),nextPointer->name);}
 	lcd_display(lcd);
-	//change_cursor(lcd,4);
 	}
 
 void menu_next() {
@@ -59,7 +62,6 @@ void menu_next() {
 	else
 	{
 		currentPointer=currentPointer->next;
-		nextPointer=currentPointer->next;
 	}
 
 }
@@ -71,23 +73,20 @@ void menu_prev(void) {
 	}
 	else
 	{
-		nextPointer=currentPointer;
 		currentPointer=currentPointer->prev;
 	}
 }
 
 void menu_enter(void) {
 
-	if(!currentPointer->menu_function)
+	if(!currentPointer->menu_function && currentPointer->child)
 			{
 				currentPointer=currentPointer->child;
-				if(currentPointer->next){nextPointer=currentPointer->next;}
 			}
 			else if(currentPointer->menu_function)
 			{
-				currentPointer->menu_function(currentPointer,nextPointer);
+				currentPointer->menu_function(&currentPointer);
 			}
-
 			else
 			{
 					return ;

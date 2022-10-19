@@ -99,6 +99,7 @@ int main(void)
   MX_I2C1_Init();
   MX_TIM3_Init();
   MX_TIM16_Init();
+  MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
   HAL_TIM_PWM_Start(&htim16, TIM_CHANNEL_1 );//incjalizuje timer16 chanel1 jako pwm output
     HAL_TIM_Encoder_Start(&htim3, TIM_CHANNEL_ALL);
@@ -130,7 +131,8 @@ int main(void)
 	  	// }
 	  	  	key_next_press();
 	  	  	  key_prev_press();
-	       	HAL_Delay(1000);
+	  	  	menu_refresh(&disp);
+	  	  	HAL_Delay(10);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -175,7 +177,8 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
-  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_I2C1;
+  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_USART1|RCC_PERIPHCLK_I2C1;
+  PeriphClkInit.Usart1ClockSelection = RCC_USART1CLKSOURCE_PCLK1;
   PeriphClkInit.I2c1ClockSelection = RCC_I2C1CLKSOURCE_HSI;
   if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
   {

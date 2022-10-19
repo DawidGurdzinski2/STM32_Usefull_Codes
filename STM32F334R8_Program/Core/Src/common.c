@@ -16,8 +16,12 @@ void key_next_press(void){
 		count=__HAL_TIM_GET_COUNTER(&htim3)/2;
 		if(oldcount<count)
 		{	oldcount=count;
-			if(key_next_func) (*key_next_func)();
+			if(key_next_func)
+				{
+				(*key_next_func)();
 
+
+				}
 		}
 
 
@@ -28,7 +32,7 @@ void key_next_press(void){
 void key_prev_press(void){
 
 	   count=__HAL_TIM_GET_COUNTER(&htim3)/2;
-		if(oldcount<count)
+		if(oldcount>count)
 		{	oldcount=count;
 			if(key_prev_func) (*key_prev_func)();
 		}

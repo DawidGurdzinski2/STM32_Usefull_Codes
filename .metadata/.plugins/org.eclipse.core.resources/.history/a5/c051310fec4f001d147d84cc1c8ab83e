@@ -1,0 +1,27 @@
+
+#include <string.h>
+#include "common.h"
+#include "menu.h"
+#include "menu_callbacks.h"
+//#include "servo.h"
+
+
+extern void (*key_next_func)(void);
+extern void (*key_prev_func)(void);
+extern void (*key_enter_func)(void);
+
+void go_back(menu_t** temp,menu_t** tnext){
+
+	menu_t* currentPointer= *temp;
+	menu_t * nextPointer = *tnext;
+	*temp =currentPointer->parent;
+	if(currentPointer->next){*tnext=currentPointer->next;}
+
+
+
+
+	return;
+	//set_ang(450);
+
+}
+
