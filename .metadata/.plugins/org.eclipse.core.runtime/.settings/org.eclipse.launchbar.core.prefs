@@ -9,3 +9,8 @@ org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:F334R8T6_ServoEncoderLcdic2\ De
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:F334R8T6_ServoEncoderLcdic2\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:STM32F334R8_Program\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:STM32F334R8_Program\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:WSYW_SPEEDRUN_1\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:dawidandslowik\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:gigaczujnik\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:gigaczujnik\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ultraczujnik\ Debug/activeLaunchMode=run

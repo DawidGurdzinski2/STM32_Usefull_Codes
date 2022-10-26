@@ -1,0 +1,10 @@
+19:28:21 **** Incremental Build of configuration Debug for project ultraczujnik ****
+make -j8 all 
+arm-none-eabi-size   ultraczujnik.elf 
+   text	   data	    bss	    dec	    hex	filename
+  35680	    484	   1852	  38016	   9480	ultraczujnik.elf
+Finished building: default.size.stdout
+ 
+
+19:28:21 Build Finished. 0 errors, 0 warnings. (took 226ms)
+

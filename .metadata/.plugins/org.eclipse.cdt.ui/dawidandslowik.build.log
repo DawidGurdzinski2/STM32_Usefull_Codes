@@ -1,0 +1,10 @@
+17:36:26 **** Incremental Build of configuration Debug for project dawidandslowik ****
+make -j8 all 
+arm-none-eabi-size   dawidandslowik.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12964	    120	   1760	  14844	   39fc	dawidandslowik.elf
+Finished building: default.size.stdout
+ 
+
+17:36:26 Build Finished. 0 errors, 0 warnings. (took 227ms)
+

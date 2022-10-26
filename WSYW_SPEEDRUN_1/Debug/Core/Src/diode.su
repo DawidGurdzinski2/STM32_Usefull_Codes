@@ -1,0 +1,2 @@
+../Core/Src/diode.c:3:6:light_diode	16	static
+../Core/Src/diode.c:27:6:turn_off_diodes	8	static
