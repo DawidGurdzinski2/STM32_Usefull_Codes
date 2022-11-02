@@ -26,7 +26,8 @@
 /* USER CODE BEGIN Includes */
 #include <stdio.h>
 #include <string.h>
-#include <servo.h>
+#include <servo360.h>
+#include <usredniarka.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -41,12 +42,15 @@
 /* Private macro -------------------------------------------------------------*/
 /* USER CODE BEGIN PM */
 
+
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
 char msg[64];
+float changed_value;
+float avg_changed_value;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -106,21 +110,33 @@ int main(void)
 
 	  uint32_t start = HAL_TIM_ReadCapturedValue(&htim2, TIM_CHANNEL_1);
 	  	  	//uint32_t stop = HAL_TIM_ReadCapturedValue(&htim2, TIM_CHANNEL_2);
-	  	  //sprintf((char*)msg,"Odczyt: %lu\n",start-2236);
+	  	  sprintf((char*)msg,"Odczyt: %lu\n",start-2236);
+
+	  	   changed_value = (start-2236)/58.0;
+	  	   avg_changed_value =usrednianie(changed_value);
 	  	  	sprintf((char*)msg,"Odczyt: %.1f cm\n",(start-2236) / 58.0f);
 	  	  	HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg),1000);
 	  	  	//HAL_Delay(1000);
 	  	  	//set_ang(0);
-	  	  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 2200);
-	  	  	HAL_Delay(1000);
-	  	  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 1530);//stoi jak chuj
+	  	  //__HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 2230);
+	  	//  	HAL_Delay(1000);
+	  	//  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 1530);//stoi jak chuj
 	  	 // set_ang(1800);
-	  	  HAL_Delay(1000);
-	  	__HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 800);
-	  	 HAL_Delay(1000);
-	  	  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 1530);//stoi jak chuj
-	  	HAL_Delay(1000);
-	  	//set_ang(900);
+	  	  //HAL_Delay(1000);
+	  	//__HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 830);
+	  	  if(changed_value<=25)
+	  		  set_move((25 - changed_value),1);
+	  	  else{
+	  		  set_move(changed_value-25, 0);
+	  	  }
+
+	  	//set_move(3,1);
+
+	  	//  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 1530);//stoi jak chuj
+	  	//HAL_Delay(1000);
+	  	//stop_servo();
+	  	//HAL_Delay(1000);
+	  	//stop_servo();
 	  		  	  //HAL_Delay(1000);
     /* USER CODE END WHILE */
 

@@ -1,0 +1,19 @@
+
+#include "usredniarka.h"
+#include "tim.h"
+
+
+
+float usrednianie(uint16_t NUMBER_OF_SAMPLES ,float probka){
+	//float avg_probka_new = (NUMBER_OF_SAMPLES-1)/NUMBER_OF_SAMPLES * avg_probki_old + 1/NUMBER_OF_SAMPLES*probka;
+	static uint16_t nrProbki;
+	static float probki;
+
+	if(nrProbki == 1000){
+		nrProbki = 0;
+		return probki;
+	}
+	else if {
+		probki = probki + probka;
+	}
+}
