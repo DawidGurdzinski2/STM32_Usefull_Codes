@@ -1,0 +1,83 @@
+09:38:48 **** Incremental Build of configuration Debug for project LCD_1.8INCH ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/common.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/common.d" -MT"Core/Src/common.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/common.o"
+arm-none-eabi-gcc "../Core/Src/menu.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/menu.d" -MT"Core/Src/menu.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/menu.o"
+arm-none-eabi-gcc "../Core/Src/menu_callbacks.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/menu_callbacks.d" -MT"Core/Src/menu_callbacks.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/menu_callbacks.o"
+In file included from ../Core/Src/common.c:2:
+../Core/Inc/menu.h:7:3: error: expected specifier-qualifier-list before 'uint8_t'
+    7 |   uint8_t ;
+      |   ^~~~~~~
+In file included from ../Core/Src/menu_callbacks.c:4:
+../Core/Inc/menu.h:7:3: error: expected specifier-qualifier-list before 'uint8_t'
+    7 |   uint8_t ;
+      |   ^~~~~~~
+../Core/Src/menu_callbacks.c: In function 'go_back':
+../Core/Src/menu_callbacks.c:16:23: error: 'menu_t' {aka 'struct menu_struct'} has no member named 'parent'
+   16 |  *temp =currentPointer->parent;
+      |                       ^~
+In file included from ../Core/Src/menu.c:5:
+../Core/Inc/menu.h:7:11: warning: declaration does not declare anything
+    7 |   uint8_t ;
+      |           ^
+../Core/Src/menu.c:18:18: warning: initialization of 'const char *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   18 | menu_t menu1 = { 1,"Zapisuj na SD", &menu2, NULL, NULL, NULL, NULL };
+      |                  ^
+../Core/Src/menu.c:18:18: note: (near initialization for 'menu1.name')
+../Core/Src/menu.c:18:20: warning: initialization of 'menu_t *' {aka 'struct menu_struct *'} from incompatible pointer type 'char *' [-Wincompatible-pointer-types]
+   18 | menu_t menu1 = { 1,"Zapisuj na SD", &menu2, NULL, NULL, NULL, NULL };
+      |                    ^~~~~~~~~~~~~~~
+../Core/Src/menu.c:18:20: note: (near initialization for 'menu1.next')
+../Core/Src/menu.c:18:63: warning: excess elements in struct initializer
+   18 | menu_t menu1 = { 1,"Zapisuj na SD", &menu2, NULL, NULL, NULL, NULL };
+      |                                                               ^~~~
+../Core/Src/menu.c:18:63: note: (near initialization for 'menu1')
+../Core/Src/menu.c:19:18: warning: initialization of 'const char *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   19 | menu_t menu2 = { 2,"Transmituj BT", &menu3, &menu1, NULL, NULL,NULL };
+      |                  ^
+../Core/Src/menu.c:19:18: note: (near initialization for 'menu2.name')
+../Core/Src/menu.c:19:20: warning: initialization of 'menu_t *' {aka 'struct menu_struct *'} from incompatible pointer type 'char *' [-Wincompatible-pointer-types]
+   19 | menu_t menu2 = { 2,"Transmituj BT", &menu3, &menu1, NULL, NULL,NULL };
+      |                    ^~~~~~~~~~~~~~~
+../Core/Src/menu.c:19:20: note: (near initialization for 'menu2.next')
+../Core/Src/menu.c:19:64: warning: excess elements in struct initializer
+   19 | menu_t menu2 = { 2,"Transmituj BT", &menu3, &menu1, NULL, NULL,NULL };
+      |                                                                ^~~~
+../Core/Src/menu.c:19:64: note: (near initialization for 'menu2')
+../Core/Src/menu.c:20:18: warning: initialization of 'const char *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   20 | menu_t menu3 = { 3,"Zastrzymaj", NULL, &menu2, NULL, NULL,NULL};
+      |                  ^
+../Core/Src/menu.c:20:18: note: (near initialization for 'menu3.name')
+../Core/Src/menu.c:20:20: warning: initialization of 'menu_t *' {aka 'struct menu_struct *'} from incompatible pointer type 'char *' [-Wincompatible-pointer-types]
+   20 | menu_t menu3 = { 3,"Zastrzymaj", NULL, &menu2, NULL, NULL,NULL};
+      |                    ^~~~~~~~~~~~
+../Core/Src/menu.c:20:20: note: (near initialization for 'menu3.next')
+../Core/Src/menu.c:20:59: warning: excess elements in struct initializer
+   20 | menu_t menu3 = { 3,"Zastrzymaj", NULL, &menu2, NULL, NULL,NULL};
+      |                                                           ^~~~
+../Core/Src/menu.c:20:59: note: (near initialization for 'menu3')
+../Core/Src/menu.c: In function 'menu_refresh':
+../Core/Src/menu.c:31:47: warning: passing argument 1 of 'strcat' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   31 |  LCD_DisplayString(28,45,strcat(currentPointer->name,cursor),&Font8,RED,GRED);
+      |                                 ~~~~~~~~~~~~~~^~~~~~
+In file included from ../Core/Src/menu.c:1:
+/opt/st/stm32cubeide_1.10.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.0.202111181127/tools/arm-none-eabi/include/string.h:34:16: note: expected 'char * restrict' but argument is of type 'const char *'
+   34 | char  *strcat (char *__restrict, const char *__restrict);
+      |                ^
+../Core/Src/menu.c: In function 'get_number_pos':
+../Core/Src/menu.c:36:2: warning: implicit declaration of function 'HAL_Delay' [-Wimplicit-function-declaration]
+   36 |  HAL_Delay(10);//dopisz funkcje od typa
+      |  ^~~~~~~~~
+../Core/Src/menu.c: In function 'menu_enter':
+../Core/Src/menu.c:75:33: warning: passing argument 1 of 'currentPointer->menu_function' from incompatible pointer type [-Wincompatible-pointer-types]
+   75 |   currentPointer->menu_function(&currentPointer);
+      |                                 ^~~~~~~~~~~~~~~
+      |                                 |
+      |                                 menu_t ** {aka struct menu_struct **}
+../Core/Src/menu.c:75:33: note: expected 'menu_t *' {aka 'struct menu_struct *'} but argument is of type 'menu_t **' {aka 'struct menu_struct **'}
+make: *** [Core/Src/subdir.mk:79: Core/Src/menu_callbacks.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Core/Src/subdir.mk:79: Core/Src/common.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+09:38:49 Build Failed. 6 errors, 13 warnings. (took 221ms)
+

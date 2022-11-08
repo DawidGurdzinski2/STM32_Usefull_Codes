@@ -1,0 +1,6 @@
+../Core/Src/menu.c:29:6:menu_refresh	16	static
+../Core/Src/menu.c:34:6:get_number_pos	8	static
+../Core/Src/menu.c:39:6:position	8	static
+../Core/Src/menu.c:43:6:menu_next	8	static
+../Core/Src/menu.c:54:6:menu_prev	8	static
+../Core/Src/menu.c:67:6:menu_enter	8	static

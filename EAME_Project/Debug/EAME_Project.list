@@ -540,9 +540,9 @@ void key_enter_press(void){
  8000634:	20000008 	.word	0x20000008
 
 08000638 <MX_GPIO_Init>:
-/* USER CODE END 1 */
-
-/** Configure pins
+        * Output
+        * EVENT_OUT
+        * EXTI
 */
 void MX_GPIO_Init(void)
 {

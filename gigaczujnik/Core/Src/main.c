@@ -113,7 +113,7 @@ int main(void)
 	  	  sprintf((char*)msg,"Odczyt: %lu\n",start-2236);
 
 	  	   changed_value = (start-2236)/58.0;
-	  	   avg_changed_value =usrednianie(changed_value);
+	  	   //avg_changed_value =usrednianie(changed_value);
 	  	  	sprintf((char*)msg,"Odczyt: %.1f cm\n",(start-2236) / 58.0f);
 	  	  	HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg),1000);
 	  	  	//HAL_Delay(1000);
@@ -133,7 +133,7 @@ int main(void)
 	  	//set_move(3,1);
 
 	  	//  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 1530);//stoi jak chuj
-	  	//HAL_Delay(1000);
+	  	HAL_Delay(1000);
 	  	//stop_servo();
 	  	//HAL_Delay(1000);
 	  	//stop_servo();
