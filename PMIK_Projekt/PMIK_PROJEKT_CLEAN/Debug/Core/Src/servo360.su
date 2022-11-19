@@ -1,0 +1,2 @@
+../Core/Src/servo360.c:10:6:set_move	32	static
+../Core/Src/servo360.c:26:6:stop_servo	8	static

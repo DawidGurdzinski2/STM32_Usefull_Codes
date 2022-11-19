@@ -1,0 +1,2 @@
+../Core/Src/distance_sensor.c:7:6:IR_Init	16	static
+../Core/Src/distance_sensor.c:29:10:IR_Get_Distance	16	static

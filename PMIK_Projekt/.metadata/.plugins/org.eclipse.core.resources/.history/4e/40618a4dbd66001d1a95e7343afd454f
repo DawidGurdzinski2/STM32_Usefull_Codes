@@ -1,0 +1,22 @@
+#include "distance_sensor.h"
+#include "vl53l1x_api.h"
+
+
+uint16_t IR_Get_Distance()
+{
+	uint8_t byteData, sensorState=0;
+	uint16_t wordData;
+	uint8_t ToFSensor = 1; // 0=Left, 1=Center(default), 2=Right
+	uint16_t Distance;
+	uint16_t SignalRate;
+	uint16_t AmbientRate;
+	uint16_t SpadNum;
+	uint8_t RangeStatus;
+	uint8_t dataReady;
+
+
+	if(VL53L1X_BootState(DEV, &sensorState)==0)
+	{
+		return 1;
+	}
+}

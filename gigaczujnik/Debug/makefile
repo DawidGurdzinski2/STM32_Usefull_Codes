@@ -60,8 +60,8 @@ all: main-build
 main-build: gigaczujnik.elf secondary-outputs
 
 # Tool invocations
-gigaczujnik.elf gigaczujnik.map: $(OBJS) $(USER_OBJS) /home/dawid/Desktop/Programing\ and\ other/GITHUB/STM32_Usefull_Codes/gigaczujnik/STM32L073RZTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "gigaczujnik.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"/home/dawid/Desktop/Programing and other/GITHUB/STM32_Usefull_Codes/gigaczujnik/STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="gigaczujnik.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+gigaczujnik.elf gigaczujnik.map: $(OBJS) $(USER_OBJS) C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\gigaczujnik\STM32L073RZTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "gigaczujnik.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\gigaczujnik\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="gigaczujnik.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

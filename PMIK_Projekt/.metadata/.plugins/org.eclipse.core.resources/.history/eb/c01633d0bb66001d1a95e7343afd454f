@@ -1,0 +1,10 @@
+#include "distance_sensor.h"
+
+
+
+
+
+uint16_t IR_Get_Distance()
+{
+	if(!VL53L1X_BootState(dev, &sensorState);)
+}

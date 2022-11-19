@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "stdint.h": "c",
+        "usart.h": "c",
+        "vl53l1x_api.h": "c",
+        "akcelerometr.h": "c"
+    }
+}

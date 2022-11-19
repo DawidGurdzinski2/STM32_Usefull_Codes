@@ -18,6 +18,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "i2c.h"
 #include "tim.h"
 #include "usart.h"
 #include "gpio.h"
@@ -26,8 +27,9 @@
 /* USER CODE BEGIN Includes */
 #include <stdio.h>
 #include <string.h>
-#include <servo360.h>
-#include <usredniarka.h>
+#include "servo360.h"
+#include "akcelerometr.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -37,6 +39,10 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+#define SERWO_MIN 500
+#define SERWO_MAX 2500
+
+//#define bma_adr 0x0A<<1
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -51,12 +57,58 @@
 char msg[64];
 float changed_value;
 float avg_changed_value;
+
+//sternvarablrs
+int state = 1;
+uint8_t znak, komunikat[20], kutas, radres;
+uint16_t dlkom;
+int8_t data_rec[6];
+int odakcel;
+int kat;
+float PID;
+float Kp = 1;
+float Ki = 0.001;
+float cumError;
+
+int oTime;
+int nTime;
+int dTime;
+//sternvariablesend
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
-
+//int PrzeliczKat(int kat);
+//
+//void bma_write (uint8_t reg, uint8_t value){
+//	uint8_t data[2];
+//	data[0] = reg;
+//	data[1] = value;
+//
+//	HAL_I2C_Master_Transmit(&hi2c1, bma_adr, data, 2, 10);
+//
+//}
+//
+//
+//void bma_read (uint8_t reg, uint8_t numberofbytes){
+//
+//	HAL_I2C_Mem_Read(&hi2c1, bma_adr, reg, 1, data_rec, numberofbytes, 100);
+//
+//}
+//
+//void bma_init (void){
+//
+//	bma_write(0x22,0x00);
+//
+//	bma_write(0x20,0x05);
+//
+//	bma_write(0x1A,0x04);
+//
+//
+//
+//
+//}
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -95,45 +147,105 @@ int main(void)
   MX_USART2_UART_Init();
   MX_TIM2_Init();
   MX_TIM3_Init();
+  MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
   	  HAL_TIM_IC_Start(&htim2, TIM_CHANNEL_1);
-   // HAL_TIM_IC_Start(&htim2, TIM_CHANNEL_2);
+    HAL_TIM_IC_Start(&htim2, TIM_CHANNEL_2);
     HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_3);
-    HAL_Delay(1000);
     HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
+    HAL_UART_Receive_IT(&huart2, &znak, 1);
+    HAL_Delay(1000);
+
+	 // __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 1400);
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+    bma_init();
+
+
+
+    oTime = HAL_GetTick();
   while (1)
   {
 
-	  uint32_t start = HAL_TIM_ReadCapturedValue(&htim2, TIM_CHANNEL_1);
-	  	  	//uint32_t stop = HAL_TIM_ReadCapturedValue(&htim2, TIM_CHANNEL_2);
-	  	  sprintf((char*)msg,"Odczyt: %lu\n",start-2236);
+	  //stern
+	  bma_read(0x4,1,data_rec);
+	  //bma_read(0x0,1);
+	  //sprintf(komunikat,"%c", data_rec[0]);
+	   odakcel = (int)(data_rec[0] >> 2);
 
-	  	   changed_value = (start-2236)/58.0;
-	  	   //avg_changed_value =usrednianie(changed_value);
-	  	  	sprintf((char*)msg,"Odczyt: %.1f cm\n",(start-2236) / 58.0f);
+	  // sprintf(komunikat,"%c", odakcel);
+	     //			  dlkom = 1;
+	    // HAL_UART_Transmit(&huart2, komunikat, 1, 1000);
+
+	   	  dTime = nTime - oTime;
+	   	  oTime = nTime;
+
+	   cumError += (odakcel*5.625)*dTime;
+
+	   if (cumError > 90){
+	 	  cumError = 90;
+	   }
+	   else if (cumError < -90){
+	 	  cumError = -90;
+	   }
+
+	   PID = 1*(odakcel*5.625) + 0*cumError;
+	   //kat = PrzeliczKat((int)PID);
+	 // sprintf(komunikat,"%c", (int)PID);
+	  // HAL_UART_Transmit(&huart2, komunikat, 1, 1000);
+ 	   //HAL_UART_Transmit(&huart2, (uint8_t*)komunikat, strlen(komunikat),1000);
+
+	  //stern
+
+	  uint32_t start = HAL_TIM_ReadCapturedValue(&htim2, TIM_CHANNEL_1);
+	  uint32_t stop = HAL_TIM_ReadCapturedValue(&htim2, TIM_CHANNEL_2);
+	  	 // sprintf((char*)msg,"Odczyt: %lu\n",start-2236);
+
+	  	   changed_value = (stop-start)/58.0f;
+
+	  	  	sprintf((char*)msg,"ODL %.1f cm\n",(stop-start) / 58.0f);
 	  	  	HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg),1000);
-	  	  	//HAL_Delay(1000);
+
+	  	  	HAL_Delay(100);
 	  	  	//set_ang(0);
-	  	  //__HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 2230);
 	  	//  	HAL_Delay(1000);
 	  	//  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 1530);//stoi jak chuj
 	  	 // set_ang(1800);
 	  	  //HAL_Delay(1000);
 	  	//__HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 830);
-	  	  if(changed_value<=25)
-	  		  set_move((25 - changed_value),1);
-	  	  else{
-	  		  set_move(changed_value-25, 0);
+	  	  if ( PID <-20)
+	  	  {
+	  	  	//__HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 1530);//stoi jak chuj
+
+	  		 set_move(changed_value-25, 0);
 	  	  }
+	  	  else if ( PID > 20)
+	  	  {
+	  	  	  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 1530);//stoi jak chuj
+
+	  		set_move((25 - changed_value),1);
+	  	  }
+
+	  	  else{
+	  		  	  if(changed_value<=25)
+	  		  	  {
+	  		  		  set_move((25 - changed_value),1);
+	  		  	  }
+	  		  	  else
+	  		  	  {
+	  		  		  set_move(changed_value-25, 0);
+	  		  	  }
+	  	  	  }
+
+
 
 	  	//set_move(3,1);
 
 	  	//  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 1530);//stoi jak chuj
-	  	HAL_Delay(1000);
+	  //	HAL_Delay(1000);
 	  	//stop_servo();
 	  	//HAL_Delay(1000);
 	  	//stop_servo();
@@ -187,8 +299,9 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
-  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_USART2;
+  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_USART2|RCC_PERIPHCLK_I2C1;
   PeriphClkInit.Usart2ClockSelection = RCC_USART2CLKSOURCE_PCLK1;
+  PeriphClkInit.I2c1ClockSelection = RCC_I2C1CLKSOURCE_PCLK1;
   if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
   {
     Error_Handler();
@@ -196,7 +309,64 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
+//int PrzeliczKat(int kat){
+//	int wynik = 0;
+//
+//	if (kat > 90){
+//		return 2500;
+//	}
+//	else if (kat < -90) {
+//		return 500;
+//	}
+//
+//	else {
+//		wynik = (kat * 11.11) + 1500;
+//		return wynik;
+//
+//	}
+//
+//}
 
+//void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart){
+//
+//	if(huart->Instance == USART2){
+//		if(znak == 'l'){
+//			state = 2;
+//
+//			  sprintf(komunikat,"lewo");
+//			  dlkom = 4;
+//			  HAL_UART_Transmit_IT(&huart2, komunikat, dlkom);
+//		}
+//		else if (znak == 'r'){
+//			state = 0;
+//
+//			  sprintf(komunikat,"prawo");
+//			  dlkom = 5;
+//			  HAL_UART_Transmit_IT(&huart2, komunikat, dlkom);
+//		}
+//
+//		else if(znak == 's'){
+//			state = 1;
+//
+//			  sprintf(komunikat,"srodek");
+//			  dlkom = 6;
+//			  HAL_UART_Transmit_IT(&huart2, komunikat, dlkom);
+//		}
+//
+//		else if(znak == 'm'){
+//			state = 3;
+//
+//			  sprintf(komunikat,"moje");
+//			  dlkom = 4;
+//			  HAL_UART_Transmit_IT(&huart2, komunikat, dlkom);
+//
+//
+//
+//
+//		}
+//		HAL_UART_Receive_IT(&huart2, &znak, 1);
+//	}
+//}
 /* USER CODE END 4 */
 
 /**

@@ -1,0 +1,4 @@
+../Core/Src/akcelerometr.c:4:6:bma_write	32	static
+../Core/Src/akcelerometr.c:15:8:bma_read	48	static
+../Core/Src/akcelerometr.c:27:6:bma_init	8	static
+../Core/Src/akcelerometr.c:39:5:PrzeliczKat	24	static
