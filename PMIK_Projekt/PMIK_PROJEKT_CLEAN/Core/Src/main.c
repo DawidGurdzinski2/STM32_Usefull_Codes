@@ -23,7 +23,6 @@
 #include "usart.h"
 #include "gpio.h"
 
-
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include <stdio.h>
@@ -44,8 +43,8 @@ typedef struct
 	uint32_t time_new;
     uint32_t period;
 	int16_t distance_error;
-	uint16_t distance_previous_error;
-	uint16_t dist_diference;
+	int16_t distance_previous_error;
+	int16_t dist_diference;
 	float PID_p, PID_i, PID_d, PID_total;
 }PIDStruct;
 /* USER CODE END PTD */
@@ -67,7 +66,7 @@ typedef struct
 uint16_t data_recdist;
 int8_t data_recangle;
 float  data_PID_total;
-static PIDStruct PID;
+PIDStruct PID;
 //uartzm
 char msg[64];
 //uart
@@ -76,7 +75,7 @@ char msg[64];
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
-float PIDRegulator(uint16_t distance, PIDStruct PID);
+void PIDRegulator(uint16_t distance, PIDStruct *PID);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -122,11 +121,11 @@ int main(void)
   HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
 
   //PID VARIABLES INIT
-  PID.Kd = 0.0;
-  PID.Ki = 0.0;
-  PID.Kp = 1.0;
+  PID.Kd = 10.0;
+  PID.Ki = 2.0;
+  PID.Kp = 0.04; // 0.06 ustawione bylo
   PID.time_old = HAL_GetTick();
-  PID.set_point = 200;
+  PID.set_point = 180;
   //PID VARIABLES INIT
 
   /* USER CODE END 2 */
@@ -139,27 +138,44 @@ int main(void)
 	 //koniec rynienki 355
 	 //srodek rynienki 205
 	 // lewo 55
+
+	  //po naklejeniu
+	  	  //koniec 330
+	  	  // srodek 165
+	  	  //lewo 0
 	 data_recdist = IR_Get_Distance();
-	 data_recangle = bma_read(bma_x,1);
-	 data_PID_total = PIDRegulator(data_recdist, PID);
+	 data_recangle = 5.625*bma_read(bma_x,1);
+	 PIDRegulator(data_recdist, &PID);
 //	 set_move(10,1);
-//	 HAL_Delay(3000);
-//	 stop_servo();
-	 if(data_PID_total<0)
+
+	 stop_servo();
+	 if(data_recangle<35 && data_recangle >-45)
 	 {
-		 set_move(-data_PID_total, 1);
+	 	 if(PID.PID_total<0)
+	 	 {
+	 		 set_move(-PID.PID_total, 1);
+	 	 }
+	 	 else if (PID.PID_total>0)
+	 	 {
+	 		 set_move(PID.PID_total, 0);
+	 	 }
 	 }
-	 else if (data_PID_total>0)
+	 else if ( data_recangle>35)
 	 {
-		 set_move(data_PID_total, 0);
+		 set_move(15, 0);
 	 }
+	 else if ( data_recangle<-45)
+	 {
+		 set_move(15, 1);
+ 	 }
 
 
 	 // uart test
-	 sprintf((char*)msg,"Odczyt: %d\n",data_recdist);
+	 sprintf((char*)msg,"PID_d %f PID_p %f,  PID_total %f , PID.Ki %f , Dist %d\n",PID.PID_d, PID.PID_p, PID.PID_total, PID.PID_i, data_recdist);
 
 
 	 HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg),1000);
+
 	 //uarttest
 
 
@@ -224,31 +240,31 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
-float PIDRegulator(uint16_t distance, PIDStruct PID)
+void PIDRegulator( uint16_t distance,  PIDStruct *PID)
 {
-	PID.time_new = HAL_GetTick();
-	PID.period = PID.time_new - PID.time_old;
-	PID.time_old = PID.time_new;
+	PID->time_new = HAL_GetTick();
+	PID->period = PID->time_new - PID->time_old;
+	PID->time_old = PID->time_new;
 
-	PID.distance_error = PID.set_point - distance;
+	PID->distance_error = PID->set_point - distance;
 
-	PID.PID_p = PID.Kp * PID.distance_error;
+	PID->PID_p = PID->Kp * PID->distance_error;
 
-	PID.dist_diference = PID.distance_error - PID.distance_previous_error;
+	PID->dist_diference = PID->distance_error - PID->distance_previous_error;
 
-	PID.PID_d = PID.Kd*((PID.distance_error - PID.distance_previous_error)/PID.period);
+	PID->PID_d = PID->Kd*(((float)PID->distance_error - (float)PID->distance_previous_error)/(float)PID->period);
 
-	if(-3 < PID.distance_error && PID.distance_error < 3)
+	if(-3 < PID->distance_error && PID->distance_error < 3)
 	    {
-		PID.PID_i = PID.PID_i + (PID.Ki * PID.distance_error);
+		PID->PID_i = PID->PID_i + (PID->Ki * PID->distance_error);
 	    }
 	    else
 	    {
-	    	PID.PID_i = 0;
+	    	PID->PID_i = 0;
 	    }
-	PID.PID_total = PID.PID_p + PID.PID_i + PID.PID_d;
-
-	return PID.PID_total;
+	PID->PID_total = PID->PID_p + PID->PID_i + PID->PID_d;
+	PID->distance_previous_error =  PID->distance_error;
+	return;
 }
 /* USER CODE END 4 */
 

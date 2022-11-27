@@ -1,85 +1,1161 @@
-21:44:16 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+15:04:09 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
 make -j8 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
 ../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:161:45: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
-  161 |   HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg),1000);
+../Core/Src/main.c:177:45: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  177 |   HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg),1000);
       |                                             ^~~~~~
-../Core/Src/main.c:161:45: warning: incompatible implicit declaration of built-in function 'strlen'
-../Core/Src/main.c:33:1: note: include '<string.h>' or provide a declaration of 'strlen'
-   32 | #include "distance_sensor.h"
+../Core/Src/main.c:177:45: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:32:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   31 | #include "distance_sensor.h"
   +++ |+#include <string.h>
-   33 | /* USER CODE END Includes */
+   32 | /* USER CODE END Includes */
 arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: PMIK_PROJEKT_CLEAN.elf
  
 arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
 arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
    text	   data	    bss	    dec	    hex	filename
-  34364	    120	   2304	  36788	   8fb4	PMIK_PROJEKT_CLEAN.elf
+  34964	    120	   2304	  37388	   920c	PMIK_PROJEKT_CLEAN.elf
 Finished building: default.size.stdout
  
 Finished building: PMIK_PROJEKT_CLEAN.list
  
-21:44:27 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+15:05:55 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
 make -j8 all 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-   text	   data	    bss	    dec	    hex	filename
-  34364	    120	   2304	  36788	   8fb4	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-21:47:36 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:143:3: error: 'data_PID_total' undeclared (first use in this function)
-  143 |   data_PID_total = PIDRegulator(data_recdist, PID);
-      |   ^~~~~~~~~~~~~~
-../Core/Src/main.c:143:3: note: each undeclared identifier is reported only once for each function it appears in
-../Core/Src/main.c:161:45: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
-  161 |   HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg),1000);
-      |                                             ^~~~~~
-../Core/Src/main.c:161:45: warning: incompatible implicit declaration of built-in function 'strlen'
-../Core/Src/main.c:33:1: note: include '<string.h>' or provide a declaration of 'strlen'
-   32 | #include "distance_sensor.h"
-  +++ |+#include <string.h>
-   33 | /* USER CODE END Includes */
-make: *** [Core/Src/subdir.mk:64: Core/Src/main.o] Error 1
-"make -j8 all" terminated with exit code 2. Build might be incomplete.
-21:47:57 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:162:45: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
-  162 |   HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg),1000);
-      |                                             ^~~~~~
-../Core/Src/main.c:162:45: warning: incompatible implicit declaration of built-in function 'strlen'
-../Core/Src/main.c:33:1: note: include '<string.h>' or provide a declaration of 'strlen'
-   32 | #include "distance_sensor.h"
-  +++ |+#include <string.h>
-   33 | /* USER CODE END Includes */
-arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: PMIK_PROJEKT_CLEAN.elf
  
 arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
 arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
    text	   data	    bss	    dec	    hex	filename
-  34376	    120	   2304	  36800	   8fc0	PMIK_PROJEKT_CLEAN.elf
+  48124	    484	   2300	  50908	   c6dc	PMIK_PROJEKT_CLEAN.elf
 Finished building: default.size.stdout
  
 Finished building: PMIK_PROJEKT_CLEAN.list
  
-21:50:54 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+15:06:34 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
 make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:45: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  177 |   HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg),1000);
+      |                                             ^~~~~~
+../Core/Src/main.c:177:45: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:32:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   31 | #include "distance_sensor.h"
+  +++ |+#include <string.h>
+   32 | /* USER CODE END Includes */
+arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PMIK_PROJEKT_CLEAN.elf
+ 
 arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
    text	   data	    bss	    dec	    hex	filename
-  34376	    120	   2304	  36800	   8fc0	PMIK_PROJEKT_CLEAN.elf
+  48124	    484	   2300	  50908	   c6dc	PMIK_PROJEKT_CLEAN.elf
 Finished building: default.size.stdout
  
-21:56:30 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+Finished building: PMIK_PROJEKT_CLEAN.list
+ 
+15:08:58 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:45: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  177 |   HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg),1000);
+      |                                             ^~~~~~
+../Core/Src/main.c:177:45: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:32:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   31 | #include "distance_sensor.h"
+  +++ |+#include <string.h>
+   32 | /* USER CODE END Includes */
+arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PMIK_PROJEKT_CLEAN.elf
+ 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  48128	    484	   2300	  50912	   c6e0	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: PMIK_PROJEKT_CLEAN.list
+ 
+15:09:52 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:45: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  177 |   HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg),1000);
+      |                                             ^~~~~~
+../Core/Src/main.c:177:45: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:32:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   31 | #include "distance_sensor.h"
+  +++ |+#include <string.h>
+   32 | /* USER CODE END Includes */
+arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PMIK_PROJEKT_CLEAN.elf
+ 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  48132	    484	   2300	  50916	   c6e4	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: PMIK_PROJEKT_CLEAN.list
+ 
+15:10:24 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:45: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  177 |   HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg),1000);
+      |                                             ^~~~~~
+../Core/Src/main.c:177:45: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:32:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   31 | #include "distance_sensor.h"
+  +++ |+#include <string.h>
+   32 | /* USER CODE END Includes */
+arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PMIK_PROJEKT_CLEAN.elf
+ 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  48128	    484	   2300	  50912	   c6e0	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: PMIK_PROJEKT_CLEAN.list
+ 
+15:11:41 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:45: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  177 |   HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg),1000);
+      |                                             ^~~~~~
+../Core/Src/main.c:177:45: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:32:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   31 | #include "distance_sensor.h"
+  +++ |+#include <string.h>
+   32 | /* USER CODE END Includes */
+arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PMIK_PROJEKT_CLEAN.elf
+ 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  48120	    484	   2300	  50904	   c6d8	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: PMIK_PROJEKT_CLEAN.list
+ 
+15:16:09 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:45: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  177 |   HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg),1000);
+      |                                             ^~~~~~
+../Core/Src/main.c:177:45: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:32:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   31 | #include "distance_sensor.h"
+  +++ |+#include <string.h>
+   32 | /* USER CODE END Includes */
+arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PMIK_PROJEKT_CLEAN.elf
+ 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  48176	    484	   2300	  50960	   c710	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: PMIK_PROJEKT_CLEAN.list
+ 
+15:17:57 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:45: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  177 |   HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg),1000);
+      |                                             ^~~~~~
+../Core/Src/main.c:177:45: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:32:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   31 | #include "distance_sensor.h"
+  +++ |+#include <string.h>
+   32 | /* USER CODE END Includes */
+arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PMIK_PROJEKT_CLEAN.elf
+ 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  48176	    484	   2300	  50960	   c710	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: PMIK_PROJEKT_CLEAN.list
+ 
+15:18:22 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:45: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  177 |   HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg),1000);
+      |                                             ^~~~~~
+../Core/Src/main.c:177:45: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:32:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   31 | #include "distance_sensor.h"
+  +++ |+#include <string.h>
+   32 | /* USER CODE END Includes */
+arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PMIK_PROJEKT_CLEAN.elf
+ 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  48176	    484	   2300	  50960	   c710	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: PMIK_PROJEKT_CLEAN.list
+ 
+15:19:25 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
 make -j8 all 
 arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
    text	   data	    bss	    dec	    hex	filename
-  34376	    120	   2304	  36800	   8fc0	PMIK_PROJEKT_CLEAN.elf
+  48176	    484	   2300	  50960	   c710	PMIK_PROJEKT_CLEAN.elf
 Finished building: default.size.stdout
+ 
+15:20:42 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:45: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  177 |   HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg),1000);
+      |                                             ^~~~~~
+../Core/Src/main.c:177:45: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:32:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   31 | #include "distance_sensor.h"
+  +++ |+#include <string.h>
+   32 | /* USER CODE END Includes */
+arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PMIK_PROJEKT_CLEAN.elf
+ 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  48176	    484	   2300	  50960	   c710	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: PMIK_PROJEKT_CLEAN.list
+ 
+15:22:21 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:45: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  177 |   HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg),1000);
+      |                                             ^~~~~~
+../Core/Src/main.c:177:45: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:32:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   31 | #include "distance_sensor.h"
+  +++ |+#include <string.h>
+   32 | /* USER CODE END Includes */
+arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PMIK_PROJEKT_CLEAN.elf
+ 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  48176	    484	   2300	  50960	   c710	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: PMIK_PROJEKT_CLEAN.list
+ 
+15:26:30 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/servo360.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/servo360.d" -MT"Core/Src/servo360.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/servo360.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:45: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  177 |   HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg),1000);
+      |                                             ^~~~~~
+../Core/Src/main.c:177:45: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:32:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   31 | #include "distance_sensor.h"
+  +++ |+#include <string.h>
+   32 | /* USER CODE END Includes */
+arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PMIK_PROJEKT_CLEAN.elf
+ 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  48176	    484	   2300	  50960	   c710	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: PMIK_PROJEKT_CLEAN.list
+ 
+15:28:02 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:45: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  177 |   HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg),1000);
+      |                                             ^~~~~~
+../Core/Src/main.c:177:45: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:32:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   31 | #include "distance_sensor.h"
+  +++ |+#include <string.h>
+   32 | /* USER CODE END Includes */
+../Core/Src/main.c:174:71: warning: 'sprintf' may write a terminating nul past the end of the destination [-Wformat-overflow=]
+  174 |   sprintf((char*)msg,"PID_d %f PID_p %f,  PID_total %f , distance %d\n",PID.PID_d, PID.PID_p, PID.PID_total, data_recdist);
+      |                                                                       ^
+../Core/Src/main.c:174:3: note: 'sprintf' output between 50 and 996 bytes into a destination of size 64
+  174 |   sprintf((char*)msg,"PID_d %f PID_p %f,  PID_total %f , distance %d\n",PID.PID_d, PID.PID_p, PID.PID_total, data_recdist);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PMIK_PROJEKT_CLEAN.elf
+ 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  48200	    484	   2300	  50984	   c728	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: PMIK_PROJEKT_CLEAN.list
+ 
+15:28:56 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:45: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  177 |   HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg),1000);
+      |                                             ^~~~~~
+../Core/Src/main.c:177:45: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:32:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   31 | #include "distance_sensor.h"
+  +++ |+#include <string.h>
+   32 | /* USER CODE END Includes */
+../Core/Src/main.c:174:71: warning: 'sprintf' may write a terminating nul past the end of the destination [-Wformat-overflow=]
+  174 |   sprintf((char*)msg,"PID_d %f PID_p %f,  PID_total %f , distance %d\n",PID.PID_d, PID.PID_p, PID.PID_total, data_recdist);
+      |                                                                       ^
+../Core/Src/main.c:174:3: note: 'sprintf' output between 50 and 996 bytes into a destination of size 64
+  174 |   sprintf((char*)msg,"PID_d %f PID_p %f,  PID_total %f , distance %d\n",PID.PID_d, PID.PID_p, PID.PID_total, data_recdist);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PMIK_PROJEKT_CLEAN.elf
+ 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  48204	    484	   2300	  50988	   c72c	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: PMIK_PROJEKT_CLEAN.list
+ 
+15:29:19 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:45: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  177 |   HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg),1000);
+      |                                             ^~~~~~
+../Core/Src/main.c:177:45: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:32:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   31 | #include "distance_sensor.h"
+  +++ |+#include <string.h>
+   32 | /* USER CODE END Includes */
+../Core/Src/main.c:174:71: warning: 'sprintf' may write a terminating nul past the end of the destination [-Wformat-overflow=]
+  174 |   sprintf((char*)msg,"PID_d %f PID_p %f,  PID_total %f , distance %d\n",PID.PID_d, PID.PID_p, PID.PID_total, data_recdist);
+      |                                                                       ^
+../Core/Src/main.c:174:3: note: 'sprintf' output between 50 and 996 bytes into a destination of size 64
+  174 |   sprintf((char*)msg,"PID_d %f PID_p %f,  PID_total %f , distance %d\n",PID.PID_d, PID.PID_p, PID.PID_total, data_recdist);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PMIK_PROJEKT_CLEAN.elf
+ 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  48204	    484	   2300	  50988	   c72c	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: PMIK_PROJEKT_CLEAN.list
+ 
+15:29:45 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:45: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  177 |   HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg),1000);
+      |                                             ^~~~~~
+../Core/Src/main.c:177:45: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:32:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   31 | #include "distance_sensor.h"
+  +++ |+#include <string.h>
+   32 | /* USER CODE END Includes */
+../Core/Src/main.c:174:71: warning: 'sprintf' may write a terminating nul past the end of the destination [-Wformat-overflow=]
+  174 |   sprintf((char*)msg,"PID_d %f PID_p %f,  PID_total %f , distance %d\n",PID.PID_d, PID.PID_p, PID.PID_total, data_recdist);
+      |                                                                       ^
+../Core/Src/main.c:174:3: note: 'sprintf' output between 50 and 996 bytes into a destination of size 64
+  174 |   sprintf((char*)msg,"PID_d %f PID_p %f,  PID_total %f , distance %d\n",PID.PID_d, PID.PID_p, PID.PID_total, data_recdist);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PMIK_PROJEKT_CLEAN.elf
+ 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  48204	    484	   2300	  50988	   c72c	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: PMIK_PROJEKT_CLEAN.list
+ 
+15:30:25 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/servo360.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/servo360.d" -MT"Core/Src/servo360.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/servo360.o"
+arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PMIK_PROJEKT_CLEAN.elf
+ 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  48204	    484	   2300	  50988	   c72c	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: PMIK_PROJEKT_CLEAN.list
+ 
+15:30:55 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/servo360.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/servo360.d" -MT"Core/Src/servo360.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/servo360.o"
+arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PMIK_PROJEKT_CLEAN.elf
+ 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  48204	    484	   2300	  50988	   c72c	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: PMIK_PROJEKT_CLEAN.list
+ 
+15:31:27 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/servo360.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/servo360.d" -MT"Core/Src/servo360.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/servo360.o"
+arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PMIK_PROJEKT_CLEAN.elf
+ 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  48204	    484	   2300	  50988	   c72c	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: PMIK_PROJEKT_CLEAN.list
+ 
+15:34:23 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/servo360.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/servo360.d" -MT"Core/Src/servo360.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/servo360.o"
+arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PMIK_PROJEKT_CLEAN.elf
+ 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  47884	    484	   2300	  50668	   c5ec	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: PMIK_PROJEKT_CLEAN.list
+ 
+15:35:19 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/servo360.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/servo360.d" -MT"Core/Src/servo360.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/servo360.o"
+arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PMIK_PROJEKT_CLEAN.elf
+ 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  47884	    484	   2300	  50668	   c5ec	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: PMIK_PROJEKT_CLEAN.list
+ 
+15:36:28 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/servo360.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/servo360.d" -MT"Core/Src/servo360.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/servo360.o"
+arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PMIK_PROJEKT_CLEAN.elf
+ 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  47884	    484	   2300	  50668	   c5ec	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: PMIK_PROJEKT_CLEAN.list
+ 
+15:37:49 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/servo360.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/servo360.d" -MT"Core/Src/servo360.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/servo360.o"
+arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PMIK_PROJEKT_CLEAN.elf
+ 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  47884	    484	   2300	  50668	   c5ec	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: PMIK_PROJEKT_CLEAN.list
+ 
+15:38:58 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/servo360.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/servo360.d" -MT"Core/Src/servo360.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/servo360.o"
+arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PMIK_PROJEKT_CLEAN.elf
+ 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  48204	    484	   2300	  50988	   c72c	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: PMIK_PROJEKT_CLEAN.list
+ 
+15:40:01 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/servo360.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/servo360.d" -MT"Core/Src/servo360.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/servo360.o"
+arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PMIK_PROJEKT_CLEAN.elf
+ 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  48204	    484	   2300	  50988	   c72c	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: PMIK_PROJEKT_CLEAN.list
+ 
+15:41:28 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/servo360.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/servo360.d" -MT"Core/Src/servo360.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/servo360.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:45: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  177 |   HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg),1000);
+      |                                             ^~~~~~
+../Core/Src/main.c:177:45: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:32:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   31 | #include "distance_sensor.h"
+  +++ |+#include <string.h>
+   32 | /* USER CODE END Includes */
+../Core/Src/main.c:174:71: warning: 'sprintf' may write a terminating nul past the end of the destination [-Wformat-overflow=]
+  174 |   sprintf((char*)msg,"PID_d %f PID_p %f,  PID_total %f , distance %d\n",PID.PID_d, PID.PID_p, PID.PID_total, data_recdist);
+      |                                                                       ^
+../Core/Src/main.c:174:3: note: 'sprintf' output between 50 and 996 bytes into a destination of size 64
+  174 |   sprintf((char*)msg,"PID_d %f PID_p %f,  PID_total %f , distance %d\n",PID.PID_d, PID.PID_p, PID.PID_total, data_recdist);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PMIK_PROJEKT_CLEAN.elf
+ 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  48200	    484	   2300	  50984	   c728	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: PMIK_PROJEKT_CLEAN.list
+ 
+15:45:14 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/servo360.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/servo360.d" -MT"Core/Src/servo360.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/servo360.o"
+In file included from ../Core/Src/servo360.c:2:
+../Core/Inc/servo360.h:12: warning: "PWM_STOP" redefined
+   12 | #define PWM_STOP 2230
+      | 
+../Core/Inc/servo360.h:11: note: this is the location of the previous definition
+   11 | #define PWM_STOP 1510
+      | 
+In file included from ../Core/Src/main.c:29:
+../Core/Inc/servo360.h:12: warning: "PWM_STOP" redefined
+   12 | #define PWM_STOP 2230
+      | 
+../Core/Inc/servo360.h:11: note: this is the location of the previous definition
+   11 | #define PWM_STOP 1510
+      | 
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:45: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  177 |   HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg),1000);
+      |                                             ^~~~~~
+../Core/Src/main.c:177:45: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:32:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   31 | #include "distance_sensor.h"
+  +++ |+#include <string.h>
+   32 | /* USER CODE END Includes */
+../Core/Src/main.c:174:71: warning: 'sprintf' may write a terminating nul past the end of the destination [-Wformat-overflow=]
+  174 |   sprintf((char*)msg,"PID_d %f PID_p %f,  PID_total %f , distance %d\n",PID.PID_d, PID.PID_p, PID.PID_total, data_recdist);
+      |                                                                       ^
+../Core/Src/main.c:174:3: note: 'sprintf' output between 50 and 996 bytes into a destination of size 64
+  174 |   sprintf((char*)msg,"PID_d %f PID_p %f,  PID_total %f , distance %d\n",PID.PID_d, PID.PID_p, PID.PID_total, data_recdist);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PMIK_PROJEKT_CLEAN.elf
+ 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  48196	    484	   2300	  50980	   c724	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: PMIK_PROJEKT_CLEAN.list
+ 
+15:45:33 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/servo360.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/servo360.d" -MT"Core/Src/servo360.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/servo360.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:45: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  177 |   HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg),1000);
+      |                                             ^~~~~~
+../Core/Src/main.c:177:45: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:32:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   31 | #include "distance_sensor.h"
+  +++ |+#include <string.h>
+   32 | /* USER CODE END Includes */
+../Core/Src/main.c:174:71: warning: 'sprintf' may write a terminating nul past the end of the destination [-Wformat-overflow=]
+  174 |   sprintf((char*)msg,"PID_d %f PID_p %f,  PID_total %f , distance %d\n",PID.PID_d, PID.PID_p, PID.PID_total, data_recdist);
+      |                                                                       ^
+../Core/Src/main.c:174:3: note: 'sprintf' output between 50 and 996 bytes into a destination of size 64
+  174 |   sprintf((char*)msg,"PID_d %f PID_p %f,  PID_total %f , distance %d\n",PID.PID_d, PID.PID_p, PID.PID_total, data_recdist);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PMIK_PROJEKT_CLEAN.elf
+ 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  48196	    484	   2300	  50980	   c724	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: PMIK_PROJEKT_CLEAN.list
+ 
+15:46:13 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48196	    484	   2300	  50980	   c724	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+15:48:18 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48196	    484	   2300	  50980	   c724	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+15:51:41 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48196	    484	   2300	  50980	   c724	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+15:52:25 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48196	    484	   2300	  50980	   c724	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+15:52:32 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48196	    484	   2300	  50980	   c724	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+15:52:45 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48196	    484	   2300	  50980	   c724	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+15:54:28 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48196	    484	   2300	  50980	   c724	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+15:56:36 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48196	    484	   2300	  50980	   c724	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+15:57:54 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48196	    484	   2300	  50980	   c724	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+15:58:36 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48196	    484	   2300	  50980	   c724	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+15:59:20 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48196	    484	   2300	  50980	   c724	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+16:00:43 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48196	    484	   2300	  50980	   c724	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+16:01:34 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48196	    484	   2300	  50980	   c724	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+16:03:47 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48196	    484	   2300	  50980	   c724	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+16:04:06 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48196	    484	   2300	  50980	   c724	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+16:04:23 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48196	    484	   2300	  50980	   c724	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+16:05:46 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48196	    484	   2300	  50980	   c724	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+16:09:11 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:45: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  177 |   HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg),1000);
+      |                                             ^~~~~~
+../Core/Src/main.c:177:45: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:32:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   31 | #include "distance_sensor.h"
+  +++ |+#include <string.h>
+   32 | /* USER CODE END Includes */
+../Core/Src/main.c:174:71: warning: 'sprintf' may write a terminating nul past the end of the destination [-Wformat-overflow=]
+  174 |   sprintf((char*)msg,"PID_d %f PID_p %f,  PID_total %f , distance %d\n",PID.PID_d, PID.PID_p, PID.PID_total, data_recdist);
+      |                                                                       ^
+../Core/Src/main.c:174:3: note: 'sprintf' output between 50 and 996 bytes into a destination of size 64
+  174 |   sprintf((char*)msg,"PID_d %f PID_p %f,  PID_total %f , distance %d\n",PID.PID_d, PID.PID_p, PID.PID_total, data_recdist);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PMIK_PROJEKT_CLEAN.elf
+ 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  48200	    484	   2300	  50984	   c728	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: PMIK_PROJEKT_CLEAN.list
+ 
+16:09:35 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:45: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  177 |   HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg),1000);
+      |                                             ^~~~~~
+../Core/Src/main.c:177:45: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:32:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   31 | #include "distance_sensor.h"
+  +++ |+#include <string.h>
+   32 | /* USER CODE END Includes */
+../Core/Src/main.c:174:65: warning: '%f' directive writing between 3 and 317 bytes into a region of size between 0 and 19 [-Wformat-overflow=]
+  174 |   sprintf((char*)msg,"PID_d %f PID_p %f,  PID_total %f , PID.Ki %f\n",PID.PID_d, PID.PID_p, PID.PID_total, PID.Ki);
+      |                                                                 ^~
+../Core/Src/main.c:174:22: note: assuming directive output of 8 bytes
+  174 |   sprintf((char*)msg,"PID_d %f PID_p %f,  PID_total %f , PID.Ki %f\n",PID.PID_d, PID.PID_p, PID.PID_total, PID.Ki);
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:174:3: note: 'sprintf' output between 50 and 1306 bytes into a destination of size 64
+  174 |   sprintf((char*)msg,"PID_d %f PID_p %f,  PID_total %f , PID.Ki %f\n",PID.PID_d, PID.PID_p, PID.PID_total, PID.Ki);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PMIK_PROJEKT_CLEAN.elf
+ 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  48216	    484	   2300	  51000	   c738	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: PMIK_PROJEKT_CLEAN.list
+ 
+16:10:16 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:45: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  177 |   HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg),1000);
+      |                                             ^~~~~~
+../Core/Src/main.c:177:45: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:32:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   31 | #include "distance_sensor.h"
+  +++ |+#include <string.h>
+   32 | /* USER CODE END Includes */
+../Core/Src/main.c:174:65: warning: '%f' directive writing between 3 and 317 bytes into a region of size between 0 and 19 [-Wformat-overflow=]
+  174 |   sprintf((char*)msg,"PID_d %f PID_p %f,  PID_total %f , PID.Ki %f\n",PID.PID_d, PID.PID_p, PID.PID_total, PID.PID_i);
+      |                                                                 ^~
+../Core/Src/main.c:174:22: note: assuming directive output of 8 bytes
+  174 |   sprintf((char*)msg,"PID_d %f PID_p %f,  PID_total %f , PID.Ki %f\n",PID.PID_d, PID.PID_p, PID.PID_total, PID.PID_i);
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:174:3: note: 'sprintf' output between 50 and 1306 bytes into a destination of size 64
+  174 |   sprintf((char*)msg,"PID_d %f PID_p %f,  PID_total %f , PID.Ki %f\n",PID.PID_d, PID.PID_p, PID.PID_total, PID.PID_i);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PMIK_PROJEKT_CLEAN.elf
+ 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  48216	    484	   2300	  51000	   c738	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: PMIK_PROJEKT_CLEAN.list
+ 
+16:10:58 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:45: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  177 |   HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg),1000);
+      |                                             ^~~~~~
+../Core/Src/main.c:177:45: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:32:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   31 | #include "distance_sensor.h"
+  +++ |+#include <string.h>
+   32 | /* USER CODE END Includes */
+../Core/Src/main.c:174:65: warning: '%f' directive writing between 3 and 317 bytes into a region of size between 0 and 19 [-Wformat-overflow=]
+  174 |   sprintf((char*)msg,"PID_d %f PID_p %f,  PID_total %f , PID.Ki %f , Dist %d\n",PID.PID_d, PID.PID_p, PID.PID_total, PID.PID_i, data_recdist);
+      |                                                                 ^~
+../Core/Src/main.c:174:22: note: assuming directive output of 8 bytes
+  174 |   sprintf((char*)msg,"PID_d %f PID_p %f,  PID_total %f , PID.Ki %f , Dist %d\n",PID.PID_d, PID.PID_p, PID.PID_total, PID.PID_i, data_recdist);
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:174:3: note: 'sprintf' output between 59 and 1319 bytes into a destination of size 64
+  174 |   sprintf((char*)msg,"PID_d %f PID_p %f,  PID_total %f , PID.Ki %f , Dist %d\n",PID.PID_d, PID.PID_p, PID.PID_total, PID.PID_i, data_recdist);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PMIK_PROJEKT_CLEAN.elf
+ 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  48232	    484	   2300	  51016	   c748	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: PMIK_PROJEKT_CLEAN.list
+ 
+16:12:18 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48232	    484	   2300	  51016	   c748	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+16:19:12 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-gcc -mcpu=cortex-m0plus -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32l073rztx.d" -MT"Core/Startup/startup_stm32l073rztx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Startup/startup_stm32l073rztx.o" "../Core/Startup/startup_stm32l073rztx.s"
+arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PMIK_PROJEKT_CLEAN.elf
+ 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  48232	    484	   2300	  51016	   c748	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: PMIK_PROJEKT_CLEAN.list
+ 
+16:21:56 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:45: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  177 |   HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg),1000);
+      |                                             ^~~~~~
+../Core/Src/main.c:177:45: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:32:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   31 | #include "distance_sensor.h"
+  +++ |+#include <string.h>
+   32 | /* USER CODE END Includes */
+../Core/Src/main.c:174:65: warning: '%f' directive writing between 3 and 317 bytes into a region of size between 0 and 19 [-Wformat-overflow=]
+  174 |   sprintf((char*)msg,"PID_d %f PID_p %f,  PID_total %f , PID.Ki %f , Dist %d\n",PID.PID_d, PID.PID_p, PID.PID_total, PID.PID_i, data_recdist);
+      |                                                                 ^~
+../Core/Src/main.c:174:22: note: assuming directive output of 8 bytes
+  174 |   sprintf((char*)msg,"PID_d %f PID_p %f,  PID_total %f , PID.Ki %f , Dist %d\n",PID.PID_d, PID.PID_p, PID.PID_total, PID.PID_i, data_recdist);
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:174:3: note: 'sprintf' output between 59 and 1319 bytes into a destination of size 64
+  174 |   sprintf((char*)msg,"PID_d %f PID_p %f,  PID_total %f , PID.Ki %f , Dist %d\n",PID.PID_d, PID.PID_p, PID.PID_total, PID.PID_i, data_recdist);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PMIK_PROJEKT_CLEAN.elf
+ 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  48228	    484	   2300	  51012	   c744	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: PMIK_PROJEKT_CLEAN.list
+ 
+16:23:22 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:45: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  177 |   HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg),1000);
+      |                                             ^~~~~~
+../Core/Src/main.c:177:45: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:32:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   31 | #include "distance_sensor.h"
+  +++ |+#include <string.h>
+   32 | /* USER CODE END Includes */
+../Core/Src/main.c:174:65: warning: '%f' directive writing between 3 and 317 bytes into a region of size between 0 and 19 [-Wformat-overflow=]
+  174 |   sprintf((char*)msg,"PID_d %f PID_p %f,  PID_total %f , PID.Ki %f , Dist %d\n",PID.PID_d, PID.PID_p, PID.PID_total, PID.PID_i, data_recdist);
+      |                                                                 ^~
+../Core/Src/main.c:174:22: note: assuming directive output of 8 bytes
+  174 |   sprintf((char*)msg,"PID_d %f PID_p %f,  PID_total %f , PID.Ki %f , Dist %d\n",PID.PID_d, PID.PID_p, PID.PID_total, PID.PID_i, data_recdist);
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:174:3: note: 'sprintf' output between 59 and 1319 bytes into a destination of size 64
+  174 |   sprintf((char*)msg,"PID_d %f PID_p %f,  PID_total %f , PID.Ki %f , Dist %d\n",PID.PID_d, PID.PID_p, PID.PID_total, PID.PID_i, data_recdist);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PMIK_PROJEKT_CLEAN.elf
+ 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  48232	    484	   2300	  51016	   c748	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: PMIK_PROJEKT_CLEAN.list
+ 
+16:24:40 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48232	    484	   2300	  51016	   c748	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+16:26:15 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/servo360.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/servo360.d" -MT"Core/Src/servo360.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/servo360.o"
+arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PMIK_PROJEKT_CLEAN.elf
+ 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  48248	    484	   2300	  51032	   c758	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: PMIK_PROJEKT_CLEAN.list
+ 
+16:30:23 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/servo360.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/servo360.d" -MT"Core/Src/servo360.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/servo360.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:45: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  177 |   HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg),1000);
+      |                                             ^~~~~~
+../Core/Src/main.c:177:45: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:32:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   31 | #include "distance_sensor.h"
+  +++ |+#include <string.h>
+   32 | /* USER CODE END Includes */
+../Core/Src/main.c:174:65: warning: '%f' directive writing between 3 and 317 bytes into a region of size between 0 and 19 [-Wformat-overflow=]
+  174 |   sprintf((char*)msg,"PID_d %f PID_p %f,  PID_total %f , PID.Ki %f , Dist %d\n",PID.PID_d, PID.PID_p, PID.PID_total, PID.PID_i, data_recdist);
+      |                                                                 ^~
+../Core/Src/main.c:174:22: note: assuming directive output of 8 bytes
+  174 |   sprintf((char*)msg,"PID_d %f PID_p %f,  PID_total %f , PID.Ki %f , Dist %d\n",PID.PID_d, PID.PID_p, PID.PID_total, PID.PID_i, data_recdist);
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:174:3: note: 'sprintf' output between 59 and 1319 bytes into a destination of size 64
+  174 |   sprintf((char*)msg,"PID_d %f PID_p %f,  PID_total %f , PID.Ki %f , Dist %d\n",PID.PID_d, PID.PID_p, PID.PID_total, PID.PID_i, data_recdist);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PMIK_PROJEKT_CLEAN.elf
+ 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  48232	    484	   2300	  51016	   c748	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: PMIK_PROJEKT_CLEAN.list
+ 
+16:31:34 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48232	    484	   2300	  51016	   c748	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+16:32:52 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:45: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  177 |   HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg),1000);
+      |                                             ^~~~~~
+../Core/Src/main.c:177:45: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:32:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   31 | #include "distance_sensor.h"
+  +++ |+#include <string.h>
+   32 | /* USER CODE END Includes */
+../Core/Src/main.c:174:65: warning: '%f' directive writing between 3 and 317 bytes into a region of size between 0 and 19 [-Wformat-overflow=]
+  174 |   sprintf((char*)msg,"PID_d %f PID_p %f,  PID_total %f , PID.Ki %f , Dist %d\n",PID.PID_d, PID.PID_p, PID.PID_total, PID.PID_i, data_recdist);
+      |                                                                 ^~
+../Core/Src/main.c:174:22: note: assuming directive output of 8 bytes
+  174 |   sprintf((char*)msg,"PID_d %f PID_p %f,  PID_total %f , PID.Ki %f , Dist %d\n",PID.PID_d, PID.PID_p, PID.PID_total, PID.PID_i, data_recdist);
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:174:3: note: 'sprintf' output between 59 and 1319 bytes into a destination of size 64
+  174 |   sprintf((char*)msg,"PID_d %f PID_p %f,  PID_total %f , PID.Ki %f , Dist %d\n",PID.PID_d, PID.PID_p, PID.PID_total, PID.PID_i, data_recdist);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PMIK_PROJEKT_CLEAN.elf
+ 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  48232	    484	   2300	  51016	   c748	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: PMIK_PROJEKT_CLEAN.list
+ 
+16:34:02 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:45: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  177 |   HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg),1000);
+      |                                             ^~~~~~
+../Core/Src/main.c:177:45: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:32:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   31 | #include "distance_sensor.h"
+  +++ |+#include <string.h>
+   32 | /* USER CODE END Includes */
+../Core/Src/main.c:174:65: warning: '%f' directive writing between 3 and 317 bytes into a region of size between 0 and 19 [-Wformat-overflow=]
+  174 |   sprintf((char*)msg,"PID_d %f PID_p %f,  PID_total %f , PID.Ki %f , Dist %d\n",PID.PID_d, PID.PID_p, PID.PID_total, PID.PID_i, data_recdist);
+      |                                                                 ^~
+../Core/Src/main.c:174:22: note: assuming directive output of 8 bytes
+  174 |   sprintf((char*)msg,"PID_d %f PID_p %f,  PID_total %f , PID.Ki %f , Dist %d\n",PID.PID_d, PID.PID_p, PID.PID_total, PID.PID_i, data_recdist);
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:174:3: note: 'sprintf' output between 59 and 1319 bytes into a destination of size 64
+  174 |   sprintf((char*)msg,"PID_d %f PID_p %f,  PID_total %f , PID.Ki %f , Dist %d\n",PID.PID_d, PID.PID_p, PID.PID_total, PID.PID_i, data_recdist);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PMIK_PROJEKT_CLEAN.elf
+ 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  48232	    484	   2300	  51016	   c748	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: PMIK_PROJEKT_CLEAN.list
+ 
+16:35:54 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:45: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  177 |   HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg),1000);
+      |                                             ^~~~~~
+../Core/Src/main.c:177:45: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:32:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   31 | #include "distance_sensor.h"
+  +++ |+#include <string.h>
+   32 | /* USER CODE END Includes */
+../Core/Src/main.c:174:65: warning: '%f' directive writing between 3 and 317 bytes into a region of size between 0 and 19 [-Wformat-overflow=]
+  174 |   sprintf((char*)msg,"PID_d %f PID_p %f,  PID_total %f , PID.Ki %f , Dist %d\n",PID.PID_d, PID.PID_p, PID.PID_total, PID.PID_i, data_recdist);
+      |                                                                 ^~
+../Core/Src/main.c:174:22: note: assuming directive output of 8 bytes
+  174 |   sprintf((char*)msg,"PID_d %f PID_p %f,  PID_total %f , PID.Ki %f , Dist %d\n",PID.PID_d, PID.PID_p, PID.PID_total, PID.PID_i, data_recdist);
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:174:3: note: 'sprintf' output between 59 and 1319 bytes into a destination of size 64
+  174 |   sprintf((char*)msg,"PID_d %f PID_p %f,  PID_total %f , PID.Ki %f , Dist %d\n",PID.PID_d, PID.PID_p, PID.PID_total, PID.PID_i, data_recdist);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PMIK_PROJEKT_CLEAN.elf
+ 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  48232	    484	   2300	  51016	   c748	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: PMIK_PROJEKT_CLEAN.list
+ 
+16:38:16 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:45: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  177 |   HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg),1000);
+      |                                             ^~~~~~
+../Core/Src/main.c:177:45: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:32:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   31 | #include "distance_sensor.h"
+  +++ |+#include <string.h>
+   32 | /* USER CODE END Includes */
+../Core/Src/main.c:174:65: warning: '%f' directive writing between 3 and 317 bytes into a region of size between 0 and 19 [-Wformat-overflow=]
+  174 |   sprintf((char*)msg,"PID_d %f PID_p %f,  PID_total %f , PID.Ki %f , Dist %d\n",PID.PID_d, PID.PID_p, PID.PID_total, PID.PID_i, data_recdist);
+      |                                                                 ^~
+../Core/Src/main.c:174:22: note: assuming directive output of 8 bytes
+  174 |   sprintf((char*)msg,"PID_d %f PID_p %f,  PID_total %f , PID.Ki %f , Dist %d\n",PID.PID_d, PID.PID_p, PID.PID_total, PID.PID_i, data_recdist);
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:174:3: note: 'sprintf' output between 59 and 1319 bytes into a destination of size 64
+  174 |   sprintf((char*)msg,"PID_d %f PID_p %f,  PID_total %f , PID.Ki %f , Dist %d\n",PID.PID_d, PID.PID_p, PID.PID_total, PID.PID_i, data_recdist);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PMIK_PROJEKT_CLEAN.elf
+ 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  48232	    484	   2300	  51016	   c748	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: PMIK_PROJEKT_CLEAN.list
  

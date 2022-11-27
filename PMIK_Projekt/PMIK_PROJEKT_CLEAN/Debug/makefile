@@ -61,7 +61,7 @@ main-build: PMIK_PROJEKT_CLEAN.elf secondary-outputs
 
 # Tool invocations
 PMIK_PROJEKT_CLEAN.elf PMIK_PROJEKT_CLEAN.map: $(OBJS) $(USER_OBJS) C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+	arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
