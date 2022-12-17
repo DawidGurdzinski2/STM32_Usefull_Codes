@@ -251,7 +251,7 @@ VL53L1_Error VL53L1_RdWord(uint16_t Dev, uint16_t index, uint16_t *data) {
 done:
     VL53L1_PutI2cBus();
     return Status;
-}
+ }
 
 VL53L1_Error VL53L1_RdDWord(uint16_t Dev, uint16_t index, uint32_t *data) {
     VL53L1_Error Status = VL53L1_ERROR_NONE;
