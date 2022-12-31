@@ -1,0 +1,3 @@
+../Core/Src/artificial_horizon.c:13:6:setPitchAngle	16	static
+../Core/Src/artificial_horizon.c:31:6:setBankLine	16	static
+../Core/Src/artificial_horizon.c:64:6:setPitchPoint	16	static

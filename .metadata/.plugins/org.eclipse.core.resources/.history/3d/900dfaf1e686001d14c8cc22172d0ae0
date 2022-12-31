@@ -1,0 +1,12 @@
+#include "MPU6050.h"
+
+int16_t Accel_X_RAW = 0;
+int16_t Accel_Y_RAW = 0;
+int16_t Accel_Z_RAW = 0;
+
+int16_t Gyro_X_RAW = 0;
+int16_t Gyro_Y_RAW = 0;
+int16_t Gyro_Z_RAW = 0;
+
+extern float Ax, Ay, Az, Gx, Gy, Gz;
+

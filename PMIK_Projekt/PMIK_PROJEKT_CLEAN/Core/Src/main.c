@@ -77,7 +77,7 @@ float  data_PID_total  ;
 PIDStruct PID;
 float  dist_avg_new= 175, dist_avg_old=175 ;
 float 	dist_sample;
-float n = 2.0;
+float n = 1.0;
 uint16_t servo_angle = ANGLE_MID;
 //uartzm
 char msg[64];
@@ -130,17 +130,17 @@ int main(void)
   MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
   HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
-  set_ang(940);
+  set_ang(1490);
 
-  bma_init();
+  //bma_init();
   IR_Init();
 
   //PID VARIABLES INIT
-  PID.Kd =0.0;
+  PID.Kd =1000.0; // 800
   PID.Ki = 0.0;
-  PID.Kp = 2; // 0.5 ustawione bylo
+  PID.Kp = 2; // 1.5 ustawione bylo
   PID.time_old = HAL_GetTick();
-  PID.set_point = 185;
+  PID.set_point = 170;
   //PID VARIABLES INIT
   //HAL_TIM_Base_Start_IT(&htim2);
 
@@ -153,7 +153,7 @@ int main(void)
 
 
 	 data_recdist = IR_Get_Distance();
-	 data_recangle = 5.625*bma_read(bma_x,1);
+	// data_recangle = 5.625*bma_read(bma_x,1);
 
 	// dist_sample = (float) IR_Get_Distance();
 
@@ -167,16 +167,21 @@ int main(void)
 
 	 //
 	 // uart test
-	 uint16_t temp;
-	 temp = CalculateAngle(PID.PID_total);
-	 sprintf((char*)msg," angle %d  PID_total %f  , Dist %d\n",temp,  PID.PID_total, data_recdist);
+	// uint16_t temp;
+	 //temp = CalculateAngle(PID.PID_total);
+	 sprintf((char*)msg," PID_total %f  , Dist %d, Dist avg %f\n ",  PID.PID_total,  data_recdist, dist_avg_new);
 
 
 	 HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg),1000);
 
 	 //uarttest
 	 set_ang(CalculateAngle(PID.PID_total));
-
+//	 set_ang(1180); // prawo
+//	 HAL_Delay(1000);
+	// set_ang(1800); // lewo
+//	 HAL_Delay(1000);
+//	 set_ang(1490); // srodek
+//	 HAL_Delay(1000);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -250,7 +255,7 @@ void PIDRegulator( uint16_t distance,  PIDStruct *PID)
 
 	PID->PID_d = PID->Kd*(((float)PID->distance_error - (float)PID->distance_previous_error)/(float)PID->period);
 
-	if(-3 < PID->distance_error && PID->distance_error < 3)
+	if(-5 < PID->distance_error && PID->distance_error < 5)
 	    {
 			PID->PID_i = PID->PID_i + (PID->Ki * PID->distance_error);
 	    }
@@ -268,14 +273,17 @@ uint16_t CalculateAngle(float PID_value)
 
 
 	if(PID_value < 0 && PID_value >-320){
-		servo_angle = ANGLE_MID + 1.875*(-PID_value);
+		servo_angle = ANGLE_MID + PID_value;
 	}
 	else if(PID_value > 0 && PID_value < 320){
-		servo_angle =  ANGLE_MID - 1.875*PID_value;
+		servo_angle =  ANGLE_MID + PID_value;
 	}
-	else {
-
+	else if (PID_value > 320 ) {
+		servo_angle =  ANGLE_MID + 320;
 	}
+	else if (PID_value < -320 ) {
+			servo_angle =  ANGLE_MID - 320;
+		}
 
 	return servo_angle;
 }

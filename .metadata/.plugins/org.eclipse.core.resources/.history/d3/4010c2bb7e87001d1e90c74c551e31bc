@@ -1,0 +1,9 @@
+#ifndef INC_ARTIFICIAL_HORIZON_H_
+#define INC_ARTIFICIAL_HORIZON_H_
+
+
+void drawHorizon(float zg, float yg, float xg);
+
+
+
+#endif /* INC_ARTIFICIAL_HORIZON_H_ */

@@ -1,0 +1,34 @@
+#include "artificial_horizon.h"
+#include "st7735.h"
+#include <math.h>
+extern float pitch_point; // od 1 do 160 na srodku ekranu punkt horyzontu w osi X
+extern float width_point;
+extern float height_point;
+extern float alfa;
+void setPitchCenterPoint(float xg){
+
+}
+void setBankLine(float zg, float yg, uint8_t pitch_point){
+
+
+	if(zg > 0 && yg > 0){ // 1 cwiartka plaszczyzny gziemskiego i y samolot (obrot od 0 do 90 w prawo) alfa od 0 do pi/2
+		alfa = acos(yg);
+		height_point = sin(alfa)*Image_radius;
+		width_point = cos(alfa)*Image_radius;
+	}
+	else if(zg > 0 && yg < 0){ // cwiartka 2 (obrot od 0 do -90 w prawo) alfa od pi/2 do pi
+		alfa = acos(yg);
+		height_point = sin(alfa)*Image_radius;
+		width_point = cos(alfa)*Image_radius;
+	}
+	else if(zg < 0 && yg < 0){ // cwiartka 3 (obrot od -90 do -180 w prawo) alfa od pi do 3/4 pi
+		alfa = 2*M_PI - acos(yg); // te same co w 2 cwiartce ale alfa wieksza o 90 stopni
+		height_point = sin(alfa)*Image_radius;
+		width_point = cos(alfa)*Image_radius;
+	}
+	else if(zg < 0 && yg > 0){ // cwiartka 4 (obrot od -180 do -270 w prawo) alfa od 3/4 pi do 2 pi
+		alfa = 2*M_PI - acos(yg); //te same wartosci co w 1 cwiartce ale alfa wieksza o 270 stopni
+		height_point = sin(alfa)*Image_radius;
+		width_point = cos(alfa)*Image_radius;
+	}
+}

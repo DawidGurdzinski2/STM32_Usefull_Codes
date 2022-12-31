@@ -1,0 +1,15 @@
+#include "artificial_horizon.h"
+
+
+
+
+
+void drawHorizon(float zg, float yg, float xg){
+
+	if(zg < 0){
+
+	}
+	else if (zg >0){
+
+	}
+}
