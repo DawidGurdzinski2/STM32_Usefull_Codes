@@ -34,6 +34,7 @@
 #include "MPU6050.h"
 #include "artificial_horizon.h"
 #include <math.h>
+#include<stdlib.h>
 #include "MY_Keypad4x4.h"
 /* USER CODE END Includes */
 
@@ -58,9 +59,31 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
+char tab [4];
+
+//magnetometer variables
 QMC_t pusula_sensor;
 float Compas_Value;
-char tab [100];
+float 				CalibratedXaxis;
+float 				CalibratedYaxis;
+float 				CalibratedZaxis;
+float biasaxisX = (XMAX+XMIN)/2;
+float biasaxisY = (YMAX+YMIN)/2;
+float biasaxisZ = (ZMAX+ZMIN)/2;
+
+//float deltaaxisX = (XMAX-XMIN)/2;
+//float deltaaxisY = (YMAX-YMIN)/2;
+//float deltaaxisZ = (ZMAX-ZMIN)/2;
+//
+//float deltaavg = ((XMAX-XMIN) + (YMAX-YMIN) + (ZMAX-ZMIN))*0.66;
+
+float scaleaxisX = ((((XMAX-XMIN) + (YMAX-YMIN) + (ZMAX-ZMIN))/6)/((XMAX-XMIN)/2));
+float scaleaxisY = (((XMAX-XMIN) + (YMAX-YMIN) + (ZMAX-ZMIN))/6)/((YMAX-YMIN)/2);
+float scaleaxisZ = (((XMAX-XMIN) + (YMAX-YMIN) + (ZMAX-ZMIN))/6)/((ZMAX-ZMIN)/2);
+float Compas;
+float Calibrated_heading;
+int Direction;
+//acc/gyro variables
 float Ax, Ay, Az, Gx, Gy, Gz;
 float pitch_point; // od 1 do 160 na srodku ekranu punkt horyzontu w osi X
 float width_point;
@@ -69,33 +92,54 @@ float triangle_point_w;
 float triangle_point_h;
 float alfay;
 float alfax;
+
+//keyboard variables
+
 volatile uint8_t row = 0;
 volatile uint8_t column = 0;
 bool mySwitches[16];
+uint16_t counter_button;
+volatile uint8_t magnetometer_value_index;
+volatile uint16_t magnetometer_value;
+volatile bool heading_set = false;
+uint8_t LastButton = 20;
 char Keypad_keys[16] =
 {
-	'1',
-	'2',
-	'3',
-	'A',
-	'4',
-	'5',
-	'6',
-	'B',
-	'7',
-	'8',
-	'9',
-	'C',
-	'*',
-	'0',
-	'#',
-	'D'
+    '1',
+    '2',
+    '3',
+    'B',
+    '4',
+    '5',
+    '6',
+    'R',
+    '7',
+    '8',
+    '9',
+    'C',
+    '*',
+    '0',
+    '#',
+    'E'
 };
+int calibrationData[3][2] = { { 32767, -32768 },
+                              { 32767, -32768 },
+                              { 32767, -32768 }  }; // Initialization added!
+bool changed = false;
+bool done = false;
+unsigned long t = 0; // Changed from int to unsigned long!
+unsigned long c = 0; // Changed from int to unsigned long!
+
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
+void setDirectionArrow(float heading);
+void drawDirectionArrow(int Direction);
+void drawArrowLeft();
+void drawArrowRight();
 
 /* USER CODE END PFP */
 
@@ -146,37 +190,177 @@ int main(void)
   ST7735_FillRectangleFast(0, 80, 128, 80, ST7735_BROWN);
   HAL_Delay(1000);
   HAL_TIM_Base_Start_IT(&htim3);
+
+//KALIBRACJA MAGNETOMETRU
+//  while(!done){
+// 	  c = HAL_GetTick();
+// 	  int x, y, z;
+// 	  if(HAL_GPIO_ReadPin(Mag_Data_Ready_GPIO_Port, Mag_Data_Ready_Pin) == GPIO_PIN_SET){
+// 	  		  if(QMC_read(&pusula_sensor)==0 )
+// 	  			{
+// 	  				HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_SET);
+//
+// 	  				 x = pusula_sensor.Xaxis;
+// 	  				 y = pusula_sensor.Yaxis;
+// 	  				 z = pusula_sensor.Zaxis;
+// 	  				 changed = false;
+// 	  				if(x < calibrationData[0][0]) {
+// 	  				    calibrationData[0][0] = x;
+// 	  				    changed = true;
+// 	  				  }
+// 	  				  if(x > calibrationData[0][1]) {
+// 	  				    calibrationData[0][1] = x;
+// 	  				    changed = true;
+// 	  				  }
+//
+// 	  				  if(y < calibrationData[1][0]) {
+// 	  				    calibrationData[1][0] = y;
+// 	  				    changed = true;
+// 	  				  }
+// 	  				  if(y > calibrationData[1][1]) {
+// 	  				    calibrationData[1][1] = y;
+// 	  				    changed = true;
+// 	  				  }
+//
+// 	  				  if(z < calibrationData[2][0]) {
+// 	  				    calibrationData[2][0] = z;
+// 	  				    changed = true;
+// 	  				  }
+// 	  				  if(z > calibrationData[2][1]) {
+// 	  				    calibrationData[2][1] = z;
+// 	  				    changed = true;
+// 	  				  }
+// 	  				 if (changed && !done) {
+// 	  				    c = HAL_GetTick();
+// 	  				  }
+// 	  				    t = HAL_GetTick();
+// 	  				  if ( (t - c > 10000) && !done) {
+// 	  				      done = true;
+// 	  				//sprintf(tab ,"kat %f\n X %d\n Y %d\n Z %d\n"  , pusula_sensor.heading,pusula_sensor.Xaxis,pusula_sensor.Yaxis,pusula_sensor.Zaxis);
+// 	  			}
+// 	  			else
+// 	  			{
+// 	  				HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_RESET);
+// 	  			}
+// 	  	  }
+//   }
+//  }
+//KONIEC KALIBRACJI MAGNETOMETRU
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+
 	  ST7735_DrawLine((60+width_point),80-height_point,60-width_point,80+height_point, ST7735_BLACK); //narysowac samolocik w stosunku do wyznaczonych punktow na okregu
 		  ST7735_DrawLine((60+width_point),80-height_point,60-width_point,80+height_point, ST7735_BLACK); //narysowac samolocik w stosunku do wyznaczonych punktow na okregu
 		  ST7735_DrawLine(60-triangle_point_w, 80+triangle_point_h, w/5,h/5, ST7735_BLACK);
 		  ST7735_DrawLine(60-triangle_point_w, 80+triangle_point_h, minus_w/5,minus_h/5, ST7735_BLACK);
 //	  HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
 //	  HAL_Delay(1000);
-	  for(uint8_t i=0; i<16;i++){
+		  for(uint8_t i=0; i<16;i++){
 
-	  			if(mySwitches[i]){
+		  	  		if(mySwitches[i]){
+		  	  			if(Keypad_keys[i] == 82){
+		  	  				heading_set = false;
+		  	  				mySwitches[i]=false;
+		  	  				continue;
+		  	  			}
+		  	  			if(!heading_set){
+		  	  			if(LastButton == i){
+		  	  				  if(counter_button > 7){
+		  	  				  		LastButton = i;
+		  	  				  		counter_button = 0;
+		  	  				  		if ( Keypad_keys[i] == 66){
+		  	  				  			if(magnetometer_value_index!= 0){
+		  	  				  		  		tab[magnetometer_value_index-1] =0;
+		  	  				  			  	mySwitches[i]=false;
+		  	  				  			  	magnetometer_value_index--;
+		  	  				  			  	ST7735_FillRectangleFast(0, 0, 128, 30, ST7735_BLUE);
 
-					sprintf(tab ,"przycisk %c\n"  , Keypad_keys[i]);
+		  	  				  			}
+		  	  				  		}
+		  	  				  		else{
+		  	  				  			tab[magnetometer_value_index] = Keypad_keys[i];
+		  	  				  			magnetometer_value_index++;
+		  	  				  		//ST7735_WriteString(0, 0, tab, Font_11x18, ST7735_WHITE, ST7735_BLACK);
 
-					ST7735_WriteString(0, 0, tab, Font_11x18, ST7735_WHITE, ST7735_BLACK);
+		  	  				  			mySwitches[i]=false;
+		  	  				  		}
+		  	  				  		}
+		  	  				  		counter_button++;
+		  	  					  	mySwitches[i]=false;
+		  	  				  		}
 
-	  				mySwitches[i]=false;
-	  				}
-	  	}
+		  	  				  	else{
+		  	  				  		LastButton = i;
+		  	  				  		counter_button = 0;
+		  	  				  		if (Keypad_keys[i] == 66 ){
+		  	  				  			if(magnetometer_value_index!= 0){
+		  	  				  				tab[magnetometer_value_index-1] =0;
+		  	  				  				mySwitches[i]=false;
+		  	  				  				magnetometer_value_index--;
+		  	  				  			  	ST7735_FillRectangleFast(0, 0, 128, 30, ST7735_BLUE);
+
+		  	  				  			}
+		  	  				  		}
+		  	  				  		else{
+		  	  				  			tab[magnetometer_value_index]= Keypad_keys[i];
+		  	  							magnetometer_value_index++;
+		  	  				  			mySwitches[i]=false;
+		  	  				  		}
+		  	  				  		}
+		  	  				  	if( magnetometer_value_index == 4){
+		  	  				  		if((tab[3]== 69) & (tab[0] >= 48) & (tab[0]<=57)
+		  	  				  				       & (tab[1] >= 48) & (tab[1]<=57)
+		  										   & (tab[2] >= 48) & (tab[2]<=57)){
+
+		  	  				  			uint16_t magnetometer_value_temp = 100*(tab[0]-48)+10*(tab[1]-48)+(tab[2]-48);
+		  	  				  			if((magnetometer_value_temp<=360)& (magnetometer_value_temp >=0)){
+		  	  				  				magnetometer_value = magnetometer_value_temp;
+		  	  				  				heading_set = true;
+		  	  				  			}
+
+		  	  				  		}
+
+
+		  	  				  		for (uint8_t z = 0; z<4; z++){
+		  	  				  			tab[z]=0;
+		  	  				  			}
+		  	  				  		magnetometer_value_index=0;
+  	  				  			  	ST7735_FillRectangleFast(0, 0, 128, 30, ST7735_BLUE);
+		  	  				  		}
+		  	  		  			ST7735_WriteString(0, 0, tab, Font_11x18, ST7735_WHITE, ST7735_BLACK);
+
+		  	  				  	}
+		  	  			else if(heading_set){
+		  			  		mySwitches[i]=false;
+
+		  	  			}
+		  	  		}
+
+		  	  	}
+if(heading_set){
 	  if(HAL_GPIO_ReadPin(Mag_Data_Ready_GPIO_Port, Mag_Data_Ready_Pin) == GPIO_PIN_SET){
 		  if(QMC_read(&pusula_sensor)==0 )
 			{
 				HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_SET);
 				Compas_Value=pusula_sensor.heading;
-				sprintf(tab ,"kat %f\n X %d\n Y %d\n Z %d\n"  , pusula_sensor.heading,pusula_sensor.Xaxis,pusula_sensor.Yaxis,pusula_sensor.Zaxis);
+				//sprintf(tab ,"kat %f\n X %d\n Y %d\n Z %d\n"  , pusula_sensor.heading,pusula_sensor.Xaxis,pusula_sensor.Yaxis,pusula_sensor.Zaxis);
+				CalibratedXaxis = scaleaxisX*((float)pusula_sensor.Xaxis - biasaxisX);
+				CalibratedYaxis = scaleaxisY*((float)pusula_sensor.Yaxis - biasaxisY);
+				CalibratedZaxis = scaleaxisZ*((float)pusula_sensor.Zaxis - biasaxisZ);
+				Compas = atan2f(CalibratedYaxis,CalibratedXaxis)*180.00/M_PI;
 
-
+						  if(Compas>0)
+						  {
+							  Calibrated_heading= Compas;
+						  }
+						  else
+						  {
+							  Calibrated_heading=360+Compas;
+						  }
 
 				ST7735_WriteString(0, 0, tab, Font_11x18, ST7735_WHITE, ST7735_BLACK);
 			}
@@ -210,9 +394,12 @@ int main(void)
 				  ST7735_DrawLine((60+width_point),80-height_point,60-width_point,80+height_point, ST7735_BLACK); //narysowac samolocik w stosunku do wyznaczonych punktow na okregu
 				  ST7735_DrawLine(60-triangle_point_w, 80+triangle_point_h, w/5,h/5, ST7735_BLACK);
 				  ST7735_DrawLine(60-triangle_point_w, 80+triangle_point_h, minus_w/5,minus_h/5, ST7735_BLACK);
+	setDirectionArrow(Calibrated_heading);
+	drawDirectionArrow(Direction);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+		}
   }
   /* USER CODE END 3 */
 }
@@ -264,6 +451,46 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
+void setDirectionArrow(float heading){
+if(magnetometer_value >=5){
+	if(heading < magnetometer_value-5){
+			Direction = 1; // strzalka w prawo
+		}
+		else if (heading > magnetometer_value+5){
+			Direction = -1; // strzalka w lewo
+		}
+		else
+			Direction = 0; // nie rysuj strzalki jak jest +-5 stopni od kierunku
+		if( abs(heading - magnetometer_value) >180){
+			Direction = -Direction;
+		}
+}
+
+
+}
+void drawDirectionArrow(int Direction){
+	switch(Direction){
+		case 0:
+			break;
+		case 1: drawArrowRight();
+			break;
+		case -1: drawArrowLeft();
+			break;
+	}
+}
+void drawArrowRight(){
+	ST7735_DrawLine(80, 20, 110, 20, ST7735_RED);
+	ST7735_DrawLine(110, 20,95 , 10, ST7735_RED);
+	ST7735_DrawLine(110, 20,95, 30, ST7735_RED);
+
+}
+void drawArrowLeft(){
+	ST7735_DrawLine(80, 20, 110, 20, ST7735_RED);
+	ST7735_DrawLine(80, 20,95,10, ST7735_RED);
+	ST7735_DrawLine(80, 20,95,30, ST7735_RED);
+
+}
+
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 	if(htim -> Instance == TIM3){
 		if(HAL_GPIO_ReadPin(R1_GPIO_Port, R1_Pin)){ ///pb5 1 wiersz

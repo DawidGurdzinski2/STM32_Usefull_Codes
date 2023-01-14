@@ -7,6 +7,8 @@
 #include"QMC5883.h"
 #include "math.h"
 
+
+
 //###############################################################################################################
 uint8_t QMC_init(QMC_t *qmc,I2C_HandleTypeDef *i2c,uint8_t Output_Data_Rate)
 {
@@ -39,6 +41,7 @@ uint8_t QMC_read(QMC_t *qmc)
 		  qmc->Xaxis= (qmc->datas[1]<<8) | qmc->datas[0];
 		  qmc->Yaxis= (qmc->datas[3]<<8) | qmc->datas[2];
 		  qmc->Zaxis= (qmc->datas[5]<<8) | qmc->datas[4];
+
 
 		  qmc->compas=atan2f(qmc->Yaxis,qmc->Xaxis)*180.00/M_PI;
 

@@ -18,7 +18,16 @@
 #define Standby 0
 #define Continuous 1
 #define QMC_OK 0
-#define QMC_FALSE 1
+#define  XMAX 891.0
+#define  XMIN -1870.0
+#define  YMAX 920.0
+#define  YMIN -1660.0
+#define  ZMAX 983.0
+#define  ZMIN -1585.0
+
+
+
+
 //#########################################################################################################
 
 typedef struct QMC
@@ -31,6 +40,9 @@ typedef struct QMC
 	int16_t             Zaxis;
 	float			    heading;
 	float               compas;
+
+
+
 }QMC_t;
 //#########################################################################################################
 uint8_t QMC_init(QMC_t *qmc,I2C_HandleTypeDef *i2c,uint8_t Output_Data_Rate);

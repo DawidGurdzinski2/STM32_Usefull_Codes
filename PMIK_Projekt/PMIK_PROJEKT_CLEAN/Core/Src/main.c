@@ -16,13 +16,6 @@
   ******************************************************************************
   */
 /* USER CODE END Header */
-/*
-Autorzy: JAKUB ŚLUBOWSKI i LUKASZ KUSTOSZ
-Projekt: Balanser piłeczki ping-pongowej w rynience
-Opis działania: Na podstawie odległości mierzonej czujnikiem VL53L1X program
-przewarza dane przez regulator PID i steruje servem, które ustawia kąt ustawienia
-rynienki tak aby ustawić rynienkę na środku.
-*/
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "i2c.h"
@@ -75,10 +68,10 @@ uint16_t data_recdist;
 int8_t data_recangle;
 float  data_PID_total  ;
 PIDStruct PID;
-float  dist_avg_new= 175, dist_avg_old=175 ;
+float  dist_avg_new= 210, dist_avg_old=200 ;
 float 	dist_sample;
 float n = 1.0;
-uint16_t servo_angle = ANGLE_MID;
+uint16_t servo_angle =850;
 //uartzm
 char msg[64];
 //uart
@@ -130,17 +123,18 @@ int main(void)
   MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
   HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
-  set_ang(1490);
+ // HAL_TIM_Base_Start_IT(&htim2);
+  set_ang(850);
 
   //bma_init();
   IR_Init();
 
   //PID VARIABLES INIT
-  PID.Kd =1000.0; // 800
-  PID.Ki = 0.0;
-  PID.Kp = 2; // 1.5 ustawione bylo
+  PID.Kd =300.0; // 700
+  PID.Ki = 0.1;
+  PID.Kp = 0.4; // 1.5 ustawione bylo
   PID.time_old = HAL_GetTick();
-  PID.set_point = 170;
+  PID.set_point = 180;
   //PID VARIABLES INIT
   //HAL_TIM_Base_Start_IT(&htim2);
 
@@ -153,13 +147,13 @@ int main(void)
 
 
 	 data_recdist = IR_Get_Distance();
-	// data_recangle = 5.625*bma_read(bma_x,1);
+	 //data_recangle = 5.625*bma_read(bma_x,1);
 
-	// dist_sample = (float) IR_Get_Distance();
+	 //dist_sample = (float) IR_Get_Distance();
 
-	// dist_avg_new = ((n-1)/n) * dist_avg_old + ((1/n) * dist_sample);
+	 //dist_avg_new = ((n-1)/n) * dist_avg_old + ((1/n) * dist_sample);
 
-	// dist_avg_old = dist_avg_new;
+	 //dist_avg_old = dist_avg_new;
 	 PIDRegulator(data_recdist, &PID);
 	// PIDRegulator((uint16_t)dist_avg_new, &PID);
 	// temp = PID.PID_total;
@@ -175,12 +169,25 @@ int main(void)
 	 HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg),1000);
 
 	 //uarttest
-	 set_ang(CalculateAngle(PID.PID_total));
-//	 set_ang(1180); // prawo
+//		__HAL_TIM_SET_COMPARE(&TIM_NO, TIM_CH_NO, 400);
+//		HAL_Delay(2000);
+//		__HAL_TIM_SET_COMPARE(&TIM_NO, TIM_CH_NO, 2600);
 //	 HAL_Delay(1000);
-	// set_ang(1800); // lewo
+//
+//
+	 if(data_recdist > 150){
+		 set_ang(CalculateAngle(PID.PID_total));
+	 }
+	 else{
+		 PID.PID_total=PID.PID_total*0.65;
+		 set_ang(CalculateAngle(PID.PID_total));
+
+	 }
+//	 set_ang(390); // prawo
 //	 HAL_Delay(1000);
-//	 set_ang(1490); // srodek
+//	 set_ang(1200); // lewo
+//	 HAL_Delay(1000);
+//	 set_ang(845); // srodek
 //	 HAL_Delay(1000);
     /* USER CODE END WHILE */
 
@@ -255,7 +262,7 @@ void PIDRegulator( uint16_t distance,  PIDStruct *PID)
 
 	PID->PID_d = PID->Kd*(((float)PID->distance_error - (float)PID->distance_previous_error)/(float)PID->period);
 
-	if(-5 < PID->distance_error && PID->distance_error < 5)
+	if(-20 < PID->distance_error && PID->distance_error < 20)
 	    {
 			PID->PID_i = PID->PID_i + (PID->Ki * PID->distance_error);
 	    }
@@ -272,17 +279,17 @@ uint16_t CalculateAngle(float PID_value)
 {
 
 
-	if(PID_value < 0 && PID_value >-320){
+	if(PID_value < 0 && PID_value >-355){
 		servo_angle = ANGLE_MID + PID_value;
 	}
-	else if(PID_value > 0 && PID_value < 320){
+	else if(PID_value > 0 && PID_value < 355){
 		servo_angle =  ANGLE_MID + PID_value;
 	}
-	else if (PID_value > 320 ) {
-		servo_angle =  ANGLE_MID + 320;
+	else if (PID_value > 355 ) {
+		servo_angle =  ANGLE_MID + 355;
 	}
-	else if (PID_value < -320 ) {
-			servo_angle =  ANGLE_MID - 320;
+	else if (PID_value < -790 ) {
+			servo_angle =  ANGLE_MID - 355;
 		}
 
 	return servo_angle;
