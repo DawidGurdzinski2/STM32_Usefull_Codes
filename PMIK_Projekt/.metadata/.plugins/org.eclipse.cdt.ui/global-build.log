@@ -1,95 +1,4 @@
-12:21:55 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: PMIK_PROJEKT_CLEAN.elf
- 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
-   text	   data	    bss	    dec	    hex	filename
-  47452	    492	   2300	  50244	   c444	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-Finished building: PMIK_PROJEKT_CLEAN.list
- 
-12:22:08 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-   text	   data	    bss	    dec	    hex	filename
-  47452	    492	   2300	  50244	   c444	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-12:23:03 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: PMIK_PROJEKT_CLEAN.elf
- 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
-   text	   data	    bss	    dec	    hex	filename
-  47452	    492	   2300	  50244	   c444	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-Finished building: PMIK_PROJEKT_CLEAN.list
- 
-12:24:16 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: PMIK_PROJEKT_CLEAN.elf
- 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
-   text	   data	    bss	    dec	    hex	filename
-  47776	    492	   2300	  50568	   c588	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-Finished building: PMIK_PROJEKT_CLEAN.list
- 
-12:25:39 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: PMIK_PROJEKT_CLEAN.elf
- 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
-   text	   data	    bss	    dec	    hex	filename
-  47776	    492	   2300	  50568	   c588	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-Finished building: PMIK_PROJEKT_CLEAN.list
- 
-12:26:28 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: PMIK_PROJEKT_CLEAN.elf
- 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
-   text	   data	    bss	    dec	    hex	filename
-  47776	    492	   2300	  50568	   c588	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-Finished building: PMIK_PROJEKT_CLEAN.list
- 
-12:28:07 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: PMIK_PROJEKT_CLEAN.elf
- 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
-   text	   data	    bss	    dec	    hex	filename
-  47792	    492	   2300	  50584	   c598	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-Finished building: PMIK_PROJEKT_CLEAN.list
- 
-12:29:07 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+17:06:28 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
 make -j8 all 
 arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.o"
 arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.o"
@@ -112,7 +21,7 @@ arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.c" 
 arm-none-eabi-gcc "../Core/Src/akcelerometr.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/akcelerometr.d" -MT"Core/Src/akcelerometr.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/akcelerometr.o"
 arm-none-eabi-gcc "../Core/Src/gpio.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/gpio.d" -MT"Core/Src/gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/gpio.o"
 arm-none-eabi-gcc "../Core/Src/i2c.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/i2c.d" -MT"Core/Src/i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/i2c.o"
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/lcd_i2c.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/lcd_i2c.d" -MT"Core/Src/lcd_i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/lcd_i2c.o"
 ../Core/Src/akcelerometr.c: In function 'bma_read':
 ../Core/Src/akcelerometr.c:21:45: warning: pointer targets in passing argument 5 of 'HAL_I2C_Mem_Read' differ in signedness [-Wpointer-sign]
    21 |  HAL_I2C_Mem_Read(&I2C_NO, bma_adr, reg, 1, temp_data_rec, numberofbytes, 100);
@@ -128,6 +37,7 @@ In file included from ../Core/Inc/stm32l0xx_hal_conf.h:236,
 ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_i2c.h:633:66: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'int8_t *' {aka 'signed char *'}
   633 |                                    uint16_t MemAddSize, uint8_t *pData, uint16_t Size, uint32_t Timeout);
       |                                                         ~~~~~~~~~^~~~~
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
 arm-none-eabi-gcc "../Core/Src/servo.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/servo.d" -MT"Core/Src/servo.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/servo.o"
 arm-none-eabi-gcc "../Core/Src/servo360.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/servo360.d" -MT"Core/Src/servo360.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/servo360.o"
 arm-none-eabi-gcc "../Core/Src/stm32l0xx_hal_msp.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32l0xx_hal_msp.d" -MT"Core/Src/stm32l0xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32l0xx_hal_msp.o"
@@ -142,12 +52,26 @@ Finished building target: PMIK_PROJEKT_CLEAN.elf
 arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
 arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
    text	   data	    bss	    dec	    hex	filename
-  47792	    492	   2300	  50584	   c598	PMIK_PROJEKT_CLEAN.elf
+  52188	    492	   2420	  55100	   d73c	PMIK_PROJEKT_CLEAN.elf
 Finished building: default.size.stdout
  
 Finished building: PMIK_PROJEKT_CLEAN.list
  
-12:29:54 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+17:06:45 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+   text	   data	    bss	    dec	    hex	filename
+  52188	    492	   2420	  55100	   d73c	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+17:09:45 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+make -j8 all 
+arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
+   text	   data	    bss	    dec	    hex	filename
+  52188	    492	   2420	  55100	   d73c	PMIK_PROJEKT_CLEAN.elf
+Finished building: default.size.stdout
+ 
+17:14:03 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
 make -j8 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
 arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
@@ -156,40 +80,12 @@ Finished building target: PMIK_PROJEKT_CLEAN.elf
 arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
 arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
    text	   data	    bss	    dec	    hex	filename
-  47792	    496	   2296	  50584	   c598	PMIK_PROJEKT_CLEAN.elf
+  52188	    492	   2420	  55100	   d73c	PMIK_PROJEKT_CLEAN.elf
 Finished building: default.size.stdout
  
 Finished building: PMIK_PROJEKT_CLEAN.list
  
-12:31:51 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: PMIK_PROJEKT_CLEAN.elf
- 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
-   text	   data	    bss	    dec	    hex	filename
-  47776	    492	   2300	  50568	   c588	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-Finished building: PMIK_PROJEKT_CLEAN.list
- 
-12:32:38 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: PMIK_PROJEKT_CLEAN.elf
- 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
-   text	   data	    bss	    dec	    hex	filename
-  47776	    492	   2300	  50568	   c588	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-Finished building: PMIK_PROJEKT_CLEAN.list
- 
-12:33:35 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
+17:17:30 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
 make -j8 all 
 arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.o"
 arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.o"
@@ -212,7 +108,7 @@ arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.c" 
 arm-none-eabi-gcc "../Core/Src/akcelerometr.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/akcelerometr.d" -MT"Core/Src/akcelerometr.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/akcelerometr.o"
 arm-none-eabi-gcc "../Core/Src/gpio.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/gpio.d" -MT"Core/Src/gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/gpio.o"
 arm-none-eabi-gcc "../Core/Src/i2c.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/i2c.d" -MT"Core/Src/i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/i2c.o"
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/lcd_i2c.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/lcd_i2c.d" -MT"Core/Src/lcd_i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/lcd_i2c.o"
 ../Core/Src/akcelerometr.c: In function 'bma_read':
 ../Core/Src/akcelerometr.c:21:45: warning: pointer targets in passing argument 5 of 'HAL_I2C_Mem_Read' differ in signedness [-Wpointer-sign]
    21 |  HAL_I2C_Mem_Read(&I2C_NO, bma_adr, reg, 1, temp_data_rec, numberofbytes, 100);
@@ -228,6 +124,7 @@ In file included from ../Core/Inc/stm32l0xx_hal_conf.h:236,
 ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_i2c.h:633:66: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'int8_t *' {aka 'signed char *'}
   633 |                                    uint16_t MemAddSize, uint8_t *pData, uint16_t Size, uint32_t Timeout);
       |                                                         ~~~~~~~~~^~~~~
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
 arm-none-eabi-gcc "../Core/Src/servo.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/servo.d" -MT"Core/Src/servo.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/servo.o"
 arm-none-eabi-gcc "../Core/Src/servo360.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/servo360.d" -MT"Core/Src/servo360.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/servo360.o"
 arm-none-eabi-gcc "../Core/Src/stm32l0xx_hal_msp.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32l0xx_hal_msp.d" -MT"Core/Src/stm32l0xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32l0xx_hal_msp.o"
@@ -242,429 +139,8 @@ Finished building target: PMIK_PROJEKT_CLEAN.elf
 arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
 arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
    text	   data	    bss	    dec	    hex	filename
-  47776	    492	   2300	  50568	   c588	PMIK_PROJEKT_CLEAN.elf
+  51920	    492	   2340	  54752	   d5e0	PMIK_PROJEKT_CLEAN.elf
 Finished building: default.size.stdout
  
 Finished building: PMIK_PROJEKT_CLEAN.list
- 
-12:35:10 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: PMIK_PROJEKT_CLEAN.elf
- 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
-   text	   data	    bss	    dec	    hex	filename
-  47776	    492	   2300	  50568	   c588	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-Finished building: PMIK_PROJEKT_CLEAN.list
- 
-12:36:02 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-   text	   data	    bss	    dec	    hex	filename
-  47776	    492	   2300	  50568	   c588	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-12:36:47 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-   text	   data	    bss	    dec	    hex	filename
-  47776	    492	   2300	  50568	   c588	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-12:38:03 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-   text	   data	    bss	    dec	    hex	filename
-  47776	    492	   2300	  50568	   c588	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-12:40:35 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-   text	   data	    bss	    dec	    hex	filename
-  47776	    492	   2300	  50568	   c588	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-12:42:47 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: PMIK_PROJEKT_CLEAN.elf
- 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
-   text	   data	    bss	    dec	    hex	filename
-  47432	    492	   2300	  50224	   c430	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-Finished building: PMIK_PROJEKT_CLEAN.list
- 
-12:43:33 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: PMIK_PROJEKT_CLEAN.elf
- 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
-   text	   data	    bss	    dec	    hex	filename
-  47432	    492	   2300	  50224	   c430	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-Finished building: PMIK_PROJEKT_CLEAN.list
- 
-12:44:30 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-   text	   data	    bss	    dec	    hex	filename
-  47432	    492	   2300	  50224	   c430	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-12:50:05 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: PMIK_PROJEKT_CLEAN.elf
- 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
-   text	   data	    bss	    dec	    hex	filename
-  47432	    492	   2300	  50224	   c430	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-Finished building: PMIK_PROJEKT_CLEAN.list
- 
-12:52:08 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: PMIK_PROJEKT_CLEAN.elf
- 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
-   text	   data	    bss	    dec	    hex	filename
-  47432	    492	   2300	  50224	   c430	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-Finished building: PMIK_PROJEKT_CLEAN.list
- 
-12:54:41 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: PMIK_PROJEKT_CLEAN.elf
- 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
-   text	   data	    bss	    dec	    hex	filename
-  47776	    492	   2300	  50568	   c588	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-Finished building: PMIK_PROJEKT_CLEAN.list
- 
-12:55:44 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-   text	   data	    bss	    dec	    hex	filename
-  47776	    492	   2300	  50568	   c588	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-12:57:02 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-   text	   data	    bss	    dec	    hex	filename
-  47776	    492	   2300	  50568	   c588	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-12:57:54 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: PMIK_PROJEKT_CLEAN.elf
- 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
-   text	   data	    bss	    dec	    hex	filename
-  47776	    492	   2300	  50568	   c588	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-Finished building: PMIK_PROJEKT_CLEAN.list
- 
-13:00:02 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: PMIK_PROJEKT_CLEAN.elf
- 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
-   text	   data	    bss	    dec	    hex	filename
-  47776	    492	   2300	  50568	   c588	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-Finished building: PMIK_PROJEKT_CLEAN.list
- 
-20:19:22 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-   text	   data	    bss	    dec	    hex	filename
-  47776	    492	   2300	  50568	   c588	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-20:19:48 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-   text	   data	    bss	    dec	    hex	filename
-  47776	    492	   2300	  50568	   c588	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-20:22:05 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-   text	   data	    bss	    dec	    hex	filename
-  47776	    492	   2300	  50568	   c588	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-20:23:12 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-   text	   data	    bss	    dec	    hex	filename
-  47776	    492	   2300	  50568	   c588	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-20:24:06 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-   text	   data	    bss	    dec	    hex	filename
-  47776	    492	   2300	  50568	   c588	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-20:25:13 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-   text	   data	    bss	    dec	    hex	filename
-  47776	    492	   2300	  50568	   c588	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-20:26:13 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-   text	   data	    bss	    dec	    hex	filename
-  47776	    492	   2300	  50568	   c588	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-20:26:57 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-   text	   data	    bss	    dec	    hex	filename
-  47776	    492	   2300	  50568	   c588	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-20:27:36 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-   text	   data	    bss	    dec	    hex	filename
-  47776	    492	   2300	  50568	   c588	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-20:28:51 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-   text	   data	    bss	    dec	    hex	filename
-  47776	    492	   2300	  50568	   c588	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-20:29:12 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-   text	   data	    bss	    dec	    hex	filename
-  47776	    492	   2300	  50568	   c588	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-20:29:42 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-   text	   data	    bss	    dec	    hex	filename
-  47776	    492	   2300	  50568	   c588	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-20:30:21 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-   text	   data	    bss	    dec	    hex	filename
-  47776	    492	   2300	  50568	   c588	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-20:31:41 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-   text	   data	    bss	    dec	    hex	filename
-  47776	    492	   2300	  50568	   c588	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-20:32:03 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-   text	   data	    bss	    dec	    hex	filename
-  47776	    492	   2300	  50568	   c588	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-20:34:02 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-   text	   data	    bss	    dec	    hex	filename
-  47776	    492	   2300	  50568	   c588	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-20:35:36 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-   text	   data	    bss	    dec	    hex	filename
-  47776	    492	   2300	  50568	   c588	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-20:36:51 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: PMIK_PROJEKT_CLEAN.elf
- 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
-   text	   data	    bss	    dec	    hex	filename
-  47776	    492	   2300	  50568	   c588	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-Finished building: PMIK_PROJEKT_CLEAN.list
- 
-20:39:46 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: PMIK_PROJEKT_CLEAN.elf
- 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
-   text	   data	    bss	    dec	    hex	filename
-  47776	    492	   2300	  50568	   c588	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-Finished building: PMIK_PROJEKT_CLEAN.list
- 
-20:41:22 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: PMIK_PROJEKT_CLEAN.elf
- 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
-   text	   data	    bss	    dec	    hex	filename
-  47600	    492	   2300	  50392	   c4d8	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-Finished building: PMIK_PROJEKT_CLEAN.list
- 
-20:42:54 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc "../Core/Src/servo.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/servo.d" -MT"Core/Src/servo.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/servo.o"
-arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: PMIK_PROJEKT_CLEAN.elf
- 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
-   text	   data	    bss	    dec	    hex	filename
-  47600	    492	   2300	  50392	   c4d8	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-Finished building: PMIK_PROJEKT_CLEAN.list
- 
-20:44:45 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: PMIK_PROJEKT_CLEAN.elf
- 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
-   text	   data	    bss	    dec	    hex	filename
-  47600	    492	   2300	  50392	   c4d8	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-Finished building: PMIK_PROJEKT_CLEAN.list
- 
-20:45:33 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: PMIK_PROJEKT_CLEAN.elf
- 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
-   text	   data	    bss	    dec	    hex	filename
-  47600	    492	   2300	  50392	   c4d8	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-Finished building: PMIK_PROJEKT_CLEAN.list
- 
-20:46:02 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-   text	   data	    bss	    dec	    hex	filename
-  47600	    492	   2300	  50392	   c4d8	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-20:47:03 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: PMIK_PROJEKT_CLEAN.elf
- 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
-   text	   data	    bss	    dec	    hex	filename
-  47600	    492	   2300	  50392	   c4d8	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-Finished building: PMIK_PROJEKT_CLEAN.list
- 
-13:03:12 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: PMIK_PROJEKT_CLEAN.elf
- 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
-   text	   data	    bss	    dec	    hex	filename
-  47600	    492	   2300	  50392	   c4d8	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-Finished building: PMIK_PROJEKT_CLEAN.list
- 
-13:05:28 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L073xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "PMIK_PROJEKT_CLEAN.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Lukasz\Desktop\STM32\STM32_Usefull_Codes\PMIK_Projekt\PMIK_PROJEKT_CLEAN\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PMIK_PROJEKT_CLEAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: PMIK_PROJEKT_CLEAN.elf
- 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-arm-none-eabi-objdump -h -S  PMIK_PROJEKT_CLEAN.elf  > "PMIK_PROJEKT_CLEAN.list"
-   text	   data	    bss	    dec	    hex	filename
-  47600	    492	   2300	  50392	   c4d8	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
- 
-Finished building: PMIK_PROJEKT_CLEAN.list
- 
-13:07:55 **** Incremental Build of configuration Debug for project PMIK_PROJEKT_CLEAN ****
-make -j8 all 
-arm-none-eabi-size   PMIK_PROJEKT_CLEAN.elf 
-   text	   data	    bss	    dec	    hex	filename
-  47600	    492	   2300	  50392	   c4d8	PMIK_PROJEKT_CLEAN.elf
-Finished building: default.size.stdout
  

@@ -9,7 +9,7 @@
 /* zakresy katowe pracy serwomechanizmu */
 #define ANGLE_MIN 0
 #define ANGLE_MAX 1200
-#define ANGLE_MID 860
+#define ANGLE_MID 850
 
 /* zakres PWM */
 #define PWM_MIN 400

@@ -17,7 +17,7 @@ void IR_Init()
 	  VL53L1X_SensorInit(dev);
 	  /* Optional functions to be used to change the main ranging parameters according the application requirements to get the best ranging performances */
 	  VL53L1X_SetDistanceMode(dev, 1); /* 1=short, 2=long */
-	  VL53L1X_SetTimingBudgetInMs(dev, 100); /* in ms possible values [20, 50, 100, 200, 500] */
+	  VL53L1X_SetTimingBudgetInMs(dev, 50); /* in ms possible values [20, 50, 100, 200, 500] */
 	  VL53L1X_SetInterMeasurementInMs(dev, 100); /* in ms, IM must be > = TB */
 	//  status = VL53L1X_SetOffset(dev,20); /* offset compensation in mm */
 	//  status = VL53L1X_SetROI(dev, 16, 16); /* minimum ROI 4,4 */
