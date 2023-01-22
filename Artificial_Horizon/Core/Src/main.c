@@ -81,7 +81,7 @@ float scaleaxisX = ((((XMAX-XMIN) + (YMAX-YMIN) + (ZMAX-ZMIN))/6)/((XMAX-XMIN)/2
 float scaleaxisY = (((XMAX-XMIN) + (YMAX-YMIN) + (ZMAX-ZMIN))/6)/((YMAX-YMIN)/2);
 float scaleaxisZ = (((XMAX-XMIN) + (YMAX-YMIN) + (ZMAX-ZMIN))/6)/((ZMAX-ZMIN)/2);
 float Compas;
-float Calibrated_heading;
+volatile float Calibrated_heading;
 int Direction;
 //acc/gyro variables
 float Ax, Ay, Az, Gx, Gy, Gz;
@@ -395,6 +395,8 @@ if(heading_set){
 				  ST7735_DrawLine(60-triangle_point_w, 80+triangle_point_h, w/5,h/5, ST7735_BLACK);
 				  ST7735_DrawLine(60-triangle_point_w, 80+triangle_point_h, minus_w/5,minus_h/5, ST7735_BLACK);
 	setDirectionArrow(Calibrated_heading);
+	drawDirectionArrow(Direction);
+	drawDirectionArrow(Direction);
 	drawDirectionArrow(Direction);
     /* USER CODE END WHILE */
 

@@ -1,4 +1,11 @@
 /* USER CODE BEGIN Header */
+	/*
+	 * Autorzy: Lukasz Kustosz, Jakub Slubowski
+	 * Projekt: Balanser pileczki ping-pongowej w rynience
+	 * Opis działanie: Na podstawie odleglosci mierzonej czujnikiem VL53L1X
+	 * program przetwarza dane przez regulator PID i steruje servem,które ustawia
+	 * kat rynienki tak aby ustawic pileczke na srodku
+	 */
 /**
   ******************************************************************************
   * @file           : main.c
@@ -38,19 +45,19 @@
 typedef struct
 {
 	uint16_t set_point;
-	float Kp;
-	float Kd;
-	float Ki;
+	float    Kp; // wspolczynnik proporcjonalny
+	float    Kd; // wspolczynnik rozniczkowy
+	float    Ki; // wspolczynnik calkowy
 	uint32_t time_old;
 	uint32_t time_new;
     uint32_t period;
-	int16_t distance_error;
-	int16_t distance_previous_error;
-	int16_t dist_diference;
-	float PID_p, PID_i, PID_d, PID_total;
+	int16_t  distance_error;
+	int16_t  distance_previous_error;
+	int16_t  dist_diference;
+	float    PID_p, PID_i, PID_d, PID_total; // PID_total = PID_p+PID_i+PID_d
 }PIDStruct;
 
-struct lcd_disp disp;
+
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -67,25 +74,33 @@ struct lcd_disp disp;
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-uint16_t data_recdist;
-int8_t data_recangle;
-float  data_PID_total  ;
+//lcd
+struct    lcd_disp disp;
+//
+//distance sensor
+uint16_t  data_recdist;
+//
+//akcelerometr
+int8_t    data_recangle;
+//
+//PID
+float     data_PID_total  ;
 PIDStruct PID;
-float  dist_avg_new= 210, dist_avg_old=200 ;
-float 	dist_sample;
-float n = 1.0;
-uint16_t servo_angle =850;
-//uartzm
-char msg[64];
-uint8_t znak;
-uint8_t servo_enable;
+//serwomechanizm
+uint16_t  servo_angle =850;
+uint8_t   servo_enable =1;
+//
 //uart
+char      msg[64];
+uint8_t   znak;
+
+//
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
-void SystemClock_Config(void);
+void 	 SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
-void PIDRegulator(uint16_t distance, PIDStruct *PID);
+void 	 PIDRegulator(uint16_t distance, PIDStruct *PID);
 uint16_t CalculateAngle(float PID_value);
 /* USER CODE END PFP */
 
@@ -129,26 +144,16 @@ int main(void)
   /* USER CODE BEGIN 2 */
   HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
   HAL_UART_Receive_IT(&huart2, &znak, 1);
-  disp.addr = (0x27<<1);
-  disp.bl = true;
-  lcd_init(&disp);
-  sprintf((char *)disp.f_line, "To 1. linia");
-  sprintf((char *)disp.s_line, "To w. linia");
-  lcd_display(&disp);
- // HAL_TIM_Base_Start_IT(&htim2);
-  set_ang(850);
-
-  //bma_init();
-  IR_Init();
+  set_ang(ANGLE_MID); // ustawianie rynienki w pozycji zerowej
+  bma_init(); //inicjalizacja akcelerometru
+  IR_Init(); //inicjalizacja czujnika odleglosci
 
   //PID VARIABLES INIT
-  PID.Kd =300.0; // 700
+  PID.Kd =300.0;
   PID.Ki = 0.1;
-  PID.Kp = 0.6; // 1.5 ustawione bylo
-  PID.time_old = HAL_GetTick();
+  PID.Kp = 0.6;
   PID.set_point = 200;
   //PID VARIABLES INIT
-  //HAL_TIM_Base_Start_IT(&htim2);
 
   /* USER CODE END 2 */
 
@@ -157,49 +162,22 @@ int main(void)
   while (1)
   {
 
-
 	 data_recdist = IR_Get_Distance();
-	 //data_recangle = 5.625*bma_read(bma_x,1);
-
-
+	 data_recangle = 5.625*bma_read(bma_x,1);
 	 PIDRegulator(data_recdist, &PID);
 
-
-
-
-	 // uart test
-	// uint16_t temp;
-	 //temp = CalculateAngle(PID.PID_total);
-	 sprintf((char*)msg," PID_total %f  , Dist %d, Dist avg %f\n ",  PID.PID_total,  data_recdist, dist_avg_new);
-
-
-	 HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg),1000);
-
-	 //uarttest
-//		__HAL_TIM_SET_COMPARE(&TIM_NO, TIM_CH_NO, 400);
-//		HAL_Delay(2000);
-//		__HAL_TIM_SET_COMPARE(&TIM_NO, TIM_CH_NO, 2600);
-//	 HAL_Delay(1000);
-//
-//
-if(servo_enable == 1){
-	 if(data_recdist > 100){
-			 set_ang(CalculateAngle(PID.PID_total));
-		 }
+	 if(servo_enable == 1){
+		 if(data_recdist > 100){
+				 set_ang(CalculateAngle(PID.PID_total));
+			 }
 		 else{
-			 PID.PID_total=PID.PID_total*0.65;
-			 set_ang(CalculateAngle(PID.PID_total));
-		 }
-}
-else if (servo_enable==0){
-	set_ang(ANGLE_MID);
-}
-//	 set_ang(390); // prawo
-//	 HAL_Delay(1000);
-//	 set_ang(1200); // lewo
-//	 HAL_Delay(1000);
-//	 set_ang(845); // srodek
-//	 HAL_Delay(1000);
+				 PID.PID_total=PID.PID_total*0.65; // reczna korekta nieliniowosci pomiarow czujnika odleglosci
+				 set_ang(CalculateAngle(PID.PID_total));
+			 }
+	}
+	 else if (servo_enable==0){
+		 set_ang(ANGLE_MID);
+	 }
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -259,6 +237,11 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
+/**
+  * @brief Funkcja odpowiada za regulacje PID na podstawie podanych na wejscie wartosci.
+  * Przyjmuje odleglosc w mm odczytana z czujnika odleglosci oraz wskaznik na globalna
+  * strukture zawierajaca dane potrzebne do obliczen
+  */
 void PIDRegulator( uint16_t distance,  PIDStruct *PID)
 {
 	PID->time_new = HAL_GetTick();
@@ -286,9 +269,14 @@ void PIDRegulator( uint16_t distance,  PIDStruct *PID)
 	return;
 }
 
+/**
+  * @brief Funkcja odpowiada za przeskalowanie wartosci PID na odpowiedni
+  * kat do ustawienia serwomechanizmu.
+  * Maksymalne wychylenie od srodkowego ustawienia serwa wynosi +-355
+  * (w sensie wypelnienia PWM sterujacego serwem).
+  */
 uint16_t CalculateAngle(float PID_value)
 {
-
 
 	if(PID_value < 0 && PID_value >-355){
 		servo_angle = ANGLE_MID + PID_value;
@@ -299,20 +287,11 @@ uint16_t CalculateAngle(float PID_value)
 	else if (PID_value > 355 ) {
 		servo_angle =  ANGLE_MID + 355;
 	}
-	else if (PID_value < -790 ) {
+	else if (PID_value < -355 ) {
 			servo_angle =  ANGLE_MID - 355;
 		}
 
 	return servo_angle;
-}
-
-void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
-{
-	if(htim -> Instance == TIM2)
-	{
-		//set_ang(CalculateAngle(PID.PID_total));
-	}
-
 }
 
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)

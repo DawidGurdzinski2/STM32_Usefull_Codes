@@ -1,10 +1,10 @@
-16:09:12 **** Incremental Build of configuration Debug for project Artificial_Horizon ****
+22:28:32 **** Incremental Build of configuration Debug for project Artificial_Horizon ****
 make -j8 all 
 arm-none-eabi-size   Artificial_Horizon.elf 
    text	   data	    bss	    dec	    hex	filename
-  50692	    536	   1984	  53212	   cfdc	Artificial_Horizon.elf
+  50708	    536	   1984	  53228	   cfec	Artificial_Horizon.elf
 Finished building: default.size.stdout
  
 
-16:09:12 Build Finished. 0 errors, 0 warnings. (took 443ms)
+22:28:32 Build Finished. 0 errors, 0 warnings. (took 445ms)
 
