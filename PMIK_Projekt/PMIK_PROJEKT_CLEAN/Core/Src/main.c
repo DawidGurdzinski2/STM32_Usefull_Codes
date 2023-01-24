@@ -1,15 +1,14 @@
 /* USER CODE BEGIN Header */
-	/*
-	 * Autorzy: Lukasz Kustosz, Jakub Slubowski
-	 * Projekt: Balanser pileczki ping-pongowej w rynience
-	 * Opis działanie: Na podstawie odleglosci mierzonej czujnikiem VL53L1X
-	 * program przetwarza dane przez regulator PID i steruje servem,które ustawia
-	 * kat rynienki tak aby ustawic pileczke na srodku
-	 */
+
 /**
   ******************************************************************************
   * @file           : main.c
   * @brief          : Main program body
+  * Autorzy: Lukasz Kustosz, Jakub Slubowski
+  * Projekt: Balanser pileczki ping-pongowej w rynience
+  * Opis działanie: Na podstawie odleglosci mierzonej czujnikiem VL53L1X
+  * program przetwarza dane przez regulator PID i steruje servem,które ustawia
+  * kat rynienki tak aby ustawic pileczke na srodku
   ******************************************************************************
   * @attention
   *
@@ -26,6 +25,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "i2c.h"
+#include "spi.h"
 #include "tim.h"
 #include "usart.h"
 #include "gpio.h"
@@ -37,11 +37,15 @@
 #include "servo.h"
 #include "akcelerometr.h"
 #include "distance_sensor.h"
-#include "lcd_i2c.h"
+#include "st7735.h"
+#include "fonts.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
+/**
+ *  @brief struktura uzywana do wyliczania wartosci na wyjsciu regulatora PID
+ */
 typedef struct
 {
 	uint16_t set_point;
@@ -62,8 +66,11 @@ typedef struct
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-#define dev 0x52  // address of IR distance sensor
-
+#define dev 				0x52  // address of IR distance sensor
+#define displayMiddleHeight 80
+#define screenLeftX 		20
+#define screenRightX		108
+#define angleScaler 		5.625
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -74,9 +81,7 @@ typedef struct
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-//lcd
-struct    lcd_disp disp;
-//
+
 //distance sensor
 uint16_t  data_recdist;
 //
@@ -91,6 +96,7 @@ uint16_t  servo_angle =850;
 uint8_t   servo_enable =1;
 //
 //uart
+uint8_t   test_uart;
 char      msg[64];
 uint8_t   znak;
 
@@ -98,7 +104,7 @@ uint8_t   znak;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
-void 	 SystemClock_Config(void);
+void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
 void 	 PIDRegulator(uint16_t distance, PIDStruct *PID);
 uint16_t CalculateAngle(float PID_value);
@@ -141,20 +147,21 @@ int main(void)
   MX_USART2_UART_Init();
   MX_TIM2_Init();
   MX_TIM3_Init();
+  MX_SPI1_Init();
+  MX_I2C3_Init();
   /* USER CODE BEGIN 2 */
   HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
   HAL_UART_Receive_IT(&huart2, &znak, 1);
   set_ang(ANGLE_MID); // ustawianie rynienki w pozycji zerowej
   bma_init(); //inicjalizacja akcelerometru
   IR_Init(); //inicjalizacja czujnika odleglosci
-
-  //PID VARIABLES INIT
-  PID.Kd =300.0;
-  PID.Ki = 0.1;
+  ST7735_Init();
+  ST7735_FillRectangleFast(0, 0, 128, 160, ST7735_BLACK);
+  PID.Kd =170.0;
+  PID.Ki = 0.01;
   PID.Kp = 0.6;
   PID.set_point = 200;
   //PID VARIABLES INIT
-
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -162,8 +169,12 @@ int main(void)
   while (1)
   {
 
+
+	 ST7735_DrawLine(screenLeftX, displayMiddleHeight+data_recangle, screenRightX, displayMiddleHeight-data_recangle, ST7735_BLACK);
+	 data_recangle = angleScaler*bma_read(bma_x,1);
+	 ST7735_DrawLine(screenLeftX, displayMiddleHeight+data_recangle, screenRightX, displayMiddleHeight-data_recangle, ST7735_WHITE);
+
 	 data_recdist = IR_Get_Distance();
-	 data_recangle = 5.625*bma_read(bma_x,1);
 	 PIDRegulator(data_recdist, &PID);
 
 	 if(servo_enable == 1){
@@ -174,9 +185,14 @@ int main(void)
 				 PID.PID_total=PID.PID_total*0.65; // reczna korekta nieliniowosci pomiarow czujnika odleglosci
 				 set_ang(CalculateAngle(PID.PID_total));
 			 }
-	}
+	 }
 	 else if (servo_enable==0){
 		 set_ang(ANGLE_MID);
+	 }
+
+	 if(test_uart == 1){
+	 	 sprintf((char*)msg," PID_total %f  , Dist %d, Angle %d\n ",  PID.PID_total,  data_recdist, data_recangle);
+	 	 HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg),1000);
 	 }
     /* USER CODE END WHILE */
 
@@ -227,9 +243,11 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
-  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_USART2|RCC_PERIPHCLK_I2C1;
+  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_USART2|RCC_PERIPHCLK_I2C1
+                              |RCC_PERIPHCLK_I2C3;
   PeriphClkInit.Usart2ClockSelection = RCC_USART2CLKSOURCE_PCLK1;
   PeriphClkInit.I2c1ClockSelection = RCC_I2C1CLKSOURCE_PCLK1;
+  PeriphClkInit.I2c3ClockSelection = RCC_I2C3CLKSOURCE_PCLK1;
   if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
   {
     Error_Handler();
@@ -241,6 +259,10 @@ void SystemClock_Config(void)
   * @brief Funkcja odpowiada za regulacje PID na podstawie podanych na wejscie wartosci.
   * Przyjmuje odleglosc w mm odczytana z czujnika odleglosci oraz wskaznik na globalna
   * strukture zawierajaca dane potrzebne do obliczen
+  * @param distance
+  * 	wartosc uint8_t odleglosci podana w mm
+  * @param *PID
+  * 	Wskaznik na globalna strukture PID kontrolujaca kat rynienki
   */
 void PIDRegulator( uint16_t distance,  PIDStruct *PID)
 {
@@ -256,7 +278,7 @@ void PIDRegulator( uint16_t distance,  PIDStruct *PID)
 
 	PID->PID_d = PID->Kd*(((float)PID->distance_error - (float)PID->distance_previous_error)/(float)PID->period);
 
-	if(-5 < PID->distance_error && PID->distance_error < 5)
+	if(-25 < PID->distance_error && PID->distance_error < 25)
 	    {
 			PID->PID_i = PID->PID_i + (PID->Ki * PID->distance_error);
 	    }
@@ -274,6 +296,9 @@ void PIDRegulator( uint16_t distance,  PIDStruct *PID)
   * kat do ustawienia serwomechanizmu.
   * Maksymalne wychylenie od srodkowego ustawienia serwa wynosi +-355
   * (w sensie wypelnienia PWM sterujacego serwem).
+  * @param PID_value
+  * 	Wartosc PID obliczona przez PIDREGULATOR
+  * @retval uint16_t wartosc szerokosci impulsu sterujacego servem
   */
 uint16_t CalculateAngle(float PID_value)
 {
@@ -302,14 +327,21 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 		{
 			HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
 			servo_enable = 1;
-
 		}
 		if(znak == 's')
 		{
 			HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
 			servo_enable = 0;
 		}
-		HAL_UART_Receive_IT(&huart2, &znak, 1);
+		if(znak == 't')
+		{
+			test_uart = 1;
+		}
+		if(znak == 'c')
+		{
+			test_uart = 0;
+		}
+	HAL_UART_Receive_IT(&huart2, &znak, 1);
 	}
 }
 /* USER CODE END 4 */

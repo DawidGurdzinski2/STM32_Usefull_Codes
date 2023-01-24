@@ -1,6 +1,10 @@
 #include "akcelerometr.h"
 
-
+/**@brief
+ * Funkcja sluzaca do wpisywania do rejestrow BMA
+ * @param reg uint8_t adres rejestru w akcelerometrze, do ktorego chcemy wpisac wartosc
+ * @param value uint8_t wartosc ktora chcemy wpisac do reg
+ */
 void bma_write (uint8_t reg, uint8_t value)
 {
 	uint8_t data[2];
@@ -11,7 +15,12 @@ void bma_write (uint8_t reg, uint8_t value)
 
 }
 
-
+/**@brief
+ * Funkcja sluzaca do odczytywania z rejestrow BMA
+ * @param reg uint8_t adres rejestru w akcelerometrze, z ktorego chcemy zczytac wartosc
+ * @param numberofbytes uint8_t ilosc bajtow, ktora chcemy odczytac
+ * @retval int8_t odczytana wartosc z rejestru
+ */
 int8_t bma_read (uint8_t reg, uint8_t numberofbytes)
 {
 	int8_t odakcel;
@@ -23,7 +32,10 @@ int8_t bma_read (uint8_t reg, uint8_t numberofbytes)
 	return odakcel;
 }
 
-
+/**@brief
+ * Funckja inicjalizujaca czujnik, poprzez ustawienie bazowych rejestrow
+ *
+ */
 void bma_init (void)
 {
 
@@ -36,24 +48,3 @@ void bma_init (void)
 }
 
 
-int PrzeliczKat(int kat)
-{
-	int wynik = 0;
-
-	if (kat > 90)
-	{
-		return 2500;
-	}
-	else if (kat < -90)
-	{
-		return 500;
-	}
-
-	else
-	{
-		wynik = (kat * 11.11) + 1500;
-		return wynik;
-
-	}
-
-}

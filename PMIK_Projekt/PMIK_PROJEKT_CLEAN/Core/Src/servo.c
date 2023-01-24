@@ -2,9 +2,11 @@
 #include "servo.h"
 #include "tim.h"
 
-/*
- * ang - kat obrotu walu serwomechanizmu
- * mode - tryb obrotu zgodnie/przeciwnie do wskazowek zegara
+/**
+ * @brief
+ * Ustawia szerokosc impulsu PWM na podstawie podanego kata
+ * @param ang uint16_t wartosc kata od ANGLE_MIN do ANGLE_MAX dla danego serwomechanizmu pomnozona razy 10 w stopniach
+ *
  */
 void set_ang(uint16_t ang)
 {
