@@ -2,8 +2,7 @@
 #include "servo.h"
 #include "tim.h"
 
-/**
- * @brief
+/**@brief
  * Ustawia szerokosc impulsu PWM na podstawie podanego kata
  * @param ang uint16_t wartosc kata od ANGLE_MIN do ANGLE_MAX dla danego serwomechanizmu pomnozona razy 10 w stopniach
  *
